@@ -36,7 +36,9 @@
 <link rel='https://api.w.org/' href='wp-json\index.json'>
 <link rel="alternate" type="application/json+oembed" href="wp-json\oembed\1.0\embed.json?url=https%3A%2F%2Fcompraspublicas.cba.gov.ar%2F">
 <link rel="alternate" type="text/xml+oembed" href="wp-json\oembed\1.0\embed.xml?url=https%3A%2F%2Fcompraspublicas.cba.gov.ar%2F&#038;format=xml">
+<script type="text/javascript">
 
+</script>
 		<style type="text/css" id="wp-custom-css">
 .btn-frame{background-color:#056CC5;
 border-radius:0px;
@@ -58,17 +60,21 @@ border}
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ), url(wp-content/themes/comprascba/img/bgheader.png)!important;
-
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	margin: auto;
-	padding-bottom: 5px;
 }
 /*FONDO*/
 body {
 	background-size: cover !important;
+	background-attachment: fixed;
+
 }
+.menu nav ul {
+	width: 90%;
+}
+
 .menu nav ul li, #superior nav ul li{
 	font-size: 12px;
 	font-weight: 500;
@@ -101,7 +107,7 @@ body {
 		padding: 5px;
 }
 .header .logosgob img {
-	width: 200px !important;
+	width: 150px !important;
 	margin-top: 50px;
 	margin-right: 10px;
 	margin-left: 50px;
@@ -119,7 +125,9 @@ nav {
 
 .menu {
 	float:right !important;
-	background-color: #29abe3bd;
+	background: linear-gradient(
+	        #53aae000,
+				#4598ca94,#4598cac7);
 	width: 100%;
 	padding: 5px !important;
 	border-radius: 2px;
@@ -127,14 +135,16 @@ nav {
 }
 
 .menu .menu-item {
-	width: 12% !important;
+	width: 19% !important;
 	margin: 1px !important;
 	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .menu .menu-item:hover {
-	background-color: #018be08a!important;
-
+	background-color: #4598ca94 !important;
+	transition: 2s;
 }
 
 .menu nav ul li a, #superior nav ul li a{
@@ -142,11 +152,7 @@ nav {
 	color: white !important;
 
 }
-menu nav ul li a, #superior nav ul li a:hover{
-	background-color: #018be08a;
 
-
-}
 .menu nav ul li.colorCW a, #superior nav ul li.colorCW a {
 	background: transparent !important;
 }
@@ -155,7 +161,8 @@ menu nav ul li a, #superior nav ul li a:hover{
 
 }
 .menu nav ul li.color0 a:hover {
-	background-color: #018be08a!important;
+	background-color: #4598ca94 !important;
+	transition: 2s;
 
 
 }
@@ -163,6 +170,11 @@ menu nav ul li a, #superior nav ul li a:hover{
 .color0 {
 	background: transparent !important;
 
+}
+
+.menu nav ul li a:hover:after {
+background: #020202e6 !important;
+display: none;
 }
 
 /*BTN BUSCADOR*/
@@ -187,8 +199,30 @@ menu nav ul li a, #superior nav ul li a:hover{
 
 /*MEDIAS QUERY*/
 
+@media (max-width: 900px) {
+
+	.menu .menu-item {
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	.menu nav ul {
+		width: 100%;
+	}
+
+}
+
 @media (max-width: 650px) {
-  .menu-clase {
+
+	.menu nav ul li a, #superior nav ul li a{
+		font-size: 20px;
+		line-height: 22px;
+
+	}
+.sub-principal nav ul li a span{
+	font-size: 22px;
+}
+	.menu-clase {
   }
 	#logo {
 		width: 100% !important;
@@ -217,13 +251,13 @@ menu nav ul li a, #superior nav ul li a:hover{
 	}
 
 	.menu .menu-item a:hover {
-		background-color: #000000c7;
+		background-color: #53aae0a6 !important;
 
 	}
 	.menu nav ul li a:hover:after {
 	background: #020202e6 !important;
 	padding: auto !important;
-
+width: 20px;
 }
 
 .videohome {
@@ -253,6 +287,7 @@ menu nav ul li a, #superior nav ul li a:hover{
 width: 100% !important;
 max-width: none;
 margin: 0 auto 0 auto;
+background-color: #4598CA;
 }
 
 ul.flex-direction-nav {
@@ -284,36 +319,57 @@ display: none;
  /**/
 
  .flex-control-nav{
- 		background: #29abe3bd !important;
+ 		background-color: #4598CA !important;
  }
+
 
 .flex-control-nav li a{
 	background: white ;
 	    width: 20px;
 	    height: 20px;
 			border-radius: 20px;
-			-webkit-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
-		-moz-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
-		box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
+			-webkit-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
+		-moz-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
+		box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
 }
 
  .flex-control-nav li a.flex-active {
- 	background: #29abe3bd !important;
+ 	background: #D37E32 !important;
   border: 2px solid white;
- }
+	transition: 1s;
 
+ }
+.flex-control-nav li a:hover{
+	background: #D37E32 !important;
+  border: 2px solid white;
+	transition: 1s;
+}
 
 .caption {
 
 	background-color: #fffffff2;
-	-webkit-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
+-moz-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
+box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
 	border-radius: 5px;
 	text-align: center !important;
 }
 .slides .vermas{
 	width: 100%;
+}
+.slides .vermas :hover{
+	background-color: white!important;
+	color: #D37E32 !important;
+	border: 2px solid #D37E32;
+
+}
+.slides .vermas a{
+	background: #D37E32;
+	border: 2px solid white;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
+-moz-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
+box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.35);
 }
 .flexslider .slides .descri {
 	padding-right: 20px;
@@ -324,14 +380,18 @@ box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
 /*SUBMENÚ*/
 
 	.sub-principal nav ul li {
-		width: 45% !important;
+		width: 50% !important;
 		margin-bottom: 10px;
-		padding: 20px;
+		padding: 40px;
+		margin-left: auto !important;
+	margin-right: auto !important;
 
 }
-
+#menu-item-4090{
+	width: 100% !important;
+}
 	.sub-principal nav ul li a{
-		height: 300px !important;
+		height: 450px  !important;
 		border-radius: 2px;
 		-webkit-box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
@@ -343,9 +403,12 @@ font-size: 15px;
 	}
 
 	.sub-principal nav ul li a span {
-		background-color: white!important;
+		background-color: #ffffffdb !important;
 		border-radius: 5px;
-		width: 50%;
+		width: 100%;
+		padding: 22px;
+		font-size: 20px;
+		line-height: 25px;
 
 		-webkit-box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
@@ -354,37 +417,42 @@ box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
 
 	.sub-principal nav ul li.amarillo a{
 	background-image: /* linear-gradient(
-	       #2d8eb882,
-	       #2d8eb882), */url(img/1.jpeg);
+	       #53AAE0,
+	       #53AAE0), */url(img/1.jpeg);
 	background-size: cover;
 
 	}
 
 	.sub-principal nav ul li.azul a{
 		background-image:/* linear-gradient(
-		       #2d8eb882,
-		       #2d8eb882), */ url(img/2.jpeg);
+		       #53AAE0,
+		       #53AAE0), */ url(img/2.jpeg);
 		background-size: cover;
 	}
 
 	.sub-principal nav ul li a{
 		background-image:/* linear-gradient(
-		       #2d8eb882,
-		       #2d8eb882), */ url(img/3.jpeg);
+		       #53AAE0,
+		       #53AAE0), */ url(img/3.jpeg);
 		background-size: cover;
 	}
 
 	.sub-principal nav ul li.verde a{
 		background-image:/* linear-gradient(
-		       #2d8eb882,
-		       #2d8eb882), */ url(img/4.png);
+		       #53AAE0,
+		       #53AAE0), */ url(img/4.png);
 		background-size: cover;
 	}
 
+.sub-principal nav ul li a:hover{
+	transition: 2s !important;
 
+}
 
 	.sub-principal nav ul li a:hover:after {
-    background:#29abe3bd;
+    background:linear-gradient(
+			#53aae000,
+	 #4598cac7,#4598cac7);
     border-radius: 2px;
     bottom: 0px;
     color: #fff;
@@ -395,25 +463,25 @@ box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
     z-index: 98;
     width: 100%;
 		height: 50%;
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 25px;
+    font-size: 19px;
     font-family: 'droid_sansregular';
     letter-spacing: 1px;
 
 }
 
 .sub-principal nav ul li.amarillo a {
-	border-bottom-color: #2d8eb882;
+	border-bottom-color: #53AAE0;
 }
 .sub-principal nav ul li a {
 	border-bottom-style: ridge ;
-	border-bottom-color: #2d8eb882;
+	border-bottom-color: #53AAE0;
 }
 .sub-principal nav ul li.azul a {
-	border-bottom-color: #2d8eb882;
+	border-bottom-color: #53AAE0;
 }
 .sub-principal nav ul li.verde a {
-	border-bottom-color: #2d8eb882;
+	border-bottom-color: #53AAE0;
 }
  /*mediaquery*/
 @media (max-width: 650px) {
@@ -431,11 +499,14 @@ box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
 /*INICIO FOOTER*/
 
 #footer {
-	-webkit-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.75);
-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
+-moz-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
+box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
 
-background: #29abe3bd;
+background-image: linear-gradient(
+	#4598ca94,
+#4598ca94,#4598cac7), url(img/.png);
+background-size: cover;
 padding-top: 0px;
 
 }
@@ -478,6 +549,7 @@ background: #00000052;
 }
 .footer2 {
 	width: 33%;
+	line-height: 10px;
 
 }
 .footer3 {
@@ -487,6 +559,7 @@ background: #00000052;
 
 .footer4 {
 	color: white;
+	line-height: 25px;
 }
 .irtop a {
 	background-color: white;
@@ -498,6 +571,7 @@ background: #00000052;
 
 .textwidget{
 	color: white;
+	width: 90%;
 }
 /*mediaquery*/
 @media (max-width: 800px) {
@@ -557,7 +631,7 @@ ga('require', 'displayfeatures');
 </script>
 
 
-<body class="home page-template page-template-homepage page-template-homepage-php page page-id-4 homepage">
+<body class="home page-template page-template-homepage page-template-homepage-php page page-id-4 homepage" onLoad="">
  <div class="topline"></div>
    <div class="header">
    <div id="logo"><a href="index.htm"><img src="wp-content\themes\comprascba\img\logo_compraspublicas.png" alt="Portal de Compras Públicas y Contrataciones de la Provincia de Córdoba"></a></div>
@@ -570,14 +644,12 @@ ga('require', 'displayfeatures');
 	<div class="menu">
 
 			<nav>
-	<ul id="menu-menu-header" class="menu-clase"><li id="menu-item-115851" class="colorCW menu-item menu-item-type-post_type menu-item-object-page menu-item-115851"><a title="Accede a toda la información" href="comprobante-web\index.htm">PORTAL DE<br> BENEFICIARIOS</a></li>
-<li id="menu-item-114669" class="color0 menu-item menu-item-type-post_type menu-item-object-page menu-item-114669"><a title="Accedé a toda la información" href="contratista-obra-publica\index.htm">CONTRATISTA <br> OBRA PÚBLICA</a></li>
-<li id="menu-item-4080" class="color menu-item menu-item-type-custom menu-item-object-custom menu-item-4080"><a title="Accedé a todas las contrataciones en las que podés participar" href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">OPORTUNIDADES<br> PROVEEDORES</a></li>
-<li id="menu-item-4081" class="color2 menu-item menu-item-type-custom menu-item-object-custom menu-item-4081"><a title="Accedé a las subastas electrónicas en curso" href="https://webecommerce.cba.gov.ar/VistaPublica/ConsultaPublicaCotizacion.aspx?TIPO_CONSULTA_PUBLICA=SA">SUBASTAS<br> ELECTRÓNICAS</a></li>
-<li id="menu-item-4082" class="color3 menu-item menu-item-type-custom menu-item-object-custom menu-item-4082"><a title="Accedé a tu cuenta en ComprasPúblicas" href="https://webecommerce.cba.gov.ar">INGRESO <br>A PLATAFORMA</a></li>
-<li id="menu-item-4083" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4083"><a title="Accedé a ver la normativa vigente en materia de compras y contrataciones" href="normativa-vigente\index.htm">NORMATIVA <br>VIGENTE</a></li>
-<li id="menu-item-4086" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4086"><a title="Accedé a las últimas novedades en materia de compras y contrataciones" href="category\novedades\index.htm">NOVEDADES</a></li>
-<li id="menu-item-4087" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4087"><a title="Accedé aquí para formular consultas o contactarse con la Dir. Gral. de Compras y Contrataciones" href="contacto-2\index.htm">CONSULTAS</a></li>
+	<ul id="menu-menu-header" class="menu-clase"><li id="menu-item-115851" class="colorCW menu-item menu-item-type-post_type menu-item-object-page menu-item-115851"><a title="Accede a toda la información" href="comprobante-web\index.htm">INSTITUCIONAL</a></li>
+<li id="menu-item-114669" class="color0 menu-item menu-item-type-post_type menu-item-object-page menu-item-114669"><a title="Accedé a toda la información" href="contratista-obra-publica\index.htm">BENEFICIARIOS DE PAGO</a></li>
+<li id="menu-item-4080" class="color menu-item menu-item-type-custom menu-item-object-custom menu-item-4080"><a title="Accedé a todas las contrataciones en las que podés participar" href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">NOVEDADES</a></li>
+<li id="menu-item-4081" class="color2 menu-item menu-item-type-custom menu-item-object-custom menu-item-4081"><a title="Accedé a las subastas electrónicas en curso" href="https://webecommerce.cba.gov.ar/VistaPublica/ConsultaPublicaCotizacion.aspx?TIPO_CONSULTA_PUBLICA=SA">NORMATIVA VIGENTE</a></li>
+
+<li id="menu-item-4087" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4087"><a title="Accedé aquí para formular consultas o contactarse con la Dir. Gral. de Compras y Contrataciones" href="contacto-2\index.htm">CONTACTO</a></li>
 </ul>        <!-- buscador -->
 		<form method="get" action="https://compraspublicas.cba.gov.ar" id="buscaf" onsubmit="return validasearch(this);" class="search-form">
 
@@ -746,10 +818,10 @@ Te acercamos los números y estadísticas que definieron al mes de agosto.
      <div class="col100">
 	<div class="sub-principal">
 			<nav>
-	<ul id="menu-sub-menu-principal" class="sub-clase"><li id="menu-item-4088" class="amarillo menu-item menu-item-type-custom menu-item-object-custom menu-item-4088"><a title="Ingresá aquí para conocer más sobre contrataciones públicas y las novedades de ComprasPúblicas" href="compraspublicas-y-obraspublicas\index.htm"><span>ComprasPúblicas y ObrasPúblicas</span></a></li>
-<li id="menu-item-4089" class="azul menu-item menu-item-type-custom menu-item-object-custom menu-item-4089"><a title="Ingresá aquí si sos proveedor de la provincia o si querés conocer los requisitos para serlo" href="proveedores\index.htm"><span>PROVEEDORES E INTERESADOS</span></a></li>
-<li id="menu-item-4090" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4090"><a title="Ingresá aquí para conocer la normativa vigente, acceder a formularios y descargar los instructivos" href="organismos-contratantes\index.htm"><span>ORGANISMOS CONTRATANTES</span></a></li>
-<li id="menu-item-4091" class="verde menu-item menu-item-type-custom menu-item-object-custom menu-item-4091"><a title="Ingresá aquí para informarte sobre nuestraspolíticas de contratación sustentable" href="contrataciones-sustentables\index.htm"><span>CONTRATACIONES SUSTENTABLES</span></a></li>
+	<ul id="menu-sub-menu-principal" class="sub-clase"><li id="menu-item-4088" class="amarillo menu-item menu-item-type-custom menu-item-object-custom menu-item-4088"><a title="Ingresá aquí para conocer más sobre contrataciones públicas y las novedades de ComprasPúblicas" href="compraspublicas-y-obraspublicas\index.htm"><span>REGISTRO OFICIAL DE PROVEEDORES Y CONTRATISTAS <br> ROPYCE</span></a></li>
+<li id="menu-item-4089" class="azul menu-item menu-item-type-custom menu-item-object-custom menu-item-4089"><a title="Ingresá aquí si sos proveedor de la provincia o si querés conocer los requisitos para serlo" href="proveedores\index.htm"><span>COTIZACIONES</span></a></li>
+<li id="menu-item-4090" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4090"><a title="Ingresá aquí para conocer la normativa vigente, acceder a formularios y descargar los instructivos" href="organismos-contratantes\index.htm"><span>SERVICIOS ADMINISTRATIVOS</span></a></li>
+
 </ul>		</nav>
 
 
