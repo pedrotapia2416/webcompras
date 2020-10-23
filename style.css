@@ -508,7 +508,7 @@ padding: 0px !important;
 }
 
 .sub-principal nav ul li a {
-	height: 450px !important;
+	height: 350px !important;
 }
 
 .flexslider .slides .caption{
@@ -632,3 +632,20 @@ background: #00000052;
 
 
 /*FIN RESUMEN ejecutivo*/
+
+/**/
+
+.soyquiero {
+	min-height: 900px;
+}
+.bgproveedores {
+	background-image: linear-gradient(
+		#000000bd,
+#000000bd,#010405), url(img/finanzas2.jpg);
+	height: 200px;
+
+}
+
+.btn-link {
+	color: #003d7d !important;
+}
