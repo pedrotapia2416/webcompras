@@ -1,3 +1,8 @@
+img, object, embed {
+max-width: none !important;
+height: auto !important;
+}
+
 
 .btn-frame{background-color:#056CC5;
 border-radius:0px;
@@ -14,13 +19,8 @@ border}
 /* nuevos estilos 09/10/2020 */
 .header {
 	max-width: 100% !important;
-	max-height: 666px;
-	background-image: linear-gradient(
-		#ffff,
-	#ffff,#ffff), url(img/finanzas2.jpg)!important;
-	background-repeat: no-repeat;
-	background-size: cover ;
-	background-attachment: fixed;
+	max-height: 777px;
+
 	margin: auto;
 }
 /*FONDO*/
@@ -53,7 +53,7 @@ dl, ol, ul {
 	width: 50%;
 }
 #logo a img {
-	width: 200px;
+	width: 280px;
 }
 
 /*LOGO CIDI*/
@@ -63,11 +63,15 @@ dl, ol, ul {
 	width: 50%;
 }
 
-.header .logosgob img {
-	width: 65px !important;
-	margin-right: 150px;
-	margin-left: 50px;
+.imgredonda {
+		width:100px !important;
+    height:100px!important;
+    border-radius:200px !important;
+		margin-bottom: 10px;
+}
 
+.header .logosgob img {
+margin-left: auto;
 }
 .header .logosgob {
 	margin:auto !important;
@@ -286,7 +290,9 @@ display: none;
 .flexslider .slides .caption {
 	width: 100% !important;
 	margin: 0px;
-	background-color: #000000b8 !important;
+	background-image: linear-gradient(
+		#000000bd,
+#010405), url();
 }
 .slide {
 	width: 100% !important;
@@ -554,6 +560,11 @@ padding-top: 0px;
 
 
 }
+
+#footer .logosgob img {
+	width:80% !important;
+	max-width: 250px !important;
+}
 #footer .logosfooter {
 	height: auto;
 }
@@ -629,10 +640,20 @@ background: #00000052;
 /*FIN FOOTER*/
 /*RESUMEN EJECUTIVO*/
 .resumenejecutivo {
-  background-color: #00000014;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background:#ff5200cc;
+	background-attachment: fixed;
+	background-size: cover;
+
 }
 .counter h2{
-  color: #267cad;
+  color: #ffff;
+	font-weight: 900;
+}
+
+.resumentitle{
+	font-weight: 900;
 }
 
 
