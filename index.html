@@ -18,6 +18,10 @@
 	<link href="wp-content\themes\comprascba\img\icons\favicon.ico" rel="shortcut icon">
 	<link href="wp-content\themes\comprascba\img\icons\touch.png" rel="apple-touch-icon-precomposed">
 
+	<script src="https://kit.fontawesome.com/e25f6e1d42.js" crossorigin="anonymous"></script>
+
+
+
 
 	<link rel='dns-prefetch' href='//s.w.org'>
 
@@ -94,12 +98,16 @@ ga('require', 'displayfeatures');
 
  <div class="topline"></div>
    <div class="header">
-   <div id="logo"><a href="index.htm"><img src="wp-content\themes\comprascba\img\logo_compraspublicas.png" alt="Portal de Compras Públicas y Contrataciones de la Provincia de Córdoba"></a></div>
+   <div id="logo"><a href="index.html"><img src="wp-content\themes\comprascba\img\logo_compraspublicas.png" alt="Portal de Compras Públicas y Contrataciones de la Provincia de Córdoba"></a></div>
 
   <div class="logosgob" style=" display: block; background-color: #f7f7f7 !important">
-
+		<div class="redes">
+				<a href="https://www.facebook.com/ropycecba" target="_blank"><i class="redes-item fab fa-facebook-square"></i></a>
+				<a href="https://www.youtube.com/channel/UCiPAxG4_18oZzeJRPIOQkIg" target="_blank"><i class="redes-item fab fa-youtube"></i></a>
+				<a href="mailto:ropyce.compraspublicas@gmail.com" target="_blank"><i class="redes-item far fa-envelope"></i></a>
+		</div>
 		<div class="" type="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-	    <img src="img\cidi.png" alt="Ciudadano Digital">
+	    <img src="img\cidi.png" alt="Ciudadano Digital" width="180px">
 	  </div>
 
 		<div class="collapse" id="collapseExample">
@@ -113,13 +121,13 @@ ga('require', 'displayfeatures');
 				<h3>NIVEL DE ACCESO 2:</h3>
 
 				<p>Es necesario para realizar las gestiones en ComprasPúblicas. Te permitirá acceder a una mayor cantidad de servicios web, digitalizar documentación y otros. <br>
-			 </p>	<button type="button" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/acceso" target="_blank">Más Información</a></button>
+			 </p>	<div type="button" class="btn-cidi" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/acceso#nivel2" target="_blank">Más Información</a></div>
 			</div>
-			<div class="col-lg-4 ">
+			<div class="col-lg-4 " style="display:block; margin:auto">
 
 				<img src="img/cidifoto.jpg" class="imgredonda" alt=""> <br>
-				<button type="button" name="button"><a href="http://ciudadanodigital.cba.gov.ar" target="_blank" > Iniciá sesión</a>
-				</button>
+				<div type="button" class="btn-cidi" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/?app=25" target="_blank" > Iniciá sesión</a>
+				</div>
 
 			</div>
 
@@ -288,8 +296,8 @@ ga('require', 'displayfeatures');
 
 	</div>
 	<div class="row text-center">
-		<div class="col">
-		<div class="counter">
+		<div class="col contador">
+		<div class="counter ">
 			<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-laptop" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 		  <path fill-rule="evenodd" d="M13.5 3h-11a.5.5 0 0 0-.5.5V11h12V3.5a.5.5 0 0 0-.5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11z"/>
 		  <path d="M0 12h16v.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5V12z"/>
@@ -299,7 +307,7 @@ ga('require', 'displayfeatures');
 	</div>
 		</div>
 
-		<div class="col">
+		<div class="col contador">
 		<div class="counter">
 			<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-kanban" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" d="M13.5 1h-11a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-11-1a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11z"/>
@@ -310,7 +318,7 @@ ga('require', 'displayfeatures');
 		</div>
 		</div>
 
-		<div class="col">
+		<div class="col contador">
 		<div class="counter">
 			<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-cash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	  <path fill-rule="evenodd" d="M15 4H1v8h14V4zM1 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H1z"/>
@@ -321,7 +329,7 @@ ga('require', 'displayfeatures');
 		</div>
 		</div>
 
-				<div class="col">
+				<div class="col contador">
 				<div class="counter">
 					<svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 				  <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zm4.854-7.85a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
@@ -388,8 +396,20 @@ ga('require', 'displayfeatures');
 
 </div>
 <div class="footer4">
-	<p>	<br>
-		Concepción Arenal 54, Córdoba - Registro de Proveedores: ropyce.compraspublicas@cba.gov.ar  //  DGCyC: suaf.compraspublicas@cba.gov.ar</p>
+	<br>
+		<div class="direccionfooter">
+		<p>	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+  <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>Concepción Arenal 54, Córdoba <br>
+			<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg> ropyce.compraspublicas@cba.gov.ar <br>
+			<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+</svg> suaf.compraspublicas@cba.gov.ar</p>
+
+		</div>
 
 </div>
 </div>

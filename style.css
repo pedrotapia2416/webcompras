@@ -19,8 +19,8 @@ border}
 /* nuevos estilos 09/10/2020 */
 .header {
 	max-width: 100% !important;
-	max-height: 777px;
-
+	max-height:800px;
+	padding-top: 20px;
 	margin: auto;
 }
 /*FONDO*/
@@ -56,13 +56,47 @@ dl, ol, ul {
 	width: 280px;
 }
 
+.btn-cidi:hover{
+	background: #ffffffd6;
+	color: white !important;
+}
+.btn-cidi {
+	padding: 10px;
+	width: 200px;
+	border-radius: 10px;
+	border: 1px solid white;
+	background-color: white;
+	display: block;
+	margin: auto;
+}
+
+
+
+
+
 /*LOGO CIDI*/
 #logo .logosgob {
 	float:right !important;
 	width: 200px;
 	width: 50%;
 }
+.redes {
+	padding-right:10px;
+	padding-bottom: 10px;
+	width: 100% !important;
+	text-align: end;
+}
+.redes-item {
+	font-size: 35px;
+	color: #4598ca;
+}
+.redes-item:hover{
+	color: #D37E32;
+	font-size: 40px;
+	transition: 0.25s;
 
+
+}
 .imgredonda {
 		width:100px !important;
     height:100px!important;
@@ -398,7 +432,7 @@ box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
 color: #29abe3bd !important;
 font-size: 15px;
 padding: 0px !important;
-
+border-radius: 10px;
 
 
 	}
@@ -411,6 +445,8 @@ padding: 0px !important;
 		font-size: 25px;
 		line-height: 25px;
 		background-color: rgba(0, 0, 0, 0.7);
+		border-radius: 10px;
+
 	}
 
 	.sub-principal nav ul li.amarillo a{
@@ -544,6 +580,16 @@ background-size: cover;
 padding-top: 0px;
 
 }
+.direccionfooter {
+	float: left;
+  font-size: 15px;
+	text-align: initial;
+	padding-left: 50px;:
+}
+.direccionfooter p {
+
+
+}
 
 #footer .subfooter {
 	background: none ;
@@ -642,20 +688,35 @@ background: #00000052;
 .resumenejecutivo {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	background:#ff5200cc;
+	background:#0f3e56e0;
 	background-attachment: fixed;
 	background-size: cover;
+	padding: 20px;
 
 }
 .counter h2{
-  color: #ffff;
 	font-weight: 900;
+	font-size: 40px;
 }
 
 .resumentitle{
 	font-weight: 900;
 }
 
+.contador {
+	background-color: #53aae0;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+		min-width: 200px;
+		-webkit-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
+	-moz-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
+	box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
+}
+.contador:hover {
+	background-color: white !important;
+	color: #53aae0 !important;
+}
 
 /*FIN RESUMEN ejecutivo*/
 
