@@ -39098,6 +39098,18 @@ dt {
     -webkit-transform: translateX(-50%) rotate(-45deg);
     transform: translateX(-50%) rotate(-45deg);
 }
+@media (max-width: 767px) {
+  .jumbotron-custom {
+      font-weight: 900;
+      font-size: 25px !important;
+      line-height: 1.2;
+      letter-spacing: .01em;
+  }
+  h4, .h4 {
+    font-size: 17px;
+    line-height: 1.1;
+}
+}
 
 @media (min-width: 768px) {
     .panel-lg {
