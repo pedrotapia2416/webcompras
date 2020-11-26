@@ -8,6 +8,13 @@
 <meta charset="utf-8">
 <!-- CSS -->
 
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+
 <!-- jQuery and JS bundle w/ Popper.js -->
 
 <link rel="icon" href="images/favicon-2.png" type="image/x-icon">
@@ -16,21 +23,6 @@
 
 
 
-<script type="text/javascript">
-$(document).ready(function() {
-$('a[href^="#"]').click(function() {
-  var destino = $(this.hash);
-  if (destino.length == 0) {
-    destino = $('a[name="' + this.hash.substr(1) + '"]');
-  }
-  if (destino.length == 0) {
-    destino = $('html');
-  }
-  $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-  return false;
-});
-});
-</script>
 
 
 </head>
@@ -97,13 +89,12 @@ $('a[href^="#"]').click(function() {
                   <li class="active"><a href="index.html"><i class="fa fa-home"></i> Inicio</a> </li>
                   <li><a href="institucional.html">Institucional</a> </li>
                   <li><a href="novedades.html">Novedades</a> </li>
-                  <li><a href="normativa"> <i class="fa fa-book"></i> Normativa</a>
+                  <li><a href="normativa.html"> <i class="fa fa-book"></i> Normativa</a>
                     <ul class="rd-navbar-dropdown">
                       <li><a href="normativa.html">Bienes y Servicios</a> </li>
                       <li><a href="normativa.html">Obra Pública</a> </li>
                       <li><a href="normativa.html">Resoluciones de la DGCyC</a> </li>
                       <li><a href="normativa.html">Otras normas de referencia</a> </li>
-
                     </ul>
                   </li>
                   <li><a href="#"><i class="fa fa-question-circle"></i> Ayuda</a>
@@ -154,130 +145,108 @@ $('a[href^="#"]').click(function() {
 
   </header>
 
+
+
   <main class="page-content">
-    <section style="background-image: url(images/institucional.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
+
+    <section style="background-image: url(images/panal.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
       <div class="shell">
         <div class="page-title">
-          <h2>NORMATIVA</h2>
+          <h3>servicios <span class="text-thin">administrativos</span></h3>
         </div>
       </div>
     </section>
-    <section class="section-60 section-sm-90 section-lg-bottom-120 bg-primary">
-      <div class="shell">
-        <div class="range range-sm-center">
-          <div class="cell-sm-10 cell-md-12">
-            <div class="range">
-              <div class="cell-md-6">
-                <h3>NORMATIVA <span class="text-thin">VIGENTE</span></h3>
-                <div class="offset-top-22">
-                  <p class="text-big text-white">Consultá la normativa que regula las contrataciones de bienes, servicios y obra pública, de acuerdo a las leyes Nº 10.155 y Nº8.614 y otra normativa de referencia.</p>
-                </div>
-                <div class="offset-top-40">
-                  <div id="accordionOne" role="tablist" aria-multiselectable="true" class="panel-group panel-group-custom panel-group-corporate">
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading1" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse1" aria-controls="accordionOneCollapse1" aria-expanded="true">Bienes y Servicios
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse1" role="tabpanel" aria-labelledby="accordionOneHeading1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <p>En este módulo se encontrará toda la normativa referente a contratación de bienes y servicios, en forma de menús desplegables.
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading2" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse2" aria-controls="accordionOneCollapse2" class="collapsed">Obra Pública
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse2" role="tabpanel" aria-labelledby="accordionOneHeading2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>On este módulo se encontrará toda la normativa referente a contratación de obra pública.
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading3" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse3" aria-controls="accordionOneCollapse3" class="collapsed">Resoluciones de la DGCyC
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse3" role="tabpanel" aria-labelledby="accordionOneHeading3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <ul>
-                            <li>Bs. Y Ss.</li>
-                            <li> Obra Pública.</li>
-                            <li>ROPyCE.</li>
-                            <li>Sanciones.</li>
-                            <li>Catálogo.</li>
-                            <li>Sistema.</li>
-
-                          </ul>
-                          <p>
-
-
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading4" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse4" aria-controls="accordionOneCollapse4" class="collapsed">Otras normas de referencia.
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse4" role="tabpanel" aria-labelledby="accordionOneHeading4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>Acá se podrán consultar leyes, decretos y resoluciones que no son específicas de los regímenes, pero están relacionados a las contrataciones de la administración pública provincial. Incluye la información disponible actualmente en “Leyes de referencia”, “Decretos de referencia” y “Resoluciones de referencia”. Se dividirá en tres botones:
-                            <ul>
-                              <li>Leyes</li>
-                              <li>Decretos</li>
-                              <li> Resoluciones de la DGCyC.</li>
-
-                            </ul>
-
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <section>
+      <div class="range range-condensed range-xs-center range-sm-left">
+        <div class="cell-xs-10 cell-sm-4 height-fill">
+          <article class="icon-box icon-box-top-line bg-primary">
+            <div class="box-top">
+              <div class="box-icon"><span class="icon icon-primary icon-lg icon-1"></span></div>
+              <div class="box-header">
+                <h5><a href="#">Proceso de Contratación</a></h5>
               </div>
-              <div class="cell-md-6">
-<div class="  bg-cape-cod text-center ">
-<h4>Actualizaciones</h4>
-<div  class="panel-collapse ">
-  <div class="panel-body">
-
-<blockquote >
-Fecha - Modificación - Tipo
-</blockquote>
-
-  </div>
-</div>
-</div>
-              </div>
+            </div>
+            <div class="box-body">
 
             </div>
-          </div>
+            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
+        </div>
+        <div class="cell-xs-10 cell-sm-4 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box icon-box-top-line bgdgreeorange">
+            <div class="box-top">
+              <div class="box-icon"><span class="icon icon-primary icon-lg icon-2"></span></div>
+              <div class="box-header">
+                <h5><a href="#">Armado de Expedientes</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+              <p class="text-gray-base">La DGCyC junto al Tribunal de Cuenta de la Provincia, comenzamos el proyecto «Recomendaciones para el armado de expedientes» con el objetivo de aportar claridad y evitar errores en la confección de los mismos.
+                </p> <p class="text-gray-base">
+
+Te acercamos estas recomendaciones sobre la documentación mínima que deben contener los expediente con las compras y/o contrataciones de bienes y servicios, mediante:
+                </p>
+            </div>
+            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
+        </div>
+        <div class="cell-xs-10 cell-sm-4 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box icon-box-top-line bg-primary">
+            <div class="box-top">
+              <div class="box-icon"><span class="icon icon-primary icon-lg icon-3"></span></div>
+              <div class="box-header">
+                <h5><a href="#">Convenios Marco</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+              <p class="text-gray-base">Un convenio marco es un compromiso entre el Estado Provincial y uno o más proveedores, seleccionados a través de un procedimiento de licitación pública, por medio del cual los proveedores se comprometen a brindar determinados bienes y/o servicios por un lapso de tiempo preestablecido. El Estado, por su parte, se compromete a adquirir dichos bienes o servicios a los proveedores suscriptores.</p>
+            </div>
+            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
+        </div>
+        <div class="cell-xs-10 cell-sm-4 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box bgdgreeorange">
+            <div class="box-top">
+              <div class="box-icon"><span class="icon icon-primary icon-lg icon-4"></span></div>
+              <div class="box-header">
+                <h5><a href="#">Roles de SUAF</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+              <p class="text-gray-base">Para solicitar los Roles correspondientes a fin de acceder a los módulos: RUE/NOTA DE PEDIDO, RUE/ COTIZACIÓN, RUE/ORDEN DE COMPRA, PATRIMONIO/CATALOGO DE BIENES y CLASIFICADORES/TESORERÍA/ROPyCE en SUAF, el Director de Administración del Servicio Administrativo deberá cargar un caso GALI adjuntando el Formulario de Solicitud de Roles y Alta de Usuarios (FSR).</p>
+            </div>
+            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
+        </div>
+        <div class="cell-xs-10 cell-sm-4 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box bg-primary">
+            <div class="box-top">
+              <div class="box-icon"><span class="icon icon-primary icon-lg icon-5"></span></div>
+              <div class="box-header">
+                <h5><a href="#">Preguntas Frecuentes</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+              <p class="text-gray-base">Contrataciones Electrónicas – SUAF y Portal de ComprasPúblicas</p>
+            </div>
+            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
+        </div>
+        <div class="cell-xs-10 cell-sm-4 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box bgdgreeorange">
+            <div class="box-top">
+              <div class="box-icon"><span class="icon icon-primary icon-lg icon-6"></span></div>
+              <div class="box-header">
+                <h5><a href="#">Catálogo de Bienes y Servicios</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+              <p class="text-gray-base">Podrás descargar y consultar el catálogo de bienes y servicios completo y actualizado en formato de archivo excel:
+              <br><br>
+Catálogo de Bienes y Servicios   Actualizado al 30/10/2020</p>
+            </div>
+            <a href="#" class="btn btn-icon-only btn-icon-single btn-icon-default"><span class="icon icon-sm material-icons-arrow_forward"></span></a> </article>
         </div>
       </div>
     </section>
+
   </main>
-
-
 
 
   <footer class="page-foot bg-cape-cod context-dark">
@@ -365,6 +334,8 @@ Fecha - Modificación - Tipo
     </section>
   </footer>
 </div>
+
+
 
 
 <script src="js/core.min.js"></script>
