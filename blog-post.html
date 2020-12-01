@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="wide wow-animation">
+<html lang="en" class="wide wow-animation">
 <head>
 <title>ComprasPúblicas</title>
 <meta name="format-detection" content="telephone=no">
@@ -7,23 +7,33 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <!-- CSS -->
-
-<!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-<!-- jQuery and JS bundle w/ Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
-
-<!-- jQuery and JS bundle w/ Popper.js -->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <link rel="icon" href="images/favicon-2.png" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="css/css.css?family=Roboto:100,300,400,500,700%7CPlayfair+Display:400,700,700i,900,900i">
 <link rel="stylesheet" href="css/style.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+$(document).ready(function() {
+$('a[href^="#"]').click(function() {
+  var destino = $(this.hash);
+  if (destino.length == 0) {
+    destino = $('a[name="' + this.hash.substr(1) + '"]');
+  }
+  if (destino.length == 0) {
+    destino = $('html');
+  }
+  $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+  return false;
+});
+});
+</script>
 
 
 </head>
@@ -40,7 +50,7 @@
                 <li>
                   <div class="unit unit-horizontal unit-spacing-xs">
                     <div class="unit-left"><span class="icon icon-xxs-small icon-primary material-icons-place icon-shift-1 offset-top-2"></span></div>
-                    <div class="unit-body"><a href="#" class="link-white-v2 reveal-inline">Concepción Arenal 54, Córdoba</a></div>
+                    <div class="unit-body"><a  class="link-white-v2 reveal-inline">Concepción Arenal 54, Córdoba</a></div>
                   </div>
                 </li>
                 <li>
@@ -54,7 +64,7 @@
                 <li>
                   <div class="unit unit-horizontal unit-spacing-xs">
                     <div class="unit-left"><span class="icon icon-xs icon-primary thin-icon-support "></span></div>
-                    <div class="unit-body"><a href="callto:#" class="link-white-v2">Atención Online</a></div>
+                    <div class="unit-body"><a  class="link-white-v2">Atención Online</a></div>
                   </div>
                 </li>
               </ul>
@@ -87,7 +97,7 @@
                   <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="rd-navbar-search-toggle"></button>
                 </div>
                 <ul class="rd-navbar-nav">
-                  <li class="active"><a href="index.html"><i class="fa fa-home"></i> Inicio</a> </li>
+                  <li class="active"><a href="index.html"><i class="fa fa-home"></i> </a> </li>
                   <li><a href="institucional.html">Institucional</a> </li>
                   <li><a href="novedades.html">Novedades</a> </li>
                   <li><a href="normativa.html"> <i class="fa fa-book"></i> Normativa</a>
@@ -145,167 +155,55 @@
     </div>
 
   </header>
-
-
-
   <main class="page-content">
-
-    <section style="background-image: url(images/seccprov5.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
+    <section style="background-image: url(images/institucional.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
       <div class="shell">
         <div class="page-title">
-          <h2>PROVEEDORES Y CONTRATISTAS </h2>
+          <h2>Novedades</h2>
         </div>
-        <h6>Con sus actividades contribuyen a satisfacer las necesidades de todos los cordobeses</h6>
       </div>
     </section>
+    <section class="section-60 section-sm-75 section-lg-100">
+      <div class="shell">
+        <div class="range">
+          <div class="cell-md-12 cell-lg-12">
+            <article class="post post-single">
+              <div class="post-header">
+                <h3> <span class="" style="color:#377fab;"> Presentamos las primeras recomendaciones para el armado de expedientes</span></h3>
+                <p>Una mesa de trabajo de la DGCyC y el Tribunal de Cuentas de la Provincia, trabajó en la creación de sugerencias para sumar claridad al armado de expedientes</p> <br>
+              </div>
+              <div class="post-image" >
+                <figure><img src="images/novedad3.png" /> </figure>
+              </div>
 
 
+              <div class="divider-fullwidth bg-gray-light offset-top-15"></div>
+              <div class="post-body">
+                <p class="text-gray-base">Un grupo de trabajo de la Dirección General de Compras y Contrataciones y del Tribunal de Cuentas de la Provincia de Córdoba, conformó un equipo multidisciplinario con el objetivo de elaborar recomendaciones para el armado de expedientes y, de esa manera, sumar claridad y evitar errores en la confección de los mismos.</p>
+                <p class="text-gray-base">El equipo encaró este proyecto con la intención de aportar simplicidad y claridad al trabajo diario que realizan las distintas reparticiones. En calidad de órgano rector del Régimen de Compras y Contrataciones de Bienes y Servicios y de Obra Pública, la Dirección General tiene como función principal promover el perfeccionamiento de los procedimientos de compras y contrataciones. En tanto, como órgano de control externo, el TCP tiene como función controlar la legalidad de las contrataciones que efectúan las reparticiones, entre otras atribuciones.</p>
 
 
-<section class="section-60 section-sm-90 section-lg-bottom-120 bgdgreewhite">
-  <div class="container">
-    <div class="row text-center">
+                <p class="text-gray-base">En este proceso, fue de vital importancia la participación y el aporte de los Servicios Administrativos, ya que son los beneficiarios directos del proyecto y a quienes están enfocadas las recomendaciones.</p>
 
-      <div  class="col-xs-12 col-sm-12 col-md-6 col-xl-6 isotope-item ">
-        <div class=" post-boxed-caption cardvariant-1 bgdgreeorange" ><a href="Quieroserproveedor2.html">
-          <figure><img src="images/quiero.png" alt=""/> </figure>
-          </a>
+                <p class="text-gray-base">En esta primera edición, se abordaron los procedimientos de Subasta Electrónica y Compulsa Abreviada de bienes y servicios, los cuales pueden ser consultados aquí.</p>
+
+                <p class="text-gray-base">Estas recomendaciones contienen el listado de documentos que se sugiere incorporar durante el armado de los expedientes, como así también aquellas exigencias innecesarias que debieran evitar solicitar para no sumar complejidad. Tienen como base la normativa vigente y fomentan la utilización de herramientas informáticas, claves para hacer más eficiente la gestión de las contrataciones.</p>
+
+                <p class="text-gray-base">Cabe remarcar que esta primera presentación es el inicio de un proceso que irá avanzando en el tiempo de acuerdo a los casos específicos que surjan en la diaria de los servicios administrativos. Trabajar en conjunto es fundamental para avanzar en la eficiencia de nuestros procesos. Cada recomendación constituye una herramienta orientada a alcanzar este objetivo.</p>
+
+              </div>
+              
+            </article>
+            <div class="divider-fullwidth bg-gray-lighter offset-top-40"></div>
+
+
+          </div>
+
         </div>
-<br>
-        <div class=" post-boxed-caption cardvariant-1 bgdgreeorange"><a href="Quieroserproveedor2.html">
-          <h3 class="post-boxed-title text-blod text-white">Quiero ser proveedor</h3>
-          </a>
-        </div>
-
-        <div class="accordion" id="accordionExample">
-<div class="card">
-  <div class="card-header" id="headingOne">
-    <h2 class="mb-0">
-      <button class="btn2 btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        ACCESO A COMPRASPÚBLICAS
-
-      </button>
-    </h2>
-  </div>
-
-  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-    <div class="card-body">
-      El Acceso a ComprasPúblicas te permitirá participar en las cotizaciones electrónicas. Esta gestión no tiene vencimiento
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-header" id="headingTwo">
-    <h2 class="mb-0">
-      <button class="btn2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        INSCRIPCIÓN EN ROPyCE
-      </button>
-    </h2>
-  </div>
-  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-    <div class="card-body">
-      Obligatorio para:
-      <ul>
-        <li>Ser adjudicado en Licitaciones de bienes y servicios.</li>
-        <li>Ofertar y/o ser adjudicado en algunas contrataciones de obra pública.</li>
-      </ul>
-
-    </div>
-  </div>
-</div>
-
-</div>
       </div>
-
-
-
-
-      <div class="col-xs-12 col-sm-12 col-md-6 col-xl-6 isotope-item ">
-        <div class=" post-boxed-caption cardvariant-1 bg-primary"><a href="#">
-          <figure><img src="images/soy.png" alt="" width="470" height="278"/> </figure>
-          </a>
-        </div>
-<br>
-        <div class=" post-boxed-caption cardvariant-1 bg-primary"><a href="#">
-          <h3 class="post-boxed-title text-blod">Gestiones para Proveedores</h3>
-          </a>
-        </div>
-
-
-        <div class="accordion" id="accordionExample2">
-<div class="card">
-  <div class="card-header" id="headingOne2">
-    <h2 class="mb-0">
-      <button class="btn2 btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
-        Renová tu inscripción.
-
-      </button>
-    </h2>
-  </div>
-
-  <div id="collapseOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#accordionExample2">
-    <div class="card-body">
-
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-header" id="headingTwo2">
-    <h2 class="mb-0">
-      <button class="btn2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-        Registrá tus antecedentes técnicos
-      </button>
-    </h2>
-  </div>
-  <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample2">
-    <div class="card-body">
-
-
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-header" id="headingTres2">
-    <h2 class="mb-0">
-      <button class="btn2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTres2" aria-expanded="false" aria-controls="collapseTres2">
-        Modificación de datos y Representación legal
-      </button>
-    </h2>
-  </div>
-  <div id="collapseTres2" class="collapse" aria-labelledby="headingTres2" data-parent="#accordionExample2">
-    <div class="card-body">
-
-
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-header" id="headingCuatro2">
-    <h2 class="mb-0">
-      <button class="btn2 btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseCuatro2" aria-expanded="false" aria-controls="collapseCuatro2">
-         Beneficiarios de Pago
-      </button>
-    </h2>
-  </div>
-  <div id="collapseCuatro2" class="collapse" aria-labelledby="headingCuatro2" data-parent="#accordionExample2">
-    <div class="card-body">
-
-
-    </div>
-  </div>
-</div>
-
-</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
   </main>
-
-  <!-- Modal -->
-    <footer class="page-foot bg-cape-cod context-dark">
+  <footer class="page-foot bg-cape-cod context-dark">
     <section class="section-40 section-sm-75">
       <div class="shell">
         <div class="range range-xs-center">
@@ -318,15 +216,15 @@
                <address class="contact-info offset-top-22 offset-md-top-30 offset-lg-top-35 text-left">
                  <div class="unit unit-horizontal unit-spacing-md unit-middle offset-top-15">
                    <div class="unit-left"><span class="icon icon-xs icon-dusty-gray fa fa-envelope-o"></span></div>
-                   <div class="unit-body"><a  class="link-white"><span > ropyce.compraspublicas@cba.gov.ar</span></a></div>
+                   <div class="unit-body"><a href="#5d7e" class="link-white"><span > ropyce.compraspublicas@cba.gov.ar</span></a></div>
                  </div>
                <div class="unit unit-horizontal unit-spacing-md unit-middle offset-top-15">
                  <div class="unit-left"><span class="icon icon-xs icon-dusty-gray fa fa-envelope-o"></span></div>
-                 <div class="unit-body"><a  class="link-white"><span > suaf.compraspublicas@cba.gov.ar</span></a></div>
+                 <div class="unit-body"><a href="#5d7e" class="link-white"><span > suaf.compraspublicas@cba.gov.ar</span></a></div>
                </div>
                <div class="unit unit-horizontal unit-spacing-md offset-top-15">
                  <div class="unit-left"><span class="icon icon-xs icon-dusty-gray material-icons-place"></span></div>
-                 <div class="unit-body"><a class="link-white reveal-inline">Concepción Arenal 54, Córdoba</a></div>
+                 <div class="unit-body"><a href="#" class="link-white reveal-inline">Concepción Arenal 54, Córdoba</a></div>
                </div>
                </address>
               </div>
@@ -390,12 +288,42 @@
     </section>
   </footer>
 </div>
-
-
-
-
+<div id="form-output-global" class="snackbars"></div>
+<div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+        <button title="Share" class="pswp__button pswp__button--share"></button>
+        <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+        <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+      <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__cent"></div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="js/core.min.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
