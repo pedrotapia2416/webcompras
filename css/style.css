@@ -134,6 +134,12 @@
 
 /*INICIO PERSONALIZADOS*/
 
+
+
+.black-highlight {
+     text-shadow:
+        3px 0px 3px #6c757d80, -3px 0px 3px #7978787a, 6px 0px 6px #77767652, -6px 0px 6px #96939314;
+     }
 .cardvariant-1 {
   border: 1px solid grey;
   border-radius: 5px;
@@ -142,6 +148,16 @@
 .card, .card-header {
   background-color: inherit !important;
   border: 0px !important;
+}
+.bgdgreegreen {
+  background: rgba(0,165,55,1);
+background: -moz-linear-gradient(left, rgba(0,165,55,1) 0%, rgba(15,89,40,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,165,55,1)), color-stop(100%, rgba(15,89,40,1)));
+background: -webkit-linear-gradient(left, rgba(0,165,55,1) 0%, rgba(15,89,40,1) 100%);
+background: -o-linear-gradient(left, rgba(0,165,55,1) 0%, rgba(15,89,40,1) 100%);
+background: -ms-linear-gradient(left, rgba(0,165,55,1) 0%, rgba(15,89,40,1) 100%);
+background: linear-gradient(to right, rgba(0,165,55,1) 0%, rgba(15,89,40,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a537', endColorstr='#0f5928', GradientType=1 );
 }
 
 .bgdgreewhite {
@@ -204,7 +220,6 @@ padding: 40px !important;
 }
 
 .cardresumen{
-  background:#040a0e6e;
   padding: 15px;
   text-align: center;
 }
@@ -244,6 +259,35 @@ background-color: #0967e4 !important;
 .submenu-item3{
   background: #040a0e;
 }
+.bg1{
+
+  background-image: url(../images/bg1.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.bgsubmenu {
+
+  background-image: url(../images/seccprov5.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+.bginstructivo {
+
+  background-image: url(../images/bginstructivo.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.bgshadow {
+  -webkit-box-shadow: -1px 6px 69px 6px rgba(0,0,0,1);
+-moz-box-shadow: -1px 6px 69px 6px rgba(0,0,0,1);
+box-shadow: -1px 6px 69px 6px rgba(0,0,0,1);
+}
+
 /*FIN PERZONALIZADOS*/
 html {
     font-family: sans-serif;
@@ -552,13 +596,13 @@ html {
 }
 
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.71429;
-    color: rgba(0, 0, 0, 0.5);
+    color: #00030a !important;
     background-color: #fff;
 }
-
+.drop { filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }
 input,
 button,
 select,
@@ -665,7 +709,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.1;
     color: #000;
@@ -767,7 +811,7 @@ h3,
 
 h4,
 .h4 {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 h5,
@@ -1192,7 +1236,7 @@ th {
 }
 
 .table>thead>tr>th {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     padding: 26px 25px;
@@ -1639,6 +1683,7 @@ input[type="search"] {
 
 .form-group {
     margin-bottom: 15px;
+    padding: 25px;
 }
 
 .radio,
@@ -2466,21 +2511,28 @@ fieldset[disabled] .btn-info.focus {
 
 .btn-warning {
     color: #fff;
-    background-color: #c49558;
+    background-color: #e4a71b;
     border-color: #c49558;
 }
 
 .btn-warning:focus,
 .btn-warning.focus {
     color: #fff;
-    background-color: #ac7c3d;
+    background-color: #e4a71b;
     border-color: #745329;
 }
+.btncidi{
+  border-radius: 50px;
+}
+.btncidi:hover{
+  background-color: #e7bb3d;
+  color: #fff;
 
+}
 .btn-warning:hover {
     color: #fff;
-    background-color: #ac7c3d;
-    border-color: #a5763a;
+    background-color: #e4a71b;
+    border-color: #fff;
 }
 
 .btn-warning:active,
@@ -2501,7 +2553,7 @@ fieldset[disabled] .btn-info.focus {
 .open>.btn-warning.dropdown-toggle:focus,
 .open>.btn-warning.dropdown-toggle.focus {
     color: #fff;
-    background-color: #926934;
+    background-color: #e4a71b;
     border-color: #745329;
 }
 
@@ -2520,7 +2572,7 @@ fieldset[disabled] .btn-info.focus {
 fieldset[disabled] .btn-warning:hover,
 fieldset[disabled] .btn-warning:focus,
 fieldset[disabled] .btn-warning.focus {
-    background-color: #c49558;
+    background-color: #e4a71b;
     border-color: #c49558;
 }
 
@@ -3712,7 +3764,7 @@ tbody.collapse.in {
     float: left;
     height: 50px;
     padding: 14px 15px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 20px;
     font-weight: 700;
     margin-top: 10px;
@@ -3850,7 +3902,7 @@ tbody.collapse.in {
   }
 
   .blurb-icon-left-square .icon i {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 50px;
   }
 
@@ -7885,7 +7937,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
@@ -8019,7 +8071,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
@@ -8267,7 +8319,7 @@ button.close {
     width: 15%;
     opacity: 0.5;
     filter: alpha(opacity=50);
-    font-size: 20px;
+    font-size: 19px;
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
@@ -11410,9 +11462,15 @@ html {
     font-size: 10px;
     -webkit-tap-highlight-color: transparent;
 }
-
+.colorlila{
+  color: #e8bc3e !important;
+}
+@font-face {
+font-family: Trasandina;
+src: url(Trasandina.ttf);
+}
 body {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina";
     -webkit-text-size-adjust: none;
     color: rgba(0, 0, 0, 0.5);
     background-color: #fff;
@@ -11617,7 +11675,7 @@ hr {
 }
 
 .font-default {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 .font-accent {
@@ -11644,7 +11702,7 @@ h6,
 .h6 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #000;
 }
@@ -11830,7 +11888,7 @@ h3.text-style-lighter,
 
 h3,
 .h3 {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.35;
     text-transform: uppercase;
 }
@@ -11838,7 +11896,7 @@ h3,
 @media (min-width: 768px) {
     h3,
     .h3 {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
@@ -11859,21 +11917,21 @@ h3,
 
 h4,
 .h4 {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.35;
 }
 
 @media (min-width: 768px) {
     h4,
     .h4 {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
 @media (min-width: 992px) {
     h4,
     .h4 {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
@@ -11881,7 +11939,7 @@ h4,
     h4,
     .h4 {
         line-height: 1.58333;
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
@@ -11915,7 +11973,7 @@ h6,
 }
 
 .h7 {
-    font: 700 14px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #414141;
 }
 
@@ -11929,7 +11987,7 @@ h6,
 @media (min-width: 768px) {
     .text-bigger,
     .quote-default {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
@@ -11941,7 +11999,7 @@ h6,
 }
 
 .text-large {
-    font: 700 38px/42px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 38px/42px "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -11953,7 +12011,7 @@ h6,
 .text-extra-large-bordered {
     display: inline-block;
     padding: .07em 0.12em;
-    font: 700 120px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 120px "Trasandina", Helvetica, Arial, sans-serif;
     line-height: .8;
     border: .075em solid;
     text-align: center;
@@ -12050,7 +12108,7 @@ mark,
 }
 
 .text-style-1 {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     color: #9b9b9b;
 }
 
@@ -12294,21 +12352,20 @@ address {
 }
 
 .bg-primary {
-  background: rgba(83,170,224,1);
-  background: -moz-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(83,170,224,1)), color-stop(100%, rgba(0,42,66,1)));
-  background: -webkit-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-  background: -o-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-  background: -ms-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-  background: linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53aae0', endColorstr='#002a42', GradientType=1 );
-
+  background: rgba(83,169,223,1);
+  background: -moz-linear-gradient(left, rgba(83,169,223,1) 0%, rgba(0,77,154,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,169,223,1)), color-stop(100%, rgba(0,77,154,1)));
+  background: -webkit-linear-gradient(left, rgba(83,169,223,1) 0%, rgba(0,77,154,1) 100%);
+  background: -o-linear-gradient(left, rgba(83,169,223,1) 0%, rgba(0,77,154,1) 100%);
+  background: -ms-linear-gradient(left, rgba(83,169,223,1) 0%, rgba(0,77,154,1) 100%);
+  background: linear-gradient(to right, rgb(67 193 254) 0%, rgb(54 169 132) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53a9df', endColorstr='#004d9a', GradientType=1 );
 
 }
 
 .bg-primary.bg-white-outline-btn .btn-white-outline:hover {
-    background: #4598ca;
-    border-color: #4598ca;
+    background: #034c9a;
+    border-color: #034c9a;
 }
 
 .bg-porcelain {
@@ -12347,8 +12404,8 @@ address {
 }
 
 .bg-cello {
-    background: #4598ca;
-    fill: #4598ca;
+    background: #034c9a;
+    fill: #034c9a;
 }
 
 .bg-cloud-burst {
@@ -12633,7 +12690,7 @@ box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
 .snackbars .icon-xxs {
     position: relative;
     top: 2px;
-    font-size: 20px;
+    font-size: 19px;
     vertical-align: baseline;
 }
 
@@ -12730,7 +12787,7 @@ strong {
 
 .btn {
     max-width: 100%;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     border-radius: 0;
@@ -12935,16 +12992,16 @@ html .btn-cello-outline:active:focus,
 html .btn-cello-outline.active:focus,
 html .btn-cello-outline:focus:active,
 html .btn-cello-outline:focus {
-    color: #4598ca;
+    color: #034c9a;
     background-color: transparent;
-    border-color: #4598ca;
+    border-color: #034c9a;
 }
 
 .open > html .btn-cello-outline.dropdown-toggle,
 html .btn-cello-outline:hover {
     color: #fff;
-    background-color: #4598ca;
-    border-color: #4598ca;
+    background-color: #034c9a;
+    border-color: #034c9a;
 }
 
 html .btn-cello-outline.disabled,
@@ -12956,7 +13013,7 @@ fieldset[disabled] html .btn-cello-outline {
 
 html .btn-cello-outline .badge {
     color: transparent;
-    background-color: #4598ca;
+    background-color: #034c9a;
 }
 
 html .btn-white-outline,
@@ -13091,8 +13148,8 @@ html .btn-cello.active:focus,
 html .btn-cello:focus:active,
 html .btn-cello:focus {
     color: #fff;
-    background-color: #4598ca;
-    border-color: #4598ca;
+    background-color: #034c9a;
+    border-color: #034c9a;
 }
 
 .open > html .btn-cello.dropdown-toggle,
@@ -13110,7 +13167,7 @@ fieldset[disabled] html .btn-cello {
 }
 
 html .btn-cello .badge {
-    color: #4598ca;
+    color: #034c9a;
     background-color: #fff;
 }
 
@@ -13347,7 +13404,7 @@ html .btn-cello .badge {
 }
 
 .page .icon-gray-base {
-    color: #000;
+    color: #fff;
 }
 
 .page .icon-primary {
@@ -13499,21 +13556,21 @@ html .btn-cello .badge {
 .page .icon-xs-smaller {
     width: 20px;
     height: 20px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 20px;
 }
 
 .page .icon-sm {
     width: 24px;
     height: 24px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 24px;
 }
 
 .page .icon-sm-custom {
     width: 24px;
     height: 24px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 24px;
 }
 
@@ -13536,7 +13593,7 @@ html .btn-cello .badge {
 .page .icon-md-custom {
     width: 26px;
     height: 26px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 26px;
 }
 
@@ -13557,10 +13614,10 @@ html .btn-cello .badge {
 }
 
 .page .icon-lg {
-    width: 45px;
-    height: 45px;
-    font-size: 35px;
-    line-height: 45px;
+    width: 145px;
+    height: 145px;
+    font-size: 65px;
+    line-height: 145px;
 }
 
 .page .icon-lg-variant-1 {
@@ -25430,7 +25487,7 @@ html .btn-cello .badge {
 }
 
 .mdi-24px {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .mdi-36px {
@@ -27308,7 +27365,7 @@ html .btn-cello .badge {
 .thumbnail-variant-2 .text-caption {
     font-style: italic;
     line-height: 1.3;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -30726,6 +30783,7 @@ form.label-outside .form-validation {
         z-index: 2;
         margin-top: -30px;
         margin-bottom: -30px;
+        background: linear-gradient(to right, rgba(83,169,223,1) 0%, rgba(0,77,154,1) 100%);
     }
 }
 
@@ -32391,7 +32449,7 @@ p + p {
     padding: 10px 20px;
     border: 2px solid;
     border-radius: 0;
-    font: 700 14px/14px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/14px "Trasandina", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     vertical-align: middle;
 }
@@ -32598,7 +32656,7 @@ blockquote cite {
 }
 
 .quote-minimal-bordered q {
-    font: 400 20px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 20px "Trasandina", Helvetica, Arial, sans-serif;
     font-style: italic;
     color: #464a4d;
 }
@@ -32633,7 +32691,7 @@ blockquote cite {
 
 @media (min-width: 768px) {
     .quote-minimal-bordered q {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 1.55;
     }
 }
@@ -32653,7 +32711,7 @@ blockquote cite {
 }
 
 .quote-minimal cite {
-    font: 700 15px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 15px "Trasandina", Helvetica, Arial, sans-serif;
     line-height: 1.1;
     color: #000;
 }
@@ -32696,7 +32754,7 @@ blockquote cite {
 
 .quote-strict cite {
     display: block;
-    font: 700 16px/21px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 16px/21px "Trasandina", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -32726,7 +32784,7 @@ blockquote cite {
 .quote-vertical cite {
     display: block;
     color: #000;
-    font: 700 14px/18px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/18px "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 .quote-vertical .quote-open > svg {
@@ -32772,7 +32830,7 @@ blockquote cite {
 }
 
 .quote-review cite {
-    font: 700 14px/18px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/18px "Trasandina", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: -.025em;
     color: #000;
@@ -32823,7 +32881,7 @@ blockquote cite {
 
 @media (min-width: 992px) {
     .quote-minimal q {
-        font-size: 20px;
+        font-size: 19px;
     }
     .quote-vertical q {
         font-size: 16px;
@@ -32843,12 +32901,12 @@ blockquote cite {
 
 @media (min-width: 992px) {
     .quote-left .quote-name {
-        font-size: 20px;
+        font-size: 19px;
     }
 }
 
 .quote-left .quote-desc-text {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1;
     font-style: italic;
     font-weight: 700;
@@ -32968,7 +33026,6 @@ blockquote cite {
     .icon-box:after {
         bottom: 0;
         right: 0;
-        border-width: 0 1px 1px 0;
     }
 }
 
@@ -32998,6 +33055,10 @@ blockquote cite {
     bottom: 0;
 }
 
+.text-blue{
+  color:#024c9a;
+}
+
 .icon-box .box-icon {
     min-height: 46px;
     display: -webkit-inline-box;
@@ -33016,6 +33077,16 @@ blockquote cite {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    border-radius: 100px;
+    border: 1px solid #c2c3c3;
+    display: inline-block;
+    line-height: 25px;
+    margin: auto 3px;
+    font-size: 55px;
+}
+
+.icon-box .box-icon:hover a {
+  color:white;
 }
 
 .icon-box * + .box-header {
@@ -33081,7 +33152,7 @@ blockquote cite {
     position: relative;
     content: counter(li, decimal-leading-zero);
     counter-increment: li;
-    font: 700 30px/30px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 30px/30px "Trasandina", Helvetica, Arial, sans-serif;
     letter-spacing: -.025em;
     color: #060f15;
 }
@@ -33210,7 +33281,11 @@ blockquote cite {
 .block-vacation:hover {
     color: rgba(0, 0, 0, 0.5);
 }
-
+.boxshadow{
+  -webkit-box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
+-moz-box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
+box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
+}
 .block-vacation:hover {
     -webkit-box-shadow: -3px 5px 12px 0px rgba(65, 65, 65, 0.16);
     box-shadow: -3px 5px 12px 0px rgba(65, 65, 65, 0.16);
@@ -33324,7 +33399,9 @@ blockquote cite {
 .post-single .post-footer > *:not(:last-child) {
     margin-right: 20px;
 }
-
+.post-header{
+  font-size: 25px;
+}
 .post-single * + .post-header {
     margin-top: 15px;
 }
@@ -33540,17 +33617,39 @@ blockquote cite {
     overflow: hidden;
     border-radius: 10px;
 }
+fieldset .col-lg-4 {
+  margin-top: 10%;
+}
+
+fieldset .col-lg-4 h4{
+  font-size: 20px;
+  background-color: #c4781c;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.bg-special {
+  background: rgba(124,57,143,1);
+background: -moz-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(124,57,143,1)), color-stop(100%, rgba(0,77,154,1)));
+background: -webkit-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+background: -o-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+background: -ms-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+background: linear-gradient(to right, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', endColorstr='#004d9a', GradientType=1 );
+}
 .bg-lila {
-  background-color: #822b87;
+  background: linear-gradient(110deg, #822b87 60%, #822b87 60%);
 }
 .bg-amarillo {
-  background-color: #fad500;
+  background: linear-gradient(110deg, #fad500 60%, #fad500 60%);
 }
 .bg-verde {
-  background-color: #00a538;
+  background: linear-gradient(110deg, #00a538 60%, #00a538 60%);
 }
 .bg-azul {
-  background-color: #004d9a;
+  background: linear-gradient(110deg, #004d9a 60%, #004d9a 60%);
 }
 
 .post-block a,
@@ -33651,7 +33750,6 @@ blockquote cite {
 @media (min-width: 768px) {
     .post-block {
         min-height: 250px;
-        width: 370px;
     }
     .post-block .post-body {
     }
@@ -33669,8 +33767,9 @@ blockquote cite {
     border-radius: 5px;
     overflow: hidden;
     background: #fff;
-    -webkit-box-shadow: -1px 0px 10px 0px rgba(65, 65, 65, 0.12);
-    box-shadow: -1px 0px 10px 0px rgba(65, 65, 65, 0.12);
+    -webkit-box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
+-moz-box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
+box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
 }
 
 .post-modern .post-inset {
@@ -33738,7 +33837,8 @@ blockquote cite {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 12px 22px 16px;
-    background: #00a4d6;
+    background: linear-gradient(110deg, #79398f 60%, #582063 60%);
+  color:white;
 }
 
 .post-modern .post-footer > * {
@@ -33858,7 +33958,7 @@ blockquote cite {
 }
 
 .post-classic-minimal time {
-    font: 700 19px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 19px "Trasandina", Helvetica, Arial, sans-serif;
     line-height: 1.2;
     color: #767877;
 }
@@ -33969,7 +34069,7 @@ blockquote cite {
 }
 
 .blog-timeline > dt {
-    font: 700 25px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 25px "Trasandina", Helvetica, Arial, sans-serif;
     color: #060f15;
 }
 
@@ -34018,7 +34118,7 @@ blockquote cite {
 }
 
 .post-boxed-title {
-    font: 500 18px/28px "Roboto", Helvetica, Arial, sans-serif;
+    font: 500 18px/28px "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 .post-boxed-title a {
@@ -34190,7 +34290,7 @@ blockquote cite {
 }
 
 .comment-minimal .author {
-    font: 700 14px/18px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/18px "Trasandina", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: -.025em;
     color: #000;
@@ -34534,11 +34634,11 @@ blockquote cite {
 .pricing-table-label {
     padding: 17px 15px;
     text-align: center;
-    background: #4598ca;
+    background: #034c9a;
 }
 
 .pricing-table-label p {
-    font: 700 14px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px "Trasandina", Helvetica, Arial, sans-serif;
     letter-spacing: .05em;
     text-transform: uppercase;
     color: #fff;
@@ -34568,7 +34668,7 @@ blockquote cite {
 }
 
 .pricing-object {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-weight: 900;
     font-size: 0;
     line-height: 0;
@@ -34586,7 +34686,7 @@ blockquote cite {
 
 .pricing-object .small {
     position: relative;
-    font: 700 10px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 10px "Trasandina", Helvetica, Arial, sans-serif;
     color: inherit;
     text-transform: uppercase;
 }
@@ -34674,7 +34774,7 @@ blockquote cite {
 
 .price-current .small {
     position: relative;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -34790,7 +34890,7 @@ blockquote cite {
 .product .product-label {
     padding: 7px 11px;
     min-width: 90px;
-    font: 700 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 12px/16px "Trasandina", Helvetica, Arial, sans-serif;
     letter-spacing: .05em;
     text-align: center;
     border-radius: 0 0 7px 7px;
@@ -34828,7 +34928,7 @@ blockquote cite {
 }
 
 .product .product-size {
-    font: 700 14px/18px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/18px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
 }
 
@@ -35276,7 +35376,7 @@ blockquote cite {
 }
 
 .product-single .product-info dt {
-    font: 700 16px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 16px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     margin-right: 10px;
 }
@@ -36651,7 +36751,7 @@ html .page .offset-top-120 {
 }
 
 .link-bold {
-    font: 700 18px/22px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 18px/22px "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 .link-group {
@@ -37026,7 +37126,7 @@ dt {
 }
 
 .list-terms-variant-1 dt {
-    font: 700 16px/22px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 16px/22px "Trasandina", Helvetica, Arial, sans-serif;
     letter-spacing: -.025em;
     color: #000;
 }
@@ -37041,7 +37141,7 @@ dt {
 
 @media (min-width: 1200px) {
     .list-terms-variant-1 dt {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 1.2;
     }
     .list-terms-variant-1 dd + dt {
@@ -37444,7 +37544,7 @@ dt {
 }
 
 .list-progress {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     color: #00030a;
 }
 
@@ -37479,7 +37579,7 @@ dt {
 
 .list-wide-bordered {
     color: #00030a;
-    font: 400 14px/22px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 14px/22px "Trasandina", Helvetica, Arial, sans-serif;
     border-top: 1px solid #dedede;
 }
 
@@ -38434,7 +38534,7 @@ dt {
 
 .tabs-custom.tabs-corporate .nav-tabs li a {
     padding: 8px 10px;
-    font: 700 11px/18px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 11px/18px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     background: transparent;
     border-bottom: 1px solid #dedede;
@@ -38461,8 +38561,8 @@ dt {
 .tabs-custom.tabs-corporate .nav-tabs li a:hover,
 .tabs-custom.tabs-corporate .nav-tabs li.active a {
     color: #fff;
-    background: #4598ca;
-    border-color: #4598ca;
+    background: #034c9a;
+    border-color: #034c9a;
 }
 
 .tabs-custom.tabs-corporate .nav-tabs li a:hover:after,
@@ -38491,7 +38591,7 @@ dt {
 }
 
 .tabs-custom.tabs-line .nav-tabs li a {
-    font: 400 11px/16px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 11px/16px "Trasandina", Helvetica, Arial, sans-serif;
     letter-spacing: -.05em;
     text-transform: uppercase;
     color: #9b9b9b;
@@ -38503,7 +38603,7 @@ dt {
 }
 
 .tabs-custom.tabs-minimal .nav-tabs li a {
-    font: 700 11px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 11px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
 }
 
@@ -38710,7 +38810,7 @@ dt {
 
 .tabs-vertical.tabs-corporate .nav-tabs li a:hover,
 .tabs-vertical.tabs-corporate .nav-tabs li.active a {
-    border-color: #4598ca;
+    border-color: #034c9a;
 }
 
 .tabs-vertical.tabs-corporate .tab-content {
@@ -38808,7 +38908,7 @@ dt {
     }
     .tabs-custom.tabs-vertical .nav-tabs li a:hover,
     .tabs-custom.tabs-vertical .nav-tabs li.active a {
-        border-color: #4598ca;
+        border-color: #034c9a;
     }
     .tabs-custom.tabs-vertical .nav-tabs li a:hover:after,
     .tabs-custom.tabs-vertical .nav-tabs li.active a:after {
@@ -38926,7 +39026,7 @@ dt {
 .panel-light .panel-title a {
     position: relative;
     padding: 24px 55px 22px 32px;
-    font: 500 18px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 500 18px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     transition: 1.5s all ease;
 }
@@ -39018,7 +39118,7 @@ dt {
     position: relative;
     z-index: 1;
     padding: 24px 82px 22px 32px;
-    font: 500 18px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 500 18px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     transition: 1.3s all ease;
     letter-spacing: -.025em;
@@ -39173,7 +39273,7 @@ dt {
 
 @media (min-width: 992px) {
     .jumbotron-custom {
-        font-size: 55px;
+        font-size: 45px;
     }
     .jumbotron-custom > span {
         font-size: 51px;
@@ -39182,7 +39282,7 @@ dt {
 
 @media (min-width: 1200px) {
     .jumbotron-custom {
-        font-size: 65px;
+        font-size: 48px;
     }
     .jumbotron-custom > span {
         font-size: 61px;
@@ -42664,7 +42764,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .counter {
-    font: 900 45px/45px "Roboto", Helvetica, Arial, sans-serif;
+    font: 900 45px/45px "Trasandina", Helvetica, Arial, sans-serif;
     margin-bottom: 0;
     color: #fff;
 }
@@ -42874,7 +42974,7 @@ html:not(.lt-ie10) .not-animated {
     .isotope-filters-minimal .list-inline a {
         position: relative;
         padding-bottom: 5px;
-        font: 700 14px/24px "Roboto", Helvetica, Arial, sans-serif;
+        font: 700 14px/24px "Trasandina", Helvetica, Arial, sans-serif;
     }
     .isotope-filters-minimal .list-inline a:after {
         content: '';
@@ -43441,7 +43541,7 @@ html:not(.lt-ie10) .not-animated {
 
 .owl-numbering-default .numbering-current {
     min-width: 16px;
-    font: 700 25px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 25px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     transition: .33s all ease;
 }
@@ -43472,7 +43572,7 @@ html:not(.lt-ie10) .not-animated {
     position: relative;
     top: 19px;
     left: -7px;
-    font: 400 18px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 18px "Trasandina", Helvetica, Arial, sans-serif;
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -44933,7 +45033,7 @@ html:not(.lt-ie10) .not-animated {
 
 .rd-navbar-fixed .rd-navbar-dropdown > li > a,
 .rd-navbar-fixed .rd-navbar-list > li > a {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.2;
 }
@@ -45281,7 +45381,7 @@ html.rd-navbar-sidebar-linked body {
 }
 
 .rd-navbar-default .rd-navbar-nav > li > a {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
@@ -45484,7 +45584,7 @@ html.rd-navbar-sidebar-linked body {
     position: static;
     display: inline-block;
     font-family: 'fl-bigmug-line';
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .rd-navbar-corporate-dark .rd-navbar-search .rd-navbar-search-toggle:hover,
@@ -45547,15 +45647,14 @@ html.rd-navbar-sidebar-linked body {
 .rd-navbar-corporate-dark.rd-navbar-static .rd-navbar-aside {
     position: relative;
     z-index: 2;
-    background: rgba(83,170,224,1);
-background: -moz-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(83,170,224,1)), color-stop(100%, rgba(0,42,66,1)));
-background: -webkit-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-background: -o-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-background: linear-gradient(45deg, rgba(83,170,224,1) 0%, rgba(0,42,66,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53aae0', endColorstr='#002a42', GradientType=1 );
-Copy text
+    background: rgba(124,57,143,1);
+  background: -moz-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(124,57,143,1)), color-stop(100%, rgba(0,77,154,1)));
+  background: -webkit-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+  background: -o-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+  background: -ms-linear-gradient(left, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+  background: linear-gradient(to right, rgba(124,57,143,1) 0%, rgba(0,77,154,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', endColorstr='#004d9a', GradientType=1 );
 }
 
 .rd-navbar-corporate-dark.rd-navbar-static .rd-navbar-aside:after {
@@ -45750,7 +45849,7 @@ Copy text
 }
 
 .rd-navbar-corporate-light .rd-navbar-nav > li > a {
-    font: 400 16px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 16px "Trasandina", Helvetica, Arial, sans-serif;
     letter-spacing: .025em;
 }
 
@@ -45789,7 +45888,7 @@ Copy text
 
 .rd-navbar-corporate-light .rd-navbar-search .rd-navbar-search-toggle:before,
 .rd-navbar-corporate-light .rd-navbar-search .rd-navbar-search-toggle:after {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .rd-navbar-corporate-light .rd-navbar-search .rd-navbar-search-toggle:before {
@@ -45882,7 +45981,7 @@ Copy text
 
 .rd-navbar-corporate-light.rd-navbar-fixed .rd-navbar-search .rd-navbar-search-toggle,
 .rd-navbar-corporate-light.rd-navbar-fixed .rd-navbar-search .rd-search-submit {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .rd-navbar-corporate-light.rd-navbar-fixed .rd-navbar-search .rd-navbar-search-toggle,
@@ -46201,7 +46300,7 @@ Copy text
     margin-left: auto;
     margin-right: auto;
     width: 800px;
-    font-size: 20px;
+    font-size: 19px;
     background-color: transparent;
     opacity: 1;
     visibility: visible;
@@ -46715,7 +46814,7 @@ html.boxed .rd-navbar--is-clone {
 
 .rd-search-minimal .form-label,
 .rd-search-minimal .form-control {
-    font: 400 16px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 400 16px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: rgba(0, 0, 0, 0.2);
     letter-spacing: -.025em;
 }
@@ -46809,7 +46908,7 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .rd-search-results-live .search-quick-result {
-    font: 700 14px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     letter-spacing: .06em;
     text-transform: uppercase;
@@ -46849,7 +46948,7 @@ html.boxed .rd-navbar--is-clone {
 
 .rd-search-results-live .search_title {
     margin-bottom: 0;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #000;
@@ -46871,7 +46970,7 @@ html.boxed .rd-navbar--is-clone {
 
 .rd-search-results-live .search_submit:hover {
     color: #fff;
-    background: #4598ca;
+    background: #034c9a;
 }
 
 .rd-search-results-live .match {
@@ -46920,7 +47019,7 @@ html.boxed .rd-navbar--is-clone {
     left: 0;
     content: counter(result, decimal-leading-zero) ".";
     counter-increment: result;
-    font: 500 19px "Roboto", Helvetica, Arial, sans-serif;
+    font: 500 19px "Trasandina", Helvetica, Arial, sans-serif;
     line-height: 1;
     color: #cdcdcd;
 }
@@ -46940,7 +47039,7 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .rd-search-results .match em {
-    font: 700 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 12px/16px "Trasandina", Helvetica, Arial, sans-serif;
     font-style: normal;
     text-transform: uppercase;
     color: #000;
@@ -47667,14 +47766,12 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .swiper-slide-caption .shell{
-  -webkit-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
+
 }
 
 .swiper-variant-1,
 .swiper-variant-1 .swiper-wrapper {
-    height: auto;
+    height: 500px;
 }
 
 .swiper-variant-1 .swiper-slide-caption {
@@ -47849,7 +47946,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
     position: relative;
     width: 100%;
     margin: 0;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
 }
 
 .progress-bar .progress-bar__body {
@@ -47878,7 +47975,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 
 .progress-bar-horizontal {
     position: relative;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     text-align: right;
 }
 
@@ -48039,7 +48136,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 .time_circles > div {
     position: absolute;
     text-align: center;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     top: 50% !important;
     transform: translateY(-63%) !important;
     -webkit-transform: translateY(-63%) !important;
@@ -48079,7 +48176,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 
 .time_circles > div > span {
     display: block;
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     font-weight: bold;
 }
@@ -48124,7 +48221,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 .countdown-wrap div > h4 {
     position: relative;
     margin-top: -2px;
-    font: 500 12px "Roboto", Helvetica, Arial, sans-serif !important;
+    font: 500 12px "Trasandina", Helvetica, Arial, sans-serif !important;
     color: rgba(0, 0, 0, 0.2);
     letter-spacing: -.025em;
     bottom: auto !important;
@@ -48138,7 +48235,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 }
 
 .countdown-wrap span {
-    font: 900 18px "Roboto", Helvetica, Arial, sans-serif !important;
+    font: 900 18px "Trasandina", Helvetica, Arial, sans-serif !important;
     font-style: normal;
     color: #000;
 }
@@ -48313,8 +48410,8 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 
 .slick-prev:before,
 .slick-next:before {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
+    font-size: 19px;
     line-height: 1;
     color: white;
     opacity: 0.75;
@@ -48681,7 +48778,7 @@ box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
 }
 
 .stepper-lg .stepper-arrow {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .stepper-lg input[type="number"] {
@@ -50023,7 +50120,7 @@ a.pswp__share--download:hover {
     border: 1px solid #dedede;
     border-radius: 0;
     color: rgba(0, 0, 0, 0.5);
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
     outline: 0;
 }
@@ -50033,7 +50130,7 @@ a.pswp__share--download:hover {
     border: 1px solid #dedede;
     border-radius: 0;
     color: rgba(0, 0, 0, 0.5);
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
 
@@ -50211,7 +50308,7 @@ a.pswp__share--download:hover {
     line-height: 20px;
     content: '\e313';
     font-family: 'Material Icons';
-    font-size: 20px;
+    font-size: 19px;
     color: #060f15;
 }
 
@@ -50608,7 +50705,7 @@ a.pswp__share--download:hover {
 .select2-container--modern {
     display: inline-block;
     width: auto !important;
-    font: 700 14px/24px "Roboto", Helvetica, Arial, sans-serif;
+    font: 700 14px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
 }
 
@@ -51220,10 +51317,10 @@ position:relative;
 top:450px;
 margin-top:-450px;display:block;}
 }
-.swiper-slide-caption .jumbotron-custom {color:#4598ca}
+.swiper-slide-caption .jumbotron-custom {color:#fff}
 .swiper-slide-caption  .veil{color:#333333}
 .swiper-slide{text-align:left;}
-.swiper-slide .btn.btn-primary{background:#4598ca;border-color:#4598ca}
+.swiper-slide .btn.btn-primary{background:#7c398f;border-color:#dee2e6}
 @media (max-width:992px)
 {
 	.rd-navbar-brand img{width:140px;}

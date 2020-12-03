@@ -8,6 +8,13 @@
 <meta charset="utf-8">
 <!-- CSS -->
 
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+
 <!-- jQuery and JS bundle w/ Popper.js -->
 
 <link rel="icon" href="images/favicon-2.png" type="image/x-icon">
@@ -15,23 +22,78 @@
 <link rel="stylesheet" href="css/style.css">
 
 
-
 <script type="text/javascript">
-$(document).ready(function() {
-$('a[href^="#"]').click(function() {
-  var destino = $(this.hash);
-  if (destino.length == 0) {
-    destino = $('a[name="' + this.hash.substr(1) + '"]');
+$(function(){
+var $tabla = $('#tabla');
+
+$('#selectCategory').change(function(){
+  var value = $(this).val();
+  if (value){
+    $('tbody tr.' + value, $tabla).show();
+    $('tbody tr:not(.' + value + ')', $tabla).hide();
   }
-  if (destino.length == 0) {
-    destino = $('html');
+  else{
+    // Se ha seleccionado All
+    $('tbody tr', $tabla).show();
   }
-  $('html, body').animate({ scrollTop: destino.offset().top }, 500);
-  return false;
 });
 });
 </script>
 
+<style type="text/css">
+    #register_form fieldset:not(:first-of-type) {
+    display: none;
+    }
+</style>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+      var form_count = 1, previous_form, next_form, total_forms;
+      total_forms = $("fieldset").length;
+      $(".next-form").click(function(){
+      previous_form = $(this).parent();
+      next_form = $(this).parent().next();
+      next_form.show();
+      previous_form.hide();
+      setProgressBarValue(++form_count);
+      });
+      $(".previous-form").click(function(){
+      previous_form = $(this).parent();
+      next_form = $(this).parent().prev();
+      next_form.show();
+      previous_form.hide();
+      setProgressBarValue(--form_count);
+      });
+      setProgressBarValue(form_count);
+      function setProgressBarValue(value){
+      var percent = parseFloat(100 / total_forms) * value;
+      percent = percent.toFixed();
+      $(".progress-bar")
+      .css("width",percent+"%")
+      .html(percent+"%");
+      }
+      // Handle form submit and validation
+      $( "#register_form" ).submit(function(event) {
+      var error_message = '';
+      if(!$("#email").val()) {
+      error_message+="Please Fill Email Address";
+      }
+      if(!$("#password").val()) {
+      error_message+="<br>Please Fill Password";
+      }
+      if(!$("#mobile").val()) {
+      error_message+="<br>Please Fill Mobile Number";
+      }
+      // Display error if any else submit form
+      if(error_message) {
+      $('.alert-success').removeClass('hide').html(error_message);
+      return false;
+      } else {
+      return true;
+      }
+      });
+      });
+</script>
 
 </head>
 <body style="">
@@ -125,7 +187,7 @@ $('a[href^="#"]').click(function() {
           </div>
         </div>
         <div class="collapse" id="collapseExample">
-        <div class="card card-body bg-primary" >
+        <div class="card card-body bg-primary"  >
         <div class="row text-white text-center" style="vertical-align:middle">
           <div class="col-lg-4 cidicard">
             <h3>¿QUÉ ES CIUDADANO DIGITAL?:</h3>
@@ -154,130 +216,80 @@ $('a[href^="#"]').click(function() {
 
   </header>
 
-  <main class="page-content">
-    <section style="background-image: url(images/institucional.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
-      <div class="shell">
-        <div class="page-title">
-          <h2>NORMATIVA</h2>
-        </div>
+  <section style="background-image: url(images/seccprov5.png);" class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap ">
+    <div class="shell">
+      <div class="page-title">
+        <h3>#GESTIONES <span class="text-thin">PARA PROVEEDOR</span></h3>
       </div>
-    </section>
-    <section class="section-60 section-sm-90 section-lg-bottom-120 bg-primary">
-      <div class="shell">
-        <div class="range range-sm-center">
-          <div class="cell-sm-10 cell-md-12">
-            <div class="range">
-              <div class="cell-md-6">
-                <h3>NORMATIVA <span class="text-thin">VIGENTE</span></h3>
-                <div class="offset-top-22">
-                  <p class="text-big text-white">Consultá la normativa que regula las contrataciones de bienes, servicios y obra pública, de acuerdo a las leyes Nº 10.155 y Nº8.614 y otra normativa de referencia.</p>
-                </div>
-                <div class="offset-top-40">
-                  <div id="accordionOne" role="tablist" aria-multiselectable="true" class="panel-group panel-group-custom panel-group-corporate">
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading1" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse1" aria-controls="accordionOneCollapse1" aria-expanded="true">Bienes y Servicios
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse1" role="tabpanel" aria-labelledby="accordionOneHeading1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <p>En este módulo se encontrará toda la normativa referente a contratación de bienes y servicios, en forma de menús desplegables.
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading2" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse2" aria-controls="accordionOneCollapse2" class="collapsed">Obra Pública
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse2" role="tabpanel" aria-labelledby="accordionOneHeading2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>On este módulo se encontrará toda la normativa referente a contratación de obra pública.
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading3" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse3" aria-controls="accordionOneCollapse3" class="collapsed">Resoluciones de la DGCyC
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse3" role="tabpanel" aria-labelledby="accordionOneHeading3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <ul>
-                            <li>Bs. Y Ss.</li>
-                            <li> Obra Pública.</li>
-                            <li>ROPyCE.</li>
-                            <li>Sanciones.</li>
-                            <li>Catálogo.</li>
-                            <li>Sistema.</li>
-
-                          </ul>
-                          <p>
+    </div>
+  </section>
 
 
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
+  <main class="page-content bg1">
 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-custom panel-corporate">
-                      <div id="accordionOneHeading4" role="tab" class="panel-heading">
-                        <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionOne" href="#accordionOneCollapse4" aria-controls="accordionOneCollapse4" class="collapsed">Otras normas de referencia.
-                          <div class="panel-arrow"></div>
-                          </a> </div>
-                      </div>
-                      <div id="accordionOneCollapse4" role="tabpanel" aria-labelledby="accordionOneHeading4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>Acá se podrán consultar leyes, decretos y resoluciones que no son específicas de los regímenes, pero están relacionados a las contrataciones de la administración pública provincial. Incluye la información disponible actualmente en “Leyes de referencia”, “Decretos de referencia” y “Resoluciones de referencia”. Se dividirá en tres botones:
-                            <ul>
-                              <li>Leyes</li>
-                              <li>Decretos</li>
-                              <li> Resoluciones de la DGCyC.</li>
-
-                            </ul>
-
-</p>
-<a href="#" class="btn btn-primary"> Ingresar</a>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <section class="shell">
+      <div class="range range-condensed range-xs-center range-sm-left">
+        <div class="cell-xs-10 cell-sm-6 height-fill">
+          <article class="icon-box icon-box-top-line boxshadow">
+            <div class="box-top">
+              <div class="box-icon"><span class="i"><i class="fa fa-edit con icon-primary icon-lg"></i></span></div>
+              <div class="box-header ">
+                <h5 class="text-blue"> <a href="acceso.html">Renová tu inscripción.</a></h5>
               </div>
-              <div class="cell-md-6">
-<div class="  bg-cape-cod text-center ">
-<h4>Actualizaciones</h4>
-<div  class="panel-collapse ">
-  <div class="panel-body">
-
-<blockquote >
-Fecha - Modificación - Tipo
-</blockquote>
-
-  </div>
-</div>
-</div>
-              </div>
+            </div>
+            <div class="box-body">
 
             </div>
-          </div>
         </div>
+        <div class="cell-xs-10 cell-sm-6 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box icon-box-top-line">
+            <div class="box-top">
+              <div class="box-icon"><span class=""><i class="fa fa-building con icon-primary icon-lg"></i></span></div>
+              <div class="box-header text-uppercase">
+                <h5 class="text-blue"><a href="inscripcion.html">Registrá tus antecedentes técnicos (Contratistas)</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+
+            </div>
+        </div>
+        <div class="cell-xs-10 cell-sm-6 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box icon-box-top-line">
+            <div class="box-top">
+              <div class="box-icon"><span class=""><i class="fa fa-book con icon-primary icon-lg"></i></span></div>
+              <div class="box-header text-uppercase">
+                <h5 class="text-blue"><a href="inscripcion.html">Modificación de datos y Representación legal</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+
+            </div>
+        </div>
+        <div class="cell-xs-10 cell-sm-6 height-fill offset-top-40 offset-sm-top-0">
+          <article class="icon-box icon-box-top-line boxshadow">
+            <div class="box-top">
+              <div class="box-icon"><span class=""><i class="fa fa-clipboard con icon-primary icon-lg"></i></span></div>
+              <div class="box-header text-uppercase">
+                <h5 class="text-blue"><a href="inscripcion.html">Beneficiarios de Pago</a></h5>
+              </div>
+            </div>
+            <div class="box-body">
+
+            </div>
+        </div>
+
+
+
+
       </div>
     </section>
+
+
+
+
+
+
   </main>
-
-
 
 
   <footer class="page-foot bg-cape-cod context-dark">
@@ -365,6 +377,8 @@ Fecha - Modificación - Tipo
     </section>
   </footer>
 </div>
+
+
 
 
 <script src="js/core.min.js"></script>
