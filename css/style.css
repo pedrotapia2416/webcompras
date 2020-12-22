@@ -266,6 +266,28 @@ background-color: #0967e4 !important;
   background-attachment: fixed;
 
 }
+.cardlogin{
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.36);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.36);
+  box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.36);
+  background-color: #3e9cf68a !important;
+}
+
+.bg2{
+
+  background-image: url(../images/panal.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+
+
+
+}
 
 .bgsubmenu {
 
@@ -32157,7 +32179,7 @@ p + p {
 
 @media (min-width: 1200px) {
     * + .btn {
-        margin-top: 44px;
+        margin-top: auto;
     }
 }
 
@@ -33619,11 +33641,17 @@ box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
 }
 fieldset .col-lg-4 {
   margin-top: 10%;
+  height: 200px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  padding:50px;
+
+
 }
 
 fieldset .col-lg-4 h4{
-  font-size: 20px;
-  background-color: #c4781c;
+  font-size: 22px;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -33650,6 +33678,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', end
 }
 .bg-azul {
   background: linear-gradient(110deg, #004d9a 60%, #004d9a 60%);
+}
+
+.bg-azul2 {
+  background: linear-gradient(119deg, #004d9a 60%, #fad50000 60%);
+}
+
+.bg-naranja {
+  background: linear-gradient(119deg, #c4781c 68%, #fad50000 60%);
 }
 
 .post-block a,
