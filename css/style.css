@@ -34168,7 +34168,7 @@ box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
 }
 
 .post-boxed img {
-    width: 100%;
+    width: 50%;
 }
 
 .post-boxed .list-inline {
@@ -34184,6 +34184,9 @@ box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
     .post-boxed .post-boxed-caption {
         padding: 28px 42px 36px 28px;
     }
+    .post-boxed img {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 1200px) {
