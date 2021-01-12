@@ -34142,7 +34142,7 @@ box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
 
 .post-boxed {
     max-width: 100%;
-    height: 400px;
+    height: 150px;
     margin-right: auto;
     margin-left: auto;
     transition: .3s all ease;
@@ -51413,4 +51413,17 @@ margin-top:-450px;display:block;}
    -moz-transform: rotate(-15deg);
    -ms-transform: rotate(-15deg);
    transform: rotate(-15deg);
+}
+
+/*LOADER*/
+
+.loader {
+  position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/sa/c.png') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
 }
