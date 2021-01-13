@@ -33158,7 +33158,7 @@ blockquote cite {
 
 @media (min-width: 1800px) {
     .icon-box {
-        padding: 90px 165px 82px;
+        padding: 90px 25px 82px;
     }
 }
 
@@ -33567,7 +33567,7 @@ box-shadow: -1px 6px 90px -12px rgba(0,0,0,1);
 }
 
 .post-preview {
-    max-width: 320px;
+    max-width: 620px;
 }
 
 .post-preview a {
@@ -33669,6 +33669,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', end
 }
 .bg-lila {
   background: linear-gradient(110deg, #822b87 60%, #822b87 60%);
+
 }
 .bg-amarillo {
   background: linear-gradient(110deg, #fad500 60%, #fad500 60%);
@@ -33685,7 +33686,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', end
 }
 
 .bg-naranja {
-  background: linear-gradient(119deg, #c4781c 68%, #fad50000 60%);
+  background: linear-gradient(119deg, #c4781c 68%, #c4781c 60%);
+}
+
+.bg-naranja2 {
+  background: linear-gradient(137deg, #c4781c 39%, #fad50000 75%);
+}
+
+.bg-amarillo2 {
+  background: linear-gradient(119deg, #fad500 68%, #fad50000 60%);
+}
+
+.bg-lila2 {
+  background: linear-gradient(110deg, #822b87 60%, #822b87 60%);
+  border-radius: 5px;
+  padding: 20px;
+
+}
+.bg-lila3 {
+background:linear-gradient(0deg, #822b87 39%, #fad50000 75%);
+border-radius: 5px;
+padding: 20px;
+}
+
+.bg-verde2 {
+  background: linear-gradient(119deg, #00a538 68%, #fad50000 60%);
 }
 
 .post-block a,
@@ -51429,4 +51454,17 @@ margin-top:-450px;display:block;}
     z-index: 9999;
     background: url('../images/sa/c.png') 50% 50% no-repeat rgb(249,249,249);
     opacity: .8;
+}
+
+.bg-dark {
+  padding: 20px;
+}
+
+.widget-importante {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.bg-celeste {
+  background-color: #00a4e2;
 }
