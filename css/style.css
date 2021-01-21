@@ -294,6 +294,7 @@ background-color: #0967e4 !important;
   background-image: url(../images/seccprov5.png);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 
 }
 .bginstructivo {
@@ -12425,7 +12426,7 @@ address {
 }
 
 .bg-iron {
-    background: #dcdde0;
+    background: #dcdde0 !important;
     fill: #dcdde0;
 }
 
@@ -51482,7 +51483,7 @@ margin-top:-450px;display:block;}
 }
 
 .bg-celeste {
-  background-color: #00a4e2;
+  background-color: #00a4e2 !important;
 }
 
 .redondeado {
