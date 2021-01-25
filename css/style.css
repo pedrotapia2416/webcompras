@@ -11995,7 +11995,10 @@ h6,
     h6,
     .h6 {
         line-height: 1.33333;
-        font-size: 13px;
+        font-size: 17px;
+    text-align: center;
+    color: #014e9b;
+    text-transform: uppercase;
     }
 }
 
@@ -33846,6 +33849,14 @@ padding: 20px;
     border-radius: 5px;
     overflow: hidden;
     background: #fff;
+    transition: all 0.8s;
+}
+.post-modern:hover {
+  -webkit-box-shadow: -4px 6px 72px -24px rgba(107,107,107,1);
+-moz-box-shadow: -4px 6px 72px -24px rgba(107,107,107,1);
+box-shadow: -4px 6px 72px -24px rgba(107,107,107,1);
+    background: #f7f8fa;
+    cursor: pointer;
 }
 
 .post-modern .post-inset {
@@ -33913,7 +33924,7 @@ padding: 20px;
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 12px 22px 16px;
-    background: linear-gradient(110deg, #00a6d9 60%, #00a6d9 60%);
+    background: linear-gradient(110deg, #004e9e  60%, #004e9e  60%);
   color:white;
 }
 
