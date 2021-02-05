@@ -51678,3 +51678,9 @@ border-radius: 5px;
    text-align: center;
    padding: 1px;
  }
+.wrapper2 {
+  background: url('bgblue.svg');
+}
+.h230 {
+  height: 230px !important;
+}

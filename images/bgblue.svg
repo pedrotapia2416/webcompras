@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="bg-blue" width="1366" height="621.333" viewBox="0 0 1366 621.333">
+    <defs>
+        <style>
+            .cls-1{opacity:.5}.cls-1,.cls-2,.cls-4{fill:url(#linear-gradient)}.cls-2{opacity:.71}.cls-3{clip-path:url(#clip-path)}.cls-4{opacity:.6}.cls-5{opacity:.4;fill:url(#linear-gradient-5)}
+        </style>
+        <linearGradient id="linear-gradient" x2=".979" y1=".426" y2=".426" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#009ed2"/>
+            <stop offset="1" stop-color="#0070a1"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path id="Mask" d="M0 0h1366v621.333H50a50 50 0 0 1-50-50V0z" class="cls-1"/>
+        </clipPath>
+        <linearGradient id="linear-gradient-5" x2="1" y1=".426" y2=".426" xlink:href="#linear-gradient"/>
+    </defs>
+    <g id="Oval_Oval_Oval_Mask">
+        <path id="Mask-2" d="M0 0h1366v621.333H50a50 50 0 0 1-50-50V0z" class="cls-2"/>
+        <g id="Oval_Oval_Oval_Mask-2" class="cls-3">
+            <circle id="Oval" cx="758.515" cy="758.515" r="758.515" class="cls-1" transform="translate(-399.129 -782.663)"/>
+            <circle id="Oval-2" cx="532.767" cy="532.767" r="532.767" class="cls-4" transform="translate(-190.028 -431.725)"/>
+            <circle id="Oval-3" cx="310.028" cy="310.028" r="310.028" class="cls-5" transform="translate(-32.969 -196)"/>
+        </g>
+    </g>
+</svg>
