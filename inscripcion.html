@@ -7,7 +7,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <!-- CSS -->
-
+<!-- CSS -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="y02ErWoK"></script>
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -68,12 +70,14 @@ $('#selectCategory').change(function(){
       });
       setProgressBarValue(form_count);
       function setProgressBarValue(value){
-      var percent = parseFloat(100 / (total_forms)-1 ) * value;
+      var percent = parseFloat(100 / (total_forms -1) ) * value;
       percent = percent.toFixed();
       $(".progress-bar")
       .css("width",percent+"%")
-      .html();
+      .html(percent+"%");
+
       }
+      // Handle form submit and validation
 
       });
 </script>
@@ -241,120 +245,76 @@ $('#selectCategory').change(function(){
 
     </section>
 
-    <section class="section-60 section-sm-90 section-lg-bottom-120 bg1 text-center">
+    <section class="section-10  text-center ">
       <div class="shell">
         <div class="range range-sm-center offset-top-40">
-          <div class="cell-lg-12">
+          <div class="cell-lg-9 ">
             <div >
 
 
               <div >
                 <div >
-                  <div ><a >
-                    <h3>Inscripción en ROPyCE</h3>
-
+                  <div ><h4>
+                    Es obligatorio para: Ser adjudicado en Licitaciones de bienes y servicios,Ofertar y/o ser adjudicado en algunas contrataciones de obra pública.<br>
+</h4>
                     <div class="panel-arrow"></div>
                     </a> </div>
-                    <div class="progress">
-                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+
+
                 </div>
                 <div >
-                  <div class="panel-body text-justify">
+                  <div class="panel-body justify-center">
+
 
 
 
                     <form id="register_form" >
-
-
+                      <div class="progress">
+                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="80"></div>
+</div>
                       <fieldset>
                       <div class="form-group">
-                        Es obligatorio para: <br>
-  -         Ser adjudicado en Licitaciones de bienes y servicios, <br>
-  -         Ofertar y/o ser adjudicado en algunas contrataciones de obra pública.<br>
-  <p>Tiene un plazo de vigencia que debe ser renovado para que tenga validez.  Incluye el Acceso a ComprasPúblicas, por lo que si está vencida tu inscripción,  podrás seguir participando en contrataciones electrónicas que no exijan de la Inscripción en ROPyCE. </p>
-
-  <p>Las ventajas de contar con la Inscripción es que al momento de ofertar, se facilita la instancia de presentación de documentación legal. De este modo, no será necesario que presentes dos veces la misma documentación en otros organismos públicos provinciales.</p>
-
-  <p>Si aún no tenes el Acceso a ComprasPúblicas, completá el formulario en el Portal de ComprasPúblicas en CiDi. Colocá tus datos en el buscador para conocer la documentación que debes presentar.</p>
-
-  <p>Chequeá las condiciones de digitalización y envialo por:
-  E-mail a ropyce.compraspublicas@gmail.com
-  É-trámites.</p>
-
-
-
-
+<div>
+                      <h4> Debes contar con <span class="color-celeste"> ACCESO a ComprasPúblicas</span>. Si no lo has gestionado, puedes consultar <a href="acceso.html" class="color-celeste">aquí</a></h4>
+</div>
 
                       </div>
                       <input type="button" class="next-form btn btn-success " value="Comenzar" />
                       </fieldset>
-
-                      <fieldset>
-                      <div class="form-group col-lg-12">
-
-                        <h4>El titular o representante natural de la firma deberá ingresar a Compras Publicas desde su cuenta de <b>Ciudadano Digital (CiDi) Nivel 2 </b>  y completar la solicitud de Acceso a ComprasPúblicas.</h4>
-
-                      </div>
-
-                      <div class="form-group col-lg-12">
-
-                        <img src="images/pasocidi.png" alt="" class="drop">
-
-                      </div>
-                      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
-
-                      <input type="button" class="next-form btn btn-success " value="Siguiente" />
-                      </fieldset>
-
-                      <fieldset>
-                      <div class="form-group col-lg-4">
-
-                        <h4>Gestioná el ACCESO A COMPRASPÚBLICAS</h4>
-
-                      </div>
-
-                      <div class="form-group col-lg-8">
-
-                        <img src="images/iracceso.png" alt="" width="350" class="drop">
-
-                      </div>
-
-                      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
-
-                      <input type="button" class="next-form btn btn-success " value="Siguiente" />
-                      </fieldset>
-
-
 
 
                       <fieldset>
 
                           <h4> Seleccioná el tipo de persona para conocer los requisitos</h4>
 
+                          <div class="range">
 
-                      <div class="form-group col-lg-12">
+                      <div class="form-group col-lg-12 ">
+                        <div class="p-1  bg-celeste redondeado">
+                          <h4 class="text-white"> Jurisdicción Córdoba <br></h4>
+
+                        </div>
 
 
-                          <div class="cell-sm-10 cell-md-8 cell-lg-6">
+                          <div class="cell-sm-12 cell-md-12 cell-lg-12">
+
+
+
                             <div id="accordionTwo" role="tablist" aria-multiselectable="true" class="panel-group panel-group-custom panel-group-corporate">
 
                               <div class="panel panel-custom panel-corporate">
-                                <div id="accordionTwoHeading2" role="tab" class="panel-heading">
-                                  <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#accordionTwoCollapse2" aria-controls="accordionTwoCollapse2" class="collapsed">Persona Jurídica
+                                <div id="accordionTwoHeading2cba" role="tab" class="panel-heading">
+                                  <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwocba" href="#accordionTwoCollapse2cba" aria-controls="accordionTwoCollapse2cba" class="collapsed">Persona Jurídica
                                     <div class="panel-arrow"></div>
                                     </a> </div>
                                 </div>
-                                <div id="accordionTwoCollapse2" role="tabpanel" aria-labelledby="accordionTwoHeading2" class="panel-collapse collapse">
+
+                                <div id="accordionTwoCollapse2cba" role="tabpanel" aria-labelledby="accordionTwoHeading2cba" class="panel-collapse collapse">
                                   <div class="panel-body text-left">
                                     <p> 1 -Formulario “A”- Informe Sociedades emitido por la Dirección General de Inspección de Personas
-Jurídicas de la Provincia de Córdoba, el que será gestionado por el mismo ROPyCE. </p>
-<p>En caso de no contar con el mismo, o se trate de personas jurídicas inscriptas en otra jurisdicción:
-</p>
+Jurídicas de la Provincia de Córdoba, <span class="color-celeste">será gestionado por el mismo ROPyCE.</span> </p>
+
 <ul>
-  <li> a) Estatuto Social, Contrato o Acta Constitutiva y todas sus modificaciones debidamente
-inscriptas en el Registro Público de Comercio correspondiente al lugar de origen de la
-sociedad</li>
   <li> b) Acta de Asamblea o de Directorio de designación de autoridades donde conste la última
 distribución y aceptación de los cargos y, solo en el caso sociedades incluidas en el artículo
 299 de la Ley N° 19.550, Acta de Asamblea donde conste la aprobación del último ejercicio
@@ -362,9 +322,7 @@ económico. <br>
 Dichas actas y/o el último ejercicio económico aprobado (de corresponder), deberán
 encontrarse inscriptos o presentados en el Registro Público de Comercio correspondiente al
 lugar de origen de la sociedad.</li>
-  <li> c) Informe de medidas cautelares de la Persona Jurídica, expedido por el Registro Público de
-Comercio de la jurisdicción donde se encuentre inscripta la sociedad, con una antigüedad no
-mayor a ciento ochenta (180) días corridos</li>
+
 
 </ul>
 <p>2 - Balance General del último ejercicio económico, emitido por Contador Público independiente y
@@ -377,19 +335,16 @@ contar previamente con Inscripción en ROPyCE vigente.</b></p>
                                 </div>
                               </div>
                               <div class="panel panel-custom panel-corporate">
-                                <div id="accordionTwoHeading3" role="tab" class="panel-heading">
-                                  <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#accordionTwoCollapse3" aria-controls="accordionTwoCollapse3" class="collapsed">Persona Humana
+                                <div id="accordionTwoHeading3cba" role="tab" class="panel-heading">
+                                  <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwocba" href="#accordionTwoCollapse3cba" aria-controls="accordionTwoCollapse3cba" class="collapsed">Persona Humana
                                     <div class="panel-arrow"></div>
                                     </a> </div>
                                 </div>
-                                <div id="accordionTwoCollapse3" role="tabpanel" aria-labelledby="accordionTwoHeading3" class="panel-collapse collapse">
+                                <div id="accordionTwoCollapse3cba" role="tabpanel" aria-labelledby="accordionTwoHeading3cba" class="panel-collapse collapse">
                                   <div class="panel-body text-left">
 
                                     <p>1. Formulario “C” Informe Matrícula Individual, emitido por Dirección General de Inspección de
-Personas Jurídicas de la Provincia de Córdoba, el que será gestionado por el mismo ROPyCE. En
-caso de no contar con el mismo, deberá contar con Informe de medidas cautelares de la persona
-humana, expedido por el Registro Público de Comercio de su domicilio, con una antigüedad no
-mayor a ciento ochenta (180) días corridos.
+Personas Jurídicas de la Provincia de Córdoba, el que <span class="color-celeste">será gestionado por el mismo ROPyCE.</span>
 
 </p>
                                     <p>2. Estado de Situación Patrimonial, Manifestación de Bienes (sólo cuando no requiera cálculo de
@@ -400,15 +355,106 @@ mayor a ciento ochenta (180) días corridos.
                                   </div>
                                 </div>
                               </div>
-                              <div class="panel panel-custom panel-corporate">
-                                <div id="accordionTwoHeading4" role="tab" class="panel-heading">
-                                  <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#accordionTwoCollapse4" aria-controls="accordionTwoCollapse4" class="collapsed"> Proveedor extranjero
-                                    <div class="panel-arrow"></div>
-                                    </a> </div>
-                                </div>
-                                <div id="accordionTwoCollapse4" role="tabpanel" aria-labelledby="accordionTwoHeading4" class="panel-collapse collapse">
-                                  <div class="panel-body text-left">
-                                    <p>1. Estatuto Social, Contrato, Acta Constitutiva, Actas de designación de autoridades y/o de
+
+                            </div>
+
+
+                          </div>
+
+
+
+
+
+
+
+                      </div>
+
+
+
+
+                  <div class="form-group col-lg-12  offset-md-top-0">
+                    <div class="p-1 bg-celeste redondeado ">
+                      <h4 class="text-white"> Otra Jurisdicción <br></h4>
+
+                    </div>
+
+                      <div class="cell-sm-12 cell-md-12 cell-lg-12">
+
+
+
+                        <div id="accordionTwo" role="tablist" aria-multiselectable="true" class="panel-group panel-group-custom panel-group-corporate">
+
+                          <div class="panel panel-custom panel-corporate">
+                            <div id="accordionTwoHeading2" role="tab" class="panel-heading">
+                              <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#accordionTwoCollapse2" aria-controls="accordionTwoCollapse2" class="collapsed">Persona Jurídica
+                                <div class="panel-arrow"></div>
+                                </a> </div>
+                            </div>
+
+                            <div id="accordionTwoCollapse2" role="tabpanel" aria-labelledby="accordionTwoHeading2" class="panel-collapse collapse">
+                              <div class="panel-body text-left">
+                                <p> 1 -Formulario “A”- Informe Sociedades emitido por la Dirección General de Inspección de Personas
+Jurídicas de la Provincia de Córdoba, el que será gestionado por el mismo ROPyCE. </p>
+<p>En caso de no contar con el mismo, o se trate de personas jurídicas inscriptas en otra jurisdicción:
+</p>
+<ul>
+<li> a) Estatuto Social, Contrato o Acta Constitutiva y todas sus modificaciones debidamente
+inscriptas en el Registro Público de Comercio correspondiente al lugar de origen de la
+sociedad</li>
+<li> b) Acta de Asamblea o de Directorio de designación de autoridades donde conste la última
+distribución y aceptación de los cargos y, solo en el caso sociedades incluidas en el artículo
+299 de la Ley N° 19.550, Acta de Asamblea donde conste la aprobación del último ejercicio
+económico. <br>
+Dichas actas y/o el último ejercicio económico aprobado (de corresponder), deberán
+encontrarse inscriptos o presentados en el Registro Público de Comercio correspondiente al
+lugar de origen de la sociedad.</li>
+<li> c) Informe de medidas cautelares de la Persona Jurídica, expedido por el Registro Público de
+Comercio de la jurisdicción donde se encuentre inscripta la sociedad, con una antigüedad no
+mayor a ciento ochenta (180) días corridos</li>
+
+</ul>
+<p>2 - Balance General del último ejercicio económico, emitido por Contador Público independiente y
+certificado por el Consejo Profesional de Ciencias Económicas de la provincia que corresponda. </p>
+<p> <b> En caso de contratos asociativos, se deberá cumplir con la documentación establecida en el punto
+“A”, en todo aquello que le sea aplicable. Asimismo, cada uno de los miembros del mismo deberá
+contar previamente con Inscripción en ROPyCE vigente.</b></p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-custom panel-corporate">
+                            <div id="accordionTwoHeading3" role="tab" class="panel-heading">
+                              <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#accordionTwoCollapse3" aria-controls="accordionTwoCollapse3" class="collapsed">Persona Humana
+                                <div class="panel-arrow"></div>
+                                </a> </div>
+                            </div>
+                            <div id="accordionTwoCollapse3" role="tabpanel" aria-labelledby="accordionTwoHeading3" class="panel-collapse collapse">
+                              <div class="panel-body text-left">
+
+                                <p>1. Formulario “C” Informe Matrícula Individual, emitido por Dirección General de Inspección de
+Personas Jurídicas de la Provincia de Córdoba, el que será gestionado por el mismo ROPyCE. En
+caso de no contar con el mismo, deberá contar con Informe de medidas cautelares de la persona
+humana, expedido por el Registro Público de Comercio de su domicilio, con una antigüedad no
+mayor a ciento ochenta (180) días corridos.
+
+</p>
+                                <p>2. Estado de Situación Patrimonial, Manifestación de Bienes (sólo cuando no requiera cálculo de
+                                Capacidad Económico Financiera en los términos del Decreto N° 1.419/17), o bien Balance
+                                General del último ejercicio económico; emitido por Contador Público independiente y certificado
+                                por el Consejo Profesional de Ciencias Económicas de la provincia que corresponda.</p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="panel panel-custom panel-corporate">
+                            <div id="accordionTwoHeading4" role="tab" class="panel-heading">
+                              <div class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordionTwo" href="#accordionTwoCollapse4" aria-controls="accordionTwoCollapse4" class="collapsed"> Proveedor extranjero
+                                <div class="panel-arrow"></div>
+                                </a> </div>
+                            </div>
+                            <div id="accordionTwoCollapse4" role="tabpanel" aria-labelledby="accordionTwoHeading4" class="panel-collapse collapse">
+                              <div class="panel-body text-left">
+                                <p>1. Estatuto Social, Contrato, Acta Constitutiva, Actas de designación de autoridades y/o de
 distribución de cargos, Actas de aprobación de Balance o documentos símiles oficiales emitidos
 en el país de origen, para el caso de tratarse de personas jurídicas; de corresponder.</p>
 <p>2. Balance General del último ejercicio económico, estado de situación patrimonial o documento
@@ -428,42 +474,40 @@ traducida al español por traductor matriculado, en caso de corresponder </b> </
 de la Nación. Las sucursales de firmas extranjeras constituidas dentro de la jurisdicción nacional en los
 términos del artículo 118° de la Ley General de Sociedades N° 19.550, deberán cumplimentar los
 requerimientos del apartado 1.I.A del presente, o equivalentes, en caso de corresponder</p>
-                                  </div>
-                                </div>
                               </div>
                             </div>
                           </div>
-
-
-
-
-
+                        </div>
 
 
                       </div>
-                      <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
-                      <input type="button" name="next" class="next-form btn btn-success" value=" Actividades a inscribir" />
+
+
+
+
+
+
+
+                  </div>
+
+
+</div>
+<input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+<input type="button" name="next" class="next-form btn btn-success" value=" Actividades a inscribir" />
                       </fieldset>
 
 
                     <fieldset>
-                      <p>Se verificará la existencia de una relación de coherencia entre las actividades que figuren en:
-<br>- La Constancia de Inscripción vigente en el impuesto sobre Ingresos Brutos de la Dirección General
-de Rentas de la Provincia de Córdoba o constancia de inscripción en AFIP (cuando en la misma esté reflejada la información de la inscripción en el mencionado organismo provincial) o en Convenio
-Multilateral si fuera de otra jurisdicción;
-<br>- En el objeto social; y
-<br>- En la habilitación especial de corresponder.<br>
-Para el caso de tratarse de firmas extranjeras, la relación de actividades se analizará considerando la
-documentación acompañada por el interesado.</p>
+
+<h4>Podés consultar tus actividades en los siguientes link</h4>
+<div class="col-lg-12 m-5">
+<a href="https://www.afip.gob.ar/sitio/externos/default.asp" target="_blank"><img src="images/linkdeinteres/afip.png" class="shadowh p-1" style="height:50px;border:1px solid grey; border-radius:5px;" alt=""></a>
+<a href="https://www.rentascordoba.gob.ar/emisiontributaria/ver-y-pagar/ingresos-brutos" target="_blank"><img src="images/linkdeinteres/rentas.png" class="shadowh p-1" style="height:50px; border:1px solid grey; border-radius:5px;" alt=""></a>
+</div>
 
 
 
 
-                      <p>Se requerirá que el interesado cuente con todas las habilitaciones especiales exigidas por las
-respectivas jurisdicciones nacional, provincial y/o municipal de corresponder, a los fines del ejercicio
-legal de la actividad de que se trate, conforme el instructivo de referencia que ponga a disposición el
-órgano rector en el Portal Web Oficial de Compras y Contrataciones</p>
-<br>
 <script type="text/javascript">
             //<![CDATA[
 
@@ -513,33 +557,20 @@ line-height: 1.5em;
 
 
 
-    </style>
+    </style><br>
+    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+    <input type="button" name="next" class="next-form btn btn-success" value="como Enviar Documentación" />
 <div class="col-lg-12" style="padding:20px">
-<p style="text-align:center">(Conforme art. 4 de la Resolución N° 08/20 de la Dirección General de Compras y Contrataciones B.O.03/08/20). <br>
-   </p>   <br>
 <p style="text-align:center"> Para consultar las Habilitaciones correspondiente a cada Rubro a actividad debés ingresar los<b> primeros 5 o 6 dígitos, sin incluir los ceros (0) finales</b> del código o <b>rubro</b> según figura en la constancia de Rentas o Convenio Multilateral. <br>
 </p>
 </div>
 
-<div class="col-lg-12 buscadorback">
+<div class="col-lg-12 bg-celeste">
 
      <span class="text-white text-blod">Ingrese Rubro o Actividad:</span>  <label for="buscador" style="color:white"><input class="form-control texto-gris " id="listSearch" type="text" placeholder="" ></label>
 
 <style media="screen">
-.buscadorback{
-background: rgba(5,177,235,1);
-background: -moz-linear-gradient(45deg, rgba(5,177,235,1) 0%, rgba(30,143,184,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(5,177,235,1)), color-stop(100%, rgba(30,143,184,1)));
-background: -webkit-linear-gradient(45deg, rgba(5,177,235,1) 0%, rgba(30,143,184,1) 100%);
-background: -o-linear-gradient(45deg, rgba(5,177,235,1) 0%, rgba(30,143,184,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(5,177,235,1) 0%, rgba(30,143,184,1) 100%);
-background: linear-gradient(45deg, rgba(5,177,235,1) 0%, rgba(30,143,184,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05b1eb', endColorstr='#1e8fb8', GradientType=1 );
-border-radius:5px; padding:20px;
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
-}
+
 </style>
 
     </div>
@@ -552,13 +583,12 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);">
 
-<thead style="border-radius:20px;width:100%"><tr class="tableizer-firstrow" style=" background-color: " align="center">
-  <th style="width:10%">Código</th>
-  <th style="width:10%">Rubro</th>
-  <th style="width:10%">N° Habilitación</th>
-  <th style="width:10%">Tipo Habilitación</th>
-  <th style="width:60%">Documentación a Presentar</th></tr></thead>
-<hr>
+<thead style="border-radius:20px;width:100%"><tr class="tableizer-firstrow" style=" background-color: " >
+  <th style="width:10%;" class="text-center">Código</th>
+  <th style="width:10%" class="text-center">Rubro</th>
+  <th style="width:10%" class="text-center">N° Habilitación</th>
+  <th style="width:10%" class="text-center">Tipo Habilitación</th>
+  <th style="width:60%" class="text-center">Documentación a Presentar</th></tr></thead>
 
 <tbody id="myList" style="display:none; box-shadow:2px;">
 
@@ -9643,51 +9673,77 @@ O<br />
 
 
 
-                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
-                    <input type="button" name="next" class="next-form btn btn-success" value="como Enviar Documentación" />
+
                     </fieldset>
 
                     <fieldset>
-                      <div class="col-lg-6">
-                        <img src="images/digi1.png" class="drop" alt="" width="100%">
+
+                    <div class="col-lg-12 ">
+                      <div class="bg-celeste p-5 redondeado">
+                        <h4 class="text-white text-uppercase">condiciones para la digitalización y presentación de documentación</h4>
 
                       </div>
-                    <div class="col-lg-6">
-                      <img src="images/digi2.png" class="drop" alt="" width="100%">
+                      <div class="m-2 p-2">
+                        <ul class="text-left ">
+
+                          <li>Te recomendamos usar la aplicación <span class="text-white bg-warning redondeado"><a href="https://acrobat.adobe.com/la/es/mobile/scanner-app.html" target="_blank">“Adobe Scan”</a>.</span></li>
+                          <li>Todas las hojas deberán quedar orientadas en el mismo sentido y ordenadas de la misma forma que en el documento original.</li>
+                          <li>Si el documento original contiene foliatura, respetá el orden de las hojas. </li>
+                          <li>La calidad de las imágenes debe permitir apreciar el contenido correctamente.</li>
+
+                        </ul>
+
+
+
+                      </div>
                     </div>
-                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
-                    <input type="button" name="next" class="next-form btn btn-success" value="Enviar Documentación" />
+                    <div class="col-lg-12 border p-2 redondeado" style="height:150px;">
+                      <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-qrcode"></i></li> <p> Scaneá a <span class="color-celeste">24bits</span>y con una resolución de -	200 DPI para documentos compuestos exclusivamente por texto -	300 DPI en color para documentos con contenido grafico altamente significativo o cuando la legibilidad del documento pueda verse comprometida.</p>
+                    </div>
+                    <div class="col-lg-6 border p-2 redondeado" style="height:150px;">
+                      <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-adjust"></i></li> <p> Para el brillo y/o contraste, te recomendamos un valor de <span class="color-celeste">60/50</span>.</p>
+                    </div>
+                    <div class="col-lg-6 border p-2 redondeado" style="height:150px;">
+                      <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-file"></i></li> <p> Respetá el <span class="color-celeste">tamaño real </span>de la hoja del documento</p>
+                    </div>
+                    <div class="col-lg-6 border p-2 redondeado" style="height:150px;">
+                      <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-database"></i></li> <p> El tamaño del archivo no puede superar los <span class="color-celeste">80 MB</span>.</p>
+                    </div>
+                    <div class="col-lg-6 border p-2 redondeado" style="height:150px;"> <i class="icon icon-round icon-abbey-filled icon-lg-bigger far fa-eye"></i><br>En caso de que el resultado obtenido no se ajuste a los criterios enunciados y se dificulte su visualización, deberá optimizar la imagen.  </div>
 
+
+                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
+<input type="button" name="next" class="next-form btn btn-success" value="Siguiente" />
                     </fieldset>
 
 
-                    <fieldset>
-                      <div class="col-lg-12 " style="padding:10px">
-                        <h4> Enviando la misma al correo electrónico institucional del ROPyCE</h4>
-                        <p>ropyce.compraspublicas@cba.gov.ar o ropyce.compraspúblicas@gmail.com, firmada
-digitalmente por el titular o representante legal de la firma</p>
+<fieldset>
 
-                      </div>
-                    <div class="form-group col-lg-12" style="padding:10px">
-                      <h4>Ingresándola por Mesa de Entrada Digital (e-trámites) </h4>
-                      <p> Desde la cuenta “Ciudadano
-Digital” (CiDi) del titular o representante legal de la razón social, la que se entenderá
-suscripta por el usuario al que pertenece dicha firma electrónica. <br></p>
-</div> <br> <br>
-                    <p> <b> En ambos casos, la documentación deberá presentarse en formato PDF y con las especificaciones
-técnicas correspondientes, publicadas en el Portal Web.
-Cuando se trate de documentación emitida por escribanos públicos, la misma debe contar con la
-certificación respectiva y con la legalización por parte del Colegio de Escribanos de cada Provincia,
-cuando provengan de otra jurisdicción.</b></p>
-<br>
-<p><b> La presentación de la documentación con firma digital o electrónica, implica la declaración
-jurada por parte del interesado de que el contenido de la misma es fiel y auténtico.
-El ROPyCE se reserva el derecho a requerir la presentación de los originales a los fines de su
-compulsa y de iniciar las acciones administrativas, civiles y/o penales que pudieren
-corresponder, ante el supuesto de falsificación y/o adulteración de los documentos
-presentados. </b> </p>
-                    <input type="button" name="previous" class="previous-form btn btn-default" value="Anterior" />
-                    </fieldset>
+  <div class="col-lg-6 redondeado border" style="height:250px;">
+    <h4>Enviando la misma al correo electrónico institucional del ROPyCE</h4>
+    <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-envelope"></i><br>
+  <b>  ropyce.compraspublicas@cba.gov.ar o ropyce.compraspúblicas@gmail.com, </b>
+<div class="">
+  <p class="color-celeste">Firmada digitalmente por el titular o representante legal de la firma</p>
+
+</div>
+  </div>
+  <div class="col-lg-6 redondeado border" style="height:250px;">
+
+    <h4>Ingresándola por Mesa de Entrada Digital (e-trámites)</h4>
+<a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/12/Instructivo_Docu-por-e-tr%C3%A1mites.-.pdf" target="_blank"><img src="images/linkdeinteres/etramites.png" class="shadowh p-1" style="height:50px;border:1px solid grey; border-radius:5px;" alt=""></a>
+    <br>Desde la cuenta “Ciudadano Digital” (CiDi) del titular o representante legal de la razón social, la que se entenderá suscripta por el usuario al que pertenece dicha firma electrónica.
+  </div>
+
+<div class="col-lg-12 bg-celeste mt-2 p-2 redondeado">
+  <p class="text-white"> En ambos casos, la documentación deberá presentarse en formato PDF y con las especificaciones técnicas correspondientes, publicadas en el Portal Web. Cuando se trate de documentación emitida por escribanos públicos, la misma debe contar con la certificación respectiva y con la legalización por parte del Colegio de Escribanos de cada Provincia, cuando provengan de otra jurisdicción.</p> <br>
+
+
+</div>
+<div class="col-lg-12 p-2">
+  <p>La presentación de la documentación con firma digital o electrónica, implica la declaración jurada por parte del interesado de que el contenido de la misma es fiel y auténtico. El ROPyCE se reserva el derecho a requerir la presentación de los originales a los fines de su compulsa y de iniciar las acciones administrativas, civiles y/o penales que pudieren corresponder, ante el supuesto de falsificación y/o adulteración de los documentos presentados.</p>
+</div>
+</fieldset>
 
 
 
@@ -9704,6 +9760,94 @@ presentados. </b> </p>
 
             </div>
           </div>
+          <div class="cell-md-4 cell-lg-3 offset-top-50 offset-md-top-0 sidebarsa redondeado" id="sidebarsa">
+          <div class=" ">
+          <div class="offset-top-22 offset-md-top-30">
+
+                    <article class="post post-preview post-preview-inverse offset-top-22 shadowh"><a href="blog-post.html">
+                      <div class="unit unit-horizontal unit-spacing-lg">
+
+                        <div class="unit-body">
+                          <div class="post-header p-2">
+                            <p>Modificación de Datos</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      </a></article>
+
+                    <article class="post post-preview post-preview-inverse offset-top-22 shadowh"><a href="blog-post.html">
+                      <div class="unit unit-horizontal unit-spacing-lg">
+
+                        <div class="unit-body">
+                          <div class="post-header">
+                            <p>Solicitá el acceso a ComprasPúblicas</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      </a></article>
+                      <article class="post post-preview post-preview-inverse offset-top-22 shadowh"><a href="blog-post.html">
+                        <div class="unit unit-horizontal unit-spacing-lg">
+
+                          <div class="unit-body">
+                            <div class="post-header">
+                              <p>Registro de Antecedentes Técnicos</p>
+                            </div>
+
+                          </div>
+                        </div>
+                        </a></article>
+                        <article class="post post-preview post-preview-inverse offset-top-22 shadowh"><a href="blog-post.html">
+                          <div class="unit unit-horizontal unit-spacing-lg">
+
+                            <div class="unit-body">
+                              <div class="post-header">
+                                <p>Descargar Constancia de Inscripción</p>
+                              </div>
+
+                            </div>
+                          </div>
+                          </a></article>
+
+                    <article class="post post-preview post-preview-inverse offset-top-22 shadowh"><a href="normativa.html">
+                      <div class="unit  text-center justify-center">
+
+                        <div class="unit-body">
+                          <div class="post-header">
+                            <div class="fa fa-book pt-5"></div>
+                            <p class="pb-5">NORMATIVA ROPYCE</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      </a></article>
+                </div>
+          <hr>
+
+  <div class="bg-celeste boxshadow widget-importante text-center">
+    <h3 class=" text-white">CANALES DE ATENCIÓN</h3>
+    <ul class="text-white">
+
+      <div class="unit unit-horizontal unit-spacing-xs unit-middle offset-top-15">
+        <div class="unit-left"><span class="icon icon-xxs icon-primary fa fa-envelope-o offset-top-2"></span></div>
+        <div class="unit-body"><a class="link-white"><span >ropyce.compraspublicas@cba.gov.ar</span></a></div>
+        <div></div>
+      </div>
+      <div class="offset-top-22">
+        <div class="fb-page" data-href="https://www.facebook.com/ropycecba/" data-tabs="timeline" data-width="" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ropycecba/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ropycecba/">Ropyce - Registro Oficial de Proveedores y Contratistas del Estado</a></blockquote></div>
+      </div>
+    </ul>
+  </div>
+
+
+
+
+
+          <hr>
+          </div>
+          </div>
+
         </div>
 
 
