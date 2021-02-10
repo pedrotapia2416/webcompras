@@ -34516,8 +34516,7 @@ box-shadow: -4px 6px 72px -24px rgba(107,107,107,1);
 }
 
 .page-title-wrap {
-    background: #53aae0;
-    background-attachment: fixed;
+  background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,1)), url('../images/slides/1.png');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center 80%;
@@ -36930,8 +36929,12 @@ html .page .offset-top-120 {
 .link-image img {
     width: auto;
     transition: .44s all ease;
- filter:opacity(0.2);
+ filter:opacity(0.5);
  border-radius: 5px;
+}
+
+.link-image .text-white {
+   text-shadow: 1px 1px 1px black;
 }
 
 .link-image:hover img {
@@ -51661,6 +51664,16 @@ border-radius: 5px;
 @media (max-width:992px)
  {
   .findatos{
+    display: none;
+  }
+  .paramovil {
+    display: none;
+  }
+}
+@media (min-width:993px)
+ {
+
+  .paracompu {
     display: none;
   }
 }
