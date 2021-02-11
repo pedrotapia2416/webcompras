@@ -303,6 +303,24 @@ background-color: #0967e4 !important;
   background-position: center;
 
 }
+
+.bgcidi {
+
+  background-image: url(../images/bgcidi.png);
+  background-repeat: repeat-x;
+
+
+
+}
+
+.bgnormativa {
+
+  background-image: url(../images/normativa.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+}
 .bginstructivo {
 
   background-image: url(../images/bginstructivo.png);
@@ -12421,6 +12439,9 @@ address {
     background: #dedede;
     fill: #dedede;
 }
+.bg-white2 {
+    background: #ffffffe6;
+}
 
 .bg-gray-lighter {
     background: #f9f9f9;
@@ -12471,7 +12492,9 @@ address {
     background: #f2f3f7;
     fill: #f2f3f7;
 }
-
+.bg-celesteclaro{
+  background-color: #aecfe4;
+}
 .bg-cape-cod {
   -webkit-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
 -moz-box-shadow: 0px -15px 26px -6px rgba(0,0,0,0.38);
@@ -33610,6 +33633,11 @@ blockquote cite {
     transition: .33s all ease;
 }
 
+.post-header p{
+  font-size: medium;
+    line-height: initial;
+    text-transform: uppercase;
+}
 .post-preview .list-meta > li {
     display: inline-block;
     font-size: 15px;
