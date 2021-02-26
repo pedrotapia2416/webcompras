@@ -32524,8 +32524,9 @@ p + p {
 .pagination-custom li:last-child a {
     padding-left: 25px;
     padding-right: 25px;
-    color: #060f15;
-    border-color: #060f15;
+    color: #004d9a;
+    border-color: #004d9a;
+    border-radius: 5px;
 }
 
 .pagination-custom li a {
@@ -32552,15 +32553,17 @@ p + p {
 .pagination-custom li a,
 .pagination-custom li a:active,
 .pagination-custom li a:focus {
-    color: #000;
     background: transparent;
-    border-color: #cdcdcd;
+
+    color: #004d9a;
+    border-color: #004d9a;
+    border-radius: 5px;
 }
 
 .pagination-custom li a:hover {
     color: #fff;
-    background: #060f15;
-    border-color: #060f15;
+    background: #004d9a;
+    border-color: #fff;
 }
 
 .pagination-custom li.disabled,
@@ -32570,8 +32573,8 @@ p + p {
 
 .pagination-custom li.active a {
     color: #fff;
-    background: #060f15;
-    border-color: #060f15;
+    background: #004d9a;
+    border-color: #004d9a;
 }
 
 .pagination-custom li.disabled a {
