@@ -28565,7 +28565,7 @@ form.label-outside .form-validation {
 
 .page .form-modern .form-control,
 .page .form-modern .form-label {
-    color: rgba(0, 0, 0, 0.5);
+    color: #000;
 }
 
 .page .form-modern input {
@@ -28581,7 +28581,7 @@ form.label-outside .form-validation {
     padding: 6px 0;
     border-radius: 0;
     border-width: 0 0 1px 0;
-    border-color: #dedede;
+    border-color: #000;
     background-color: transparent;
 }
 
