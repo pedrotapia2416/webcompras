@@ -8923,7 +8923,7 @@ form {
 @media (min-width: 1200px) {
     .shell,
     .shell-wide {
-        max-width: 1160px;
+        max-width: 1100px;
     }
 }
 
@@ -33147,7 +33147,7 @@ blockquote cite {
 
 .icon-box .box-header {
     bottom: 0;
-    background: #f2f3f7;
+    background: #fff;
 }
 
 .text-blue{
@@ -45970,7 +45970,7 @@ html.rd-navbar-sidebar-linked body {
 
 @media (min-width: 1200px) {
     .rd-navbar-corporate-dark.rd-navbar-static .rd-navbar-nav > li > a {
-        font-size: 15px;
+        font-size: 11px;
     }
     .rd-navbar-corporate-dark.rd-navbar-static .rd-navbar-nav > li + li {
         margin-left: 29px;
