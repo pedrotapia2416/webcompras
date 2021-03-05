@@ -12136,7 +12136,9 @@ h6,
 .text-small-16 {
     font-size: 15px;
 }
-
+.ext-small-16 .text-uppercase{
+  color:#00a7e5 !important;
+}
 .h3-variant-2 {
     font-size: 36px;
     line-height: 1.2;
