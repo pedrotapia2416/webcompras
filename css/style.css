@@ -39335,7 +39335,6 @@ dt {
     right: 0;
     z-index: 2;
     width: 70px;
-    background: #060f15;
     border-radius: 0 6px 0 0;
     transition: 1.3s all ease;
 }
@@ -39348,7 +39347,7 @@ dt {
     z-index: 4;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: #fff;
+    background: #3479c1;
 }
 
 .panel-corporate .panel-arrow:before {
@@ -51585,7 +51584,7 @@ margin-top:-450px;display:block;}
 }
 
 .bg-celeste {
-  background-color: #004d9a  !important;
+  background-color: #3479c1    !important;
 }
 
 .redondeado {
