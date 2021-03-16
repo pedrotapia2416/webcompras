@@ -33266,7 +33266,7 @@ blockquote cite {
 
 .block-image-plate .block-inner {
     position: relative;
-    padding: 45px 30px;
+    padding: 15px 15px;
 }
 
 .block-image-plate .block-inner:after {
@@ -33277,7 +33277,7 @@ blockquote cite {
     bottom: 0;
     left: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
 
 .block-image-plate .block-inner > * {
@@ -33309,7 +33309,7 @@ blockquote cite {
         line-height: 1.2;
     }
     .block-image-plate .block-inner {
-        padding: 60px 12.5% 60px 8.33333%;
+        padding: 15px;
     }
     .block-image-plate .block-body {
         display: -ms-flexbox;
@@ -33354,8 +33354,8 @@ blockquote cite {
     }
     .block-image-plate .block-inner {
         padding-right: 16%;
-        padding-top: 90px;
-        padding-bottom: 95px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 

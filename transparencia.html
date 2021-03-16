@@ -42,7 +42,7 @@ $('a[href^="#"]').click(function() {
         <div class="rd-navbar-inner ">
           <div class="rd-navbar-aside ">
             <div data-custom-toggle=".rd-navbar-aside" data-custom-toggle-disable-on-blur="true" class="rd-navbar-aside-toggle"><span></span></div>
-            <div class="rd-navbar-aside-content context-dark ">
+            <div class="rd-navbar-aside-content     ">
               <ul class="rd-navbar-aside-group list-units">
                 <li>
                   <div class="unit unit-horizontal unit-spacing-xs">
@@ -54,7 +54,7 @@ $('a[href^="#"]').click(function() {
                   <div class="unit unit-horizontal unit-spacing-xs">
                     <div class="unit-left"><span class="icon icon-xxs icon-gray-base fa-clock-o offset-top-2"></span></div>
                     <div class="unit-body">
-                      <p class="text-white">Lunes – Viernes: 8:00am–20:00pm</p>
+                      <p class="link-white-v2">Lunes – Viernes: 8:00am–20:00pm</p>
                     </div>
                   </div>
                 </li>
@@ -94,12 +94,16 @@ $('a[href^="#"]').click(function() {
                   <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="rd-navbar-search-toggle"></button>
                 </div>
                 <ul class="rd-navbar-nav">
-                  <li><a href="institucional.html">Institucional</a> </li>
+                  <li><a href="institucional.html">Institucional</a>
+                  <ul class="rd-navbar-dropdown">
+                    <li><a href="institucional.html">Nosotros</a> </li>
+                    <li><a href="transparencia.html">Transparencia</a> </li>
+                  </ul></li>
                   <li><a href="normativa.html"> <i class="fa fa-book"></i> Normativa</a>
                     <ul class="rd-navbar-dropdown">
-                      <li><a href="normativa.html">Leyes y Decretos</a> </li>
-                      <li><a href="normativa.html">Resoluciones de la DGCyC</a> </li>
-                      <li><a href="normativa.html">Otras normas de referencia</a> </li>
+                      <li><a href="leyesydecretos.html">Leyes y Decretos</a> </li>
+                      <li><a href="resoluciones.html">Disposiciones de la DGCyC</a> </li>
+                      <li><a href="otrasnormativas.html">Otras normas de referencia</a> </li>
                     </ul>
                   </li>
                   <li><a href="#"><i class="fa fa-question-circle"></i> Ayuda</a>
@@ -112,7 +116,7 @@ $('a[href^="#"]').click(function() {
                   <li><a href="novedades.html">Novedades</a> </li>
 
                   <li><a href="contacto.html">contacto</a> </li>
-                  <li style="cursor:pointer;" class="btncidi"> <a class="" type="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> <img src="images/cidi.png" alt="" width="50px">Ingresá</a> </li>
+                  <li style="cursor:pointer;" class="btncidi"> <a href="https://cidi.cba.gov.ar/portal-publico/?app=25" target="_blank"> <img src="images/cidi.png" alt="" width="50px">Ingresá</a> </li>
 
                 </ul>
 
@@ -122,31 +126,7 @@ $('a[href^="#"]').click(function() {
 
           </div>
         </div>
-        <div class="collapse" id="collapseExample">
-        <div class="card card-body bg-celeste" >
-        <div class="row text-white text-center" style="vertical-align:middle">
-          <div class="col-lg-4 cidicard">
-            <h3>¿QUÉ ES CIUDADANO DIGITAL?:</h3>
-            <p>Es una plataforma tecnológica que te permite acceder de forma simple a todos los trámites y servicios digitales del Gobierno de la Provincia de Córdoba.</p>
-          </div>
-          <div class="col-lg-4 cidicard">
-            <h3>NIVEL DE ACCESO 2:</h3>
 
-            <p>Es necesario para realizar las gestiones en ComprasPúblicas. Te permitirá acceder a una mayor cantidad de servicios web, digitalizar documentación y otros. <br>
-           </p>	<div type="button" class="btn btn-warning" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/acceso#nivel2" target="_blank">Más Información</a></div>
-          </div>
-          <div class="col-lg-4 cidicard" style="display:block; margin:auto">
-
-            <img src="images/cidifoto.jpg"  width="129" height="129" alt="" class="img-circle"> <br>
-            <div type="button" class="btn btn-warning" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/?app=25" target="_blank" > Iniciá sesión</a>
-            </div>
-
-          </div>
-
-        </div>
-
-        </div>
-        </div>
       </nav>
     </div>
 
@@ -161,24 +141,190 @@ $('a[href^="#"]').click(function() {
       </div>
     </section>
 
-    <section class="section-60 section-sm-90 section-lg-bottom-120 ">
-      <div class=" text-center ">
-        <h4 class=" text-bold text-uppercase">#datos</h4>
-        <h3 class="offset-top-2"><span class="text-thin">Compras Públicas</span> 2021 </h3>
-        <p class="text-white"></p>
-        <div class="range offset-top-60 list-md-dashed justify-center bg-iron redondeado border p-3">
-<iframe class="redondeado shadowh" width="80%" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ca3d5927-512a-4acf-9945-daf5b9ba7729&autoAuth=true&ctid=ec6e7548-fce3-4f44-966a-f47a0f125a81&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+    <section class="section-lg-bottom-120 shell">
+      <div class="range  ">
+        <div class="cell-md-4 cell-lg-4 offset-top-40">
+          <img src="images/transparencia/0.png" alt="" class="shadowh">
         </div>
+
+        <div class="cell-md-4 cell-lg-4 offset-top-40">
+          <img src="images/transparencia/1.png" alt="" class="shadowh">
+        </div>
+
+        <div class="cell-md-4 cell-lg-4 offset-top-40">
+          <img src="images/transparencia/2.png" alt="" class="shadowh">
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="shell">
+        <div class="range">
+<div class="cell-xs-12 section-10">
+  <h3 class="justify-center text-center" >9028 <span class="text-thin">accesos e inscripciones</span></h3> <br>
+
+</div>
+          <div class="cell-xs-6">
+
+
+              <div class="range">
+
+                <div class="cell-sm-12 offset-top-30 offset-sm-top-0"><a href="#" class="block-vacation">
+                  <h6 class="text-big-19">3305 de estos, tienen participación de mujeres. <br> Implica un 36,61%.  </h6>
+
+                  </a> </div>
+                <div class="cell-sm-12 offset-top-30"><a href="#" class="block-vacation">
+                  <h6 class="text-big-19">2.919 tiene una participación en cargos; <br> mientras 396 son accionistas, socias o asociadas</h6>
+
+                  </a> </div>
+                <div class="cell-sm-12 offset-top-30"><a href="#" class="block-vacation">
+                  <h6 class="text-big-19">En cuestión de género y acciones que disminuyan la brecha entre estos…: <br>
+El Ministerio de Promoción del Empleo y de la Economía Familiar, realizó 80 Órdenes de Compra con destino/a nombre de mujeres y sobre contrataciones que se vinculan indirectamente a cumplir con el Objetivo de Desarrollo Sostenible 5 (ODS 5: Igualdad de género)
+</h6>
+
+                  </a> </div>
+
+
+              </div>
+          </div>
+          <div class="cell-xs-6">
+            <img src="images/transparencia/3.png" alt="" class="shadowh">
+
+          </div>
+        </div>
+
 
       </div>
     </section>
+
+    <section class="">
+          <div class="shell">
+            <div class="range">
+              <div class="cell-xs-12 section-50">
+                <h3 class="justify-center text-center">Partidas y  <span class="text-thin">Unidades Administrativas:</span></h3> <br>
+
+              </div>
+            </div>
+            <div class="range">
+              <div class="cell-xs-12">
+                <ul class="list-blocks">
+                  <li style="background-color:#0055a2;" class="redondeado block-image-plate bg-gray-base bg-image">
+                    <div class="block-inner">
+                      <div class="block-header">
+                        <h5 class="text-none">Partida (PP) 2 = BIENES DE CONSUMO</h5>
+                      </div>
+                      <div class="block-body">
+                        <div class="block-left">
+                        </div>
+                        <div class="block-text">
+                          <p>Materiales y suministros consumibles para el funcionamiento de los entes estatales. Incluye los destinados a conservación y reparación de bienes de capital y los adquiridos para su transformación y/o enajenación ulterior por aquellas entidades que  desarrollan actividades de carácter comercial, industrial y/o servicios</p>
+                          <p>44 contrataciones. 27 fueron del Ministerio de Salud, realizadas por Subasta Electrónica (17) y Directa electrónica por monto (8)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li style="background-color:#0055a2;" class="block-image-plate bg-gray-base bg-image">
+                    <div class="block-inner">
+                      <div class="block-header">
+                        <h5 class="text-none">PP 3 = SERVICIOS NO PERSONALES</h5>
+                      </div>
+                      <div class="block-body">
+                        <div class="block-left">
+                        </div>
+                        <div class="block-text">
+                          <p>Servicios para el funcionamiento de los entes estatales. Comprende: servicios básicos arrendamiento de edificios, terrenos y equipos, servicios de mantenimiento, limpieza y reparación, servicios profesionales, técnicos y operativos, publicidad e impresión, servicios comerciales y financieros. Inclusive los servicios que se destinan a conservación y reparación de bienes de capital y los utilizados en los procesos productivos por las entidades que desarrollan actividades de carácter comercial, industrial o servicios.</p>
+                          <p>22 contrataciones. 5 fueron de la Secretaría General de Gobernación, por Subasta Electrónica. </p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li style="background-color:#0055a2;" class="block-image-plate bg-gray-base bg-image">
+                    <div class="block-inner">
+                      <div class="block-header">
+                        <h5 class="text-none">PP 8 = PRESTACIONES DE LA SEGURIDAD SOCIAL </h5>
+                      </div>
+                      <div class="block-body">
+                        <div class="block-left">
+                        </div>
+                        <div class="block-text">
+                          <p>Erogaciones vinculadas con prestaciones previsionales y de la obra social estatal.</p>
+                          <p>5 Contrataciones por Apross. Directa electrónica por monto.</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li style="background-color:#0055a2;" class="block-image-plate bg-gray-base bg-image">
+                    <div class="block-inner">
+                      <div class="block-header">
+                        <h5 class="text-none">PP 10 = TRANSFERENCIAS PARA EROGACIONES DE CAPITAL</h5>
+                      </div>
+                      <div class="block-body">
+                        <div class="block-left">
+                        </div>
+                        <div class="block-text">
+                          <p>Erogaciones que no requieren contraprestación de bienes o servicios, cuyos importes no serán reintegrados y serán destinados por sus beneficiarios a gastos de capital</p>
+                          <p>2 Contrataciones del Ministerio de Promoción del Empleo y de la economía familiar (Subasta Electrónica) y del Ministerio de Desarrollo Social (Compulsa Abreviada)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li style="background-color:#0055a2;" class="block-image-plate bg-gray-base bg-image">
+                    <div class="block-inner">
+                      <div class="block-header">
+                        <h5 class="text-none">PP 11 = BIENES DE CAPITAL</h5>
+                      </div>
+                      <div class="block-body">
+                        <div class="block-left">
+                        </div>
+                        <div class="block-text">
+                          <p>Adquisición de bienes físicos que aumentan el activo de las entidades del Sector Público, no se agotan en el primer uso, tienen una duración superior a un año, están sujetos a depreciación y en general son inventariables. Incluye los Activos Intangibles.</p>
+                          <p>19 contrataciones. 6 del Ministerio de Salud (Directa Electrónica por Naturaleza y subastas) y 4 del Ministerio de Educación (Subasta)</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li style="background-color:#0055a2;" class="block-image-plate bg-gray-base bg-image">
+                    <div class="block-inner">
+                      <div class="block-header">
+                        <h5 class="text-none">PP 12 = TRABAJOS PÚBLICOS </h5>
+                      </div>
+                      <div class="block-body">
+                        <div class="block-left">
+                        </div>
+                        <div class="block-text">
+                          <p>Ejecución de obras públicas por administración o por medio de terceros que implica un incremento del patrimonio del Estado Provincial. Comprende los gastos en estudios, personal, bienes y el pago a contratistas. Incluye la construcción y conservación del equipamiento necesario para habilitarlas y las erogaciones en bienes de capital exclusivamente cuando sean necesarios para su ejecución o su habilitación integral</p>
+                          <p>9 contrataciones, 4 del Ministerio de Salud (Subasta) y 4 del ministerio de Obra Pública (Licitación Digital y Subasta). 1 del Ministerio de Promoción del Empleo</p>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+
+
+            </div>
+          </div>
+        </section>
+
+
+
   </main>
 
 
 
 
   <footer class=" ">
-    <section class="tiracolorescompras">
+    <section class=" tiracoloresgobierno ">
       <div class="shell">
         <div class="range">
 
@@ -186,21 +332,21 @@ $('a[href^="#"]').click(function() {
         </div>
         <div class="range offset-top-40">
 
-          <div class="cell-md-12 cell-lg-12 offset-top-40 offset-md-top-0 ocultarencelu">
+          <div class="cell-md-12 cell-lg-12 offset-top-40 offset-md-top-0">
             <div class="range shift-md-top-1 justify-center">
-              <div class="cell-xs-2 cell-sm-2">
+              <div class="cell-xs-6 cell-sm-2">
                 <div class="link-image-wrap"><a href="https://legislaturacba.gob.ar/ " target="_blank" class="link-image2"><img src="images/linkdeinteres/legislatura.png" alt="" width="150" height="83"/></a></div>
               </div>
-              <div class="cell-xs-2 cell-sm-2 offset-top-30 offset-xs-top-0">
+              <div class="cell-xs-6 cell-sm-2 offset-top-30 offset-xs-top-0">
                 <div class="link-image-wrap"><a href="https://boletinoficial.cba.gov.ar/ " target="_blank" class="link-image2"><img src="images/linkdeinteres/bo.png" alt="" width="150" height="83"/></a></div>
               </div>
-              <div class="cell-xs-2 cell-sm-2 offset-top-30 offset-sm-top-0">
+              <div class="cell-xs-6 cell-sm-2 offset-top-30 offset-sm-top-0">
                 <div class="link-image-wrap"><a href="https://www.rentascordoba.gob.ar/inicio/ "  target="_blank" class="link-image2"><img src="images/linkdeinteres/rentas.png" alt="" width="141" height="88"/></a></div>
               </div>
-              <div class="cell-xs-2 cell-sm-2 offset-top-30 offset-sm-top-0">
+              <div class="cell-xs-6 cell-sm-2 offset-top-30 offset-sm-top-0">
                 <div class="link-image-wrap"><a href="https://ipj.cba.gov.ar/"  target="_blank" class="link-image2"><img src="images/linkdeinteres/ipj.png" alt="" width="138" height="55"/></a></div>
               </div>
-              <div class="cell-xs-2 cell-sm-2">
+              <div class="cell-xs-6 cell-sm-2">
                 <div class="link-image-wrap"><a href="http://web2.cba.gov.ar/web/leyes.nsf/fri?OpenForm " target="_blank" class="link-image2"><img src="images/linkdeinteres/legislacion.png" alt="" width="132" height="83"/></a></div>
               </div>
 
@@ -210,7 +356,7 @@ $('a[href^="#"]').click(function() {
       </div>
 
     </section>
-    <section class=" page-foot section-40 section-sm-75 bg-cloud-burst context-dark">
+    <section class=" page-foot section-40 section-sm-75 bg-cape-cod    ">
       <div class="shell">
         <div class="range range-xs-center">
           <div class="cell-xs-9 cell-sm-11 cell-lg-12">
