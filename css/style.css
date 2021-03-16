@@ -39302,7 +39302,7 @@ dt {
 .panel-corporate .panel-title a {
     position: relative;
     z-index: 1;
-    padding: 7px 82px 7px 32px;
+    padding: 17px 82px 17px 32px;
     font: 500 18px/24px "Trasandina", Helvetica, Arial, sans-serif;
     color: #000;
     transition: 1.3s all ease;
@@ -39365,7 +39365,7 @@ dt {
 .panel-corporate .panel-collapse {
     position: relative;
     z-index: 2;
-    color: rgba(0, 0, 0, 0.5);
+    color: #000000c2;
     border-radius: 0 0 6px 6px;
 }
 

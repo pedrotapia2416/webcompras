@@ -91,7 +91,7 @@ $('#selectCategory').change(function(){
         <div class="rd-navbar-inner ">
           <div class="rd-navbar-aside ">
             <div data-custom-toggle=".rd-navbar-aside" data-custom-toggle-disable-on-blur="true" class="rd-navbar-aside-toggle"><span></span></div>
-            <div class="rd-navbar-aside-content context-dark ">
+            <div class="rd-navbar-aside-content     ">
               <ul class="rd-navbar-aside-group list-units">
                 <li>
                   <div class="unit unit-horizontal unit-spacing-xs">
@@ -103,7 +103,7 @@ $('#selectCategory').change(function(){
                   <div class="unit unit-horizontal unit-spacing-xs">
                     <div class="unit-left"><span class="icon icon-xxs icon-gray-base fa-clock-o offset-top-2"></span></div>
                     <div class="unit-body">
-                      <p class="text-dark">Lunes – Viernes: 8:00am–20:00pm</p>
+                      <p class="link-white-v2">Lunes – Viernes: 8:00am–20:00pm</p>
                     </div>
                   </div>
                 </li>
@@ -143,12 +143,16 @@ $('#selectCategory').change(function(){
                   <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="rd-navbar-search-toggle"></button>
                 </div>
                 <ul class="rd-navbar-nav">
-                  <li><a href="institucional.html">Institucional</a> </li>
+                  <li><a href="institucional.html">Institucional</a>
+                  <ul class="rd-navbar-dropdown">
+                    <li><a href="institucional.html">Nosotros</a> </li>
+                    <li><a href="transparencia.html">Transparencia</a> </li>
+                  </ul></li>
                   <li><a href="normativa.html"> <i class="fa fa-book"></i> Normativa</a>
                     <ul class="rd-navbar-dropdown">
-                      <li><a href="normativa.html">Leyes y Decretos</a> </li>
-                      <li><a href="normativa.html">Resoluciones de la DGCyC</a> </li>
-                      <li><a href="normativa.html">Otras normas de referencia</a> </li>
+                      <li><a href="leyesydecretos.html">Leyes y Decretos</a> </li>
+                      <li><a href="resoluciones.html">Disposiciones de la DGCyC</a> </li>
+                      <li><a href="otrasnormativas.html">Otras normas de referencia</a> </li>
                     </ul>
                   </li>
                   <li><a href="#"><i class="fa fa-question-circle"></i> Ayuda</a>
@@ -162,7 +166,7 @@ $('#selectCategory').change(function(){
                   <li><a href="novedades.html">Novedades</a> </li>
 
                   <li><a href="contacto.html">contacto</a> </li>
-                  <li style="cursor:pointer;" class="btncidi"> <a class="" type="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> <img src="images/cidi.png" alt="" width="50px">Ingresá</a> </li>
+                  <li style="cursor:pointer;" class="btncidi"> <a href="https://cidi.cba.gov.ar/portal-publico/?app=25" target="_blank"> <img src="images/cidi.png" alt="" width="50px">Ingresá</a> </li>
 
                 </ul>
 
@@ -172,32 +176,7 @@ $('#selectCategory').change(function(){
 
           </div>
         </div>
-        <div class="collapse" id="collapseExample">
-        <div class="card card-body bgcidi" >
-        <div class="row  text-center " style="vertical-align:middle">
-          <div class="col-lg-4 cidicard bg-white2 redondeado">
-            <h3 class="">¿QUÉ ES CIUDADANO DIGITAL?</h3>
-            <p class="">Es una plataforma tecnológica que te permite acceder de forma simple a todos los servicios digitales del Gobierno de la Provincia de Córdoba.</p>
-          </div>
-          <div class="col-lg-4 cidicard bg-white2 redondeado">
-            <h3 class="">NIVEL 2</h3>
 
-            <p class="">Implica una validación de tu identidad. Es condición para realizar tus gestiones en ComprasPúblicas, además de que podrás acceder a mayores servicios web, entregar documentación digitalizada y otros.
- <br>
-           </p>	<div type="button" class="btn btn-warning" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/acceso#nivel2" target="_blank">Más Información</a></div>
-          </div>
-          <div class="col-lg-4 cidicard" style="display:block; margin:auto">
-
-            <img src="images/cidifoto.jpg"  width="129" height="129" alt="" class="img-circle"> <br>
-            <div type="button" class="btn btn-warning" name="button"><a href="https://cidi.cba.gov.ar/portal-publico/?app=25" target="_blank" > Iniciá sesión</a>
-            </div>
-
-          </div>
-
-        </div>
-
-        </div>
-        </div>
       </nav>
     </div>
 
@@ -9725,26 +9704,37 @@ O<br />
 </a>
 </div>
 
-    <div class=" col-lg-12 m-5">
-      <h4 class=" bg-celeste text-white p-3 text-uppercase m-2">¿Cómo enviarla?</h4>
+<div class=" col-lg-12">
+  <h4 class=" bg-celeste text-white  text-uppercase p-3 m-2">¿Cómo enviarla?</h4>
 
-    </div>
+</div>
+<div class="col-lg-6  p-3" >
 
-    <div class="col-lg-6 border redondeado " style="height:100%;">
-      <h4>Con FIRMA DIGITAL a nuestra casilla:
-</h4>
-      <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-envelope"></i><br>
-    <b>ropyce.compraspublicas@gmail.com </b>
+<h4 class="">Con FIRMA DIGITAL a nuestra casilla: </h4>
+<div class="col-lg-12 p-3 text-center" >
 
-    </div>
+  <i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-envelope "></i><br>
+<b>ropyce.compraspublicas@gmail.com </b>
 
-    <div class="col-lg-6 border redondeado " style="height:auto;">
+</div>
+</div>
 
-      <h4>Por E-TRÁMITES, desde la cuenta CiDi del titular o Representante Legal. <br>Luego enviá el número de sticker generado a la casilla de ROPyCE. </h4>
+<div class="col-lg-6 p-3">
+  <p>
+  Mirá como obtener la frma digital en:
+    <a href="https://www.cba.gov.ar/solicitud-de-certificado-de-firma-digital/" target="_blank">Córdoba - Secretaria General de la Gobernación </a>
+    <a href="https://www.argentina.gob.ar/jefatura/innovacion-publica/administrativa/firmadigital/firmadigitalremota" target="_blank">Jefatura de Gabinete de Ministros</a>
 
-  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/12/Instructivo_Docu-por-e-tr%C3%A1mites.-.pdf" target="_blank"><img src="images/linkdeinteres/etramites.png" class="shadowh p-1" style="height:50px;border:1px solid grey; border-radius:5px;" alt=""><br>Acá te mostramos cómo hacerlo. </a> <br>
+</p>
+</div>
+<hr>
+<div class="col-lg-12 p-3 " >
 
-    </div>
+  <h4>Por E-TRÁMITES, desde la cuenta CiDi del titular o Representante Legal. <br>Luego enviá el nro de sticker a la casilla de ROPyCE. </h4>
+
+<a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/12/Instructivo_Docu-por-e-tr%C3%A1mites.-.pdf" target="_blank"><img src="images/linkdeinteres/etramites.png" class="shadowh p-1" style="height:50px;border:1px solid grey; border-radius:5px;" alt=""><br>Acá te mostramos cómo hacerlo. </a> <br>
+
+</div>
   </div>
 
   <p>
