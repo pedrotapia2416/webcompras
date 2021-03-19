@@ -44543,9 +44543,10 @@ html:not(.lt-ie10) .not-animated {
     font-family: 'FontAwesome';
     font-size: 15px;
     line-height: inherit;
-    color: #060f15;
+    color: #e7bc3d;
     opacity: 0;
     visibility: hidden;
+    padding: 2px 2px 5px 5px;
 }
 
 .rd-navbar-static .rd-navbar-dropdown > li > a:hover,
@@ -44585,8 +44586,12 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-static .rd-navbar-list > li > a:hover,
 .rd-navbar-fullwidth .rd-navbar-dropdown > li > a:hover,
 .rd-navbar-fullwidth .rd-navbar-list > li > a:hover {
-    color: #060f15;
-    background: transparent;
+    color: #fff;
+    background: #5b99da;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 2px;
+    border-radius: 5px;
 }
 
 .rd-navbar-static .rd-navbar-dropdown > li + li,
@@ -44687,7 +44692,7 @@ html:not(.lt-ie10) .not-animated {
     max-width: 1200px;
     margin-top: 27px;
     text-align: left;
-    background: #fff;
+    background: #ffffffe8;
 }
 
 .rd-navbar-static .rd-navbar-megamenu > li,
