@@ -21,9 +21,81 @@
 <link rel="stylesheet" type="text/css" href="css/css.css?family=Roboto:100,300,400,500,700%7CPlayfair+Display:400,700,700i,900,900i">
 <link rel="stylesheet" href="css/style.css">
 
+<script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(112158)</script>
 
-<script src="https://kit.fontawesome.com/e25f6e1d42.js" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+$(function(){
+var $tabla = $('#tabla');
+
+$('#selectCategory').change(function(){
+  var value = $(this).val();
+  if (value){
+    $('tbody tr.' + value, $tabla).show();
+    $('tbody tr:not(.' + value + ')', $tabla).hide();
+  }
+  else{
+    // Se ha seleccionado All
+    $('tbody tr', $tabla).show();
+  }
+});
+});
+</script>
+
+<style type="text/css">
+    #register_form fieldset:not(:first-of-type) {
+    display: none;
+    }
+</style>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+      var form_count = 1, previous_form, next_form, total_forms;
+      total_forms = $("fieldset").length;
+      $(".next-form").click(function(){
+      previous_form = $(this).parent();
+      next_form = $(this).parent().next();
+      next_form.show();
+      previous_form.hide();
+      setProgressBarValue(++form_count);
+      });
+      $(".previous-form").click(function(){
+      previous_form = $(this).parent();
+      next_form = $(this).parent().prev();
+      next_form.show();
+      previous_form.hide();
+      setProgressBarValue(--form_count);
+      });
+      setProgressBarValue(form_count);
+      function setProgressBarValue(value){
+      var percent = parseFloat(100 / total_forms) * value;
+      percent = percent.toFixed();
+      $(".progress-bar")
+      .css("width",percent+"%")
+      .html(percent+"%");
+      }
+      // Handle form submit and validation
+      $( "#register_form" ).submit(function(event) {
+      var error_message = '';
+      if(!$("#email").val()) {
+      error_message+="Please Fill Email Address";
+      }
+      if(!$("#password").val()) {
+      error_message+="<br>Please Fill Password";
+      }
+      if(!$("#mobile").val()) {
+      error_message+="<br>Please Fill Mobile Number";
+      }
+      // Display error if any else submit form
+      if(error_message) {
+      $('.alert-success').removeClass('hide').html(error_message);
+      return false;
+      } else {
+      return true;
+      }
+      });
+      });
+</script>
 
 </head>
 <body style="">
@@ -128,280 +200,240 @@
 
 
   <main class="page-content">
-
-    <section class="section-30 section-sm-40 section-md-66  bg-gray-dark page-title-wrap">
+    <section class="section-30 section-sm-40 section-md-66 section-lg-bottom-90 bg-gray-dark page-title-wrap">
       <div class="shell">
         <div class="page-title">
-          <h2>#Servicios  <span class="text-thin">Administrativos</span></h2>
+          <h2>#INSTRUCTIVOS</h2>
         </div>
       </div>
+    </section>
+    <section class="shell ">
 
     </section>
 
-
-    <section style="background-image: url(images/slider2b.png); background-position:top; background-attachment:fixed" class="p-5 bg-white bg-image bg-image-1">
-        <div class="shell">
-          <div class="range range-xs-center range-md-left">
-
-            <div class="cell-sm-12 cell-md-6 cell-lg-5 mt-5 p-5 text-white">
-              <h3 class="text-white">¡Bienvenidos !</h3>
-              <div class="offset-top-40">
-                <p class="text-justify">En esta sección tendrás acceso a información que te permitirá coner más sobre las <b>contrataciones públicas,</b> las características del catálogo de bienes y servicios, y la normativa que rige la instrumentación de los procedimientos existentes.</p>
-                 </div>
-            </div>
-
-            <div class="cell-sm-12 cell-md-6 cell-lg-6 range">
-
-              <div  class="cell-sm-12 cell-md-12 cell-lg-12 ">
-              </div>
-
-              <div class="cell-sm-12 cell-md-6 cell-lg-6 ">
-                <article class="icon-box ">
-                  <a href="blog-post.html">
-                  <div class="box-top shadowh p-3 bg-verde">
-                    <img src="images/novedades/4.png" alt="" style="width:100%">
-                    <h4 class="text-white  text-uppercase"> <br>Nuevo buscador para el Catálogo de bienes y servicios</h4>
-
-
-
-                  </div>
-
-                </a>
-          </article>
-            </div>
-            <div class="cell-sm-12 cell-md-6 cell-lg-6 ">
-              <article class="icon-box ">
-                <a href="blog-post.html">
-                <div class="box-top shadowh p-3 bg-verde">
-                  <img src="images/novedades/6.png" alt="" style="width:100%">
-                  <h4 class="text-white  text-uppercase">Presentamos las primeras recomendaciones para el armado de expedientes</h4>
-
-
-
-                </div>
-
-              </a>
-        </article>
-          </div>
-            </div>
-
-
-
-
-
-          </div>
-        </div>
-      </section>
-
-
-    <section class="shell ">
+    <section class="shell section-30 section-sm-40">
       <div class="range">
 
-      <div class="cell-md-12 cell-lg12">
+      <div class="cell-md-8 cell-lg-8">
 
-      <div class="range range-condensed range-xs-center range-sm-left">
-        <div class="cell-xs-12 cell-sm-6 cell-md-3 ">
-
-          <article class="icon-box ">
-            <a href="proceso-de-cotizacion.html">
-            <div class="box-top shadowh p-3">
-              <div class="box-icon"><span class="i"><i class="fas fa-project-diagram icon icon-tundora icon-lg"></i></span></div>
-              <div class="box-header offset-top-30">
-              </div>
-
-            </div>
-            <div class="bg-celeste p-3 redondeado shadowh">
-              <h4 class="text-white text-uppercase"> proceso de contratación</h4>
-
-            </div>
-
-          </a>
-    </article>
-          </div>
-          <div class="cell-xs-12 cell-sm-6 cell-md-3 ">
-
-            <article class="icon-box ">
-              <a href="catalogo.html">
-              <div class="box-top shadowh p-3 ">
-                <div class="box-icon"><span class="i"><i class="fas fa-search icon icon-tundora icon-lg"></i></span></div>
-                <div class="box-header offset-top-30">
-                </div>
-
-              </div>
-              <div class="bg-celeste p-3 redondeado shadowh">
-                <h4 class="text-white text-uppercase"> catálogo de bienes y servicios</h4>
-
-
-              </div>
-
-            </a>
-    </article>
-            </div>
-            <div class="cell-xs-12 cell-sm-6 cell-md-3 ">
-
-              <article class="icon-box ">
-                <a href="roles-suaf.html">
-                <div class="box-top shadowh p-3 ">
-                  <div class="box-icon"><span class="i"><i class="fas fa-users-cog icon icon-tundora icon-lg"></i></span></div>
-                  <div class="box-header offset-top-30">
-                  </div>
-
-                </div>
-                <div class="bg-celeste p-3 redondeado shadowh">
-                  <h4 class="text-white text-uppercase">Roles suaf</h4>
-
-
-                </div>
-
-              </a>
-    </article>
-              </div>
-              <div class="cell-xs-12 cell-sm-6 cell-md-3 ">
-
-                <article class="icon-box ">
-                  <a href="login.html">
-                  <div class="box-top shadowh p-3">
-                    <div class="box-icon"><span class="i"><i class="far fa-comments icon icon-tundora icon-lg"></i></span></div>
-                    <div class="box-header  offset-top-30 ">
+        <div class="col-lg-12 p-3 redondeado bg-athens-lighten offset-top-50"> <h3>Instructivos Destacados</h3>
+          <article class="post post-preview post-preview-inverse offset-top-22"><a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/08/Instrc-CiDi-2-Listo..pdf" target="_blank">
+                    <div class="unit unit-horizontal unit-spacing-lg">
+                      <div class="unit-left">
+                        <figure class="post-image"><img src="images/70x70.jpg" alt="" width="70" height="70"/> </figure>
+                      </div>
+                      <div class="unit-body">
+                        <div class="post-header">
+                          <p>Crear Ciudadano Digital (CiDi) – Nivel 2.</p>
+                        </div>
+                        <div class="post-meta">
+                          <ul class="list-meta">
+                            <li>
+                              <time datetime="2016-12-23">Última Actualización: Enero 2021</time>
+                            </li>
+                            <li>Tiempo de Lectura 5 min</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
+      </a></article>
 
-                  </div>
-                  <div class="bg-celeste p-3 redondeado shadowh">
-                    <h4 class="text-white text-uppercase">comunicación interna</h4>
-
-                  </div>
-
-                </a>
-      </article>
-                </div>
-
-      </div>
-    </div>
-    </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <section class="section-50 section-sm-75 section-lg-100">
-          <div class="shell">
-            <div class="range range-sm-center range-md-left">
-              <div class="cell-sm-9 cell-md-6 height-fill">
-                <article class="post-block bg-naranja  text-center justify-center"><a href="instructivossa.html">
-                  <div class="post-image"><img src="images/sa/instructivos.png" alt="" width="570" height="253"/> </div>
-                  <div class="post-body  ">
-                    <h3 class="post-header">Instructivos</h3>
-                  </div></a>
-                </article>
-              </div>
-              <div class="cell-sm-9 cell-md-6 height-fill offset-top-30 offset-md-top-0">
-                <article class="post-block bg-naranja  text-center justify-center"><a href="ayudasa.html">
-                  <div class="post-image"><img src="images/sa/preguntas.png" alt="" width="570" height="253"/> </div>
-                  <div class="post-body">
-                    <h3 class="post-header">Preguntas Frecuentes</h3>
-
-                  </div></a>
-                </article>
-              </div>
-
-
-
-            </div>
-
-          </div>
-        </section>
-
-
-        <section>
-<div class="shell">
-  <div class="range">
-
-    <div class="col-lg-12 p-3 redondeado bg-athens-lighten offset-top-50"> <h3>información Destacada</h3>
-      <article class="post post-preview post-preview-inverse offset-top-22"><a href="login.html" target="_blank">
+      <article class="post post-preview post-preview-inverse offset-top-22"><a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/10/4.-Constancia-de-Inscripci%C3%B3n..pdf" target="_blank">
                 <div class="unit unit-horizontal unit-spacing-lg">
                   <div class="unit-left">
                     <figure class="post-image"><img src="images/70x70.jpg" alt="" width="70" height="70"/> </figure>
                   </div>
                   <div class="unit-body">
                     <div class="post-header">
-                      <p>CIRCULARES</p>
+                      <p>Descargar la constancia de Inscripción en ROPyCE.</p>
                     </div>
                     <div class="post-meta">
                       <ul class="list-meta">
                         <li>
                           <time datetime="2016-12-23">Última Actualización: Enero 2021</time>
                         </li>
-
+                        <li>Tiempo de Lectura 5 min</li>
                       </ul>
                     </div>
                   </div>
                 </div>
   </a></article>
 
-  <article class="post post-preview post-preview-inverse offset-top-22"><a href="login.html" target="_blank">
-            <div class="unit unit-horizontal unit-spacing-lg">
-              <div class="unit-left">
-                <figure class="post-image"><img src="images/70x70.jpg" alt="" width="70" height="70"/> </figure>
-              </div>
-              <div class="unit-body">
-                <div class="post-header">
-                  <p>Proveedores Sancionados</p>
-                </div>
-                <div class="post-meta">
-                  <ul class="list-meta">
-                    <li>
-                      <time datetime="2016-12-23">Última Actualización: Enero 2021</time>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-</a></article>
 
+        </div>
 
-    </div>
-
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/08/Instrc-CiDi-2-Listo..pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Crear Ciudadano Digital (CiDi) – Nivel 2.</h6>
+</a>
   </div>
-
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://comprasphttps://compraspublicas.cba.gov.ar/wp-content/uploads/2020/08/AccesoCPInstructivo.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Acceso a ComprasPúblicas / Inscripción en ROPyCE.</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/09/6.-C%C3%B3mo-acceder-a-Compras-P%C3%BAblicas.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Acceder al portal ComprasPúblicas.</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/12/Instructivo_Docu-por-e-tr%C3%A1mites.-.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Enviar documentación por e-Trámites.</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/10/4.-Constancia-de-Inscripci%C3%B3n..pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Descargar la constancia de Inscripción en ROPyCE.</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/09/9.-C%C3%B3mo-modificar-datos-de-contacto-en-CP.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Cómo modificar datos de contacto en el Portal ComprasPúblicas.</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/09/8.-C%C3%B3mo-acceder-a-Mis-Invitaciones-en-CP.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1">  Acceder a «Mis Invitaciones» en ComprasPúblicas</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/09/3.-C%C3%B3mo-Ofertar.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1">  ¿Cómo ofertar?</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/09/9.-C%C3%B3mo-acceder-a-la-OC-adjudicada-en-CP.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Descargar Orden de Compra adjudicada</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2014/06/Instructivo-ComprasP%C3%BAblicas-Actualizado-10-05-2017.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Operar en ComprasPúblicas  (Portal Transaccional)</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/09/Como-ofertar-con-representaci%C3%B3n-conjunta.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Representación Conjunta- ¿Cómo ofertar?</h6>
+</a>
+  </div>
+</div>
+<div class="col-lg-3 p-3 ">
+  <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/08/Acceso-al-Simulador-de-Subastas-Electr%C3%B3nicas-4-2.pdf" target="_blank">
+  <div class="border text-center shadowh h230">
+    <i class="fa fa-book con icon-primary icon-lg"></i>
+    <h6 class="color-celeste p-1"> Acceder al Simulador de Subastas Electrónicas</h6>
+</a>
+  </div>
 </div>
 
-        </section>
+    </div>
+    <div class="cell-md-1 cell-lg-1 offset-top-50 offset-md-top-0 sidebarsa" id="sidebarsa">
+    </div>
 
 
-        <section style="background-image: url(images/slider2b.png); background-position:bottom; background-attachment:fixed" class="section-60 section-sm-90 section-sm-bottom-100 bg-white bg-image bg-image-1 offset-md-top-50">
-              <div class="shell">
-                <div class="range range-sm-center range-md-right">
-                  <div class="cell-sm-8 cell-md-6 cell-lg-5  bg-celeste p-5 redondeado">
-
-                    <h4 class="text-white">¡Importante!</h4>
-
-                    <h3 class="text-center offset-top-22">armado <span class="text-thin text-white">de expedientes </span> </h3>
-
-                    <div class="offset-top-22">
-                      <p class="text-white text-justify ">Estas recomendaciones contienen el listado de documentos que se sugiere incorporar durante el armado de los expedientes, como así también aquellas exigencias innecesarias que debieran evitar solicitar para no sumar complejidad. Tienen como base la normativa vigente y fomentan la utilización de herramientas informáticas, claves para hacer más eficiente la gestión de las contrataciones.</p>
-
-                      <div class="text-center offset-top-22">
-                        <a href="#" class="btn btn-primary ">Leer más</a> </div>
-                      </div>
-
-
-                  </div>
-                  <div class="cell-md-7">
-                    <img src="images/novedades/6.png" alt="">
-                  </div>
-
-                </div>
+    <div class="cell-md-4 cell-lg-3 offset-top-50 offset-md-top-50 sidebarsa bg-athens-lighten " id="sidebarsa">
+      <div class="inset-md-left-15">
+        <div class="range">
+          <div class="cell-sm-6 cell-md-12">
+            <form action="search-results.html" method="GET" class="rd-search rd-search-classic">
+              <div class="form-group">
+                <label for="rd-search-form-input-1" class="form-label">Buscar...</label>
+                <input id="rd-search-form-input-1" type="text" name="s" autocomplete="off" class="form-control">
               </div>
-            </section>
+              <button type="submit" class="rd-search-submit"></button>
+            </form>
+            <div class="offset-top-45">
+              <h6 class="text-small-16 text-bold text-uppercase">Categorías</h6>
+              <ul class="list-marked-bordered offset-top-5">
+                <li><a href="#"><span>Categoría 1</span><span class="text-dusty-gray">(20)</span></a></li>
+                <li><a href="#"><span>Categoría 2</span><span class="text-dusty-gray">(20)</span></a></li>
+                <li><a href="#"><span>Categoría 3</span><span class="text-dusty-gray">(2)</span></a></li>
+
+
+              </ul>
+            </div>
+            <div class="offset-top-45">
+              <h6 class="text-small-16 text-bold text-uppercase">Accesos rápidos</h6>
+              <div class="offset-top-22">
+                <div class="cell-xs-12  ">
+                  <article class="icon-box ">
+                    <a href="#" >
+                    <div class="box-top  "><img class="shadowh redondeado" src="images/instructivossa.png" alt="">
+
+                    </div>
+                  </a>
+                </article>
+                <article class="icon-box ">
+                  <a href="tutoriales.html" >
+                  <div class="box-top  "><img class="shadowh redondeado" src="images/tutoriales.png" alt="">
+
+                  </div>
+                </a>
+              </article>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="cell-sm-6 cell-md-12 offset-top-50 offset-sm-top-0 offset-md-top-45">
+
+            <div class="offset-top-45">
+              <h6 class="text-small-16 text-bold text-uppercase">Tags</h6>
+              <ul class="list-tag-blocks offset-top-22">
+                <li><a href="#">Gobierno</a></li>
+                <li><a href="#">Córdoba</a></li>
+                <li><a href="#">ROPyCE</a></li>
+                <li><a href="#">DGCyC</a></li>
+                <li><a href="#">Inscripción</a></li>
+                <li><a href="#">Acceso</a></li>
+                <li><a href="#">[...]</a></li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
+
+    </section>
 
   </main>
 
@@ -417,11 +449,11 @@
 
           <div class="cell-md-12 cell-lg-12 offset-top-40 offset-md-top-0">
             <div class="range shift-md-top-1 justify-center">
-              <div class="p-2 ">
+              <div class="p-2 offset-top-30 offset-sm-top-0">
                 <div class="link-image-wrap"><a href="https://www.rentascordoba.gob.ar/inicio/ "  target="_blank" class="link-image2"><img src="images/linkdeinteres/rentas.png" alt="" width="141" height="88"/></a></div>
               </div>
 
-              <div class="p-2 ">
+              <div class="p-2 offset-top-30 offset-sm-top-0">
                 <div class="link-image-wrap"><a href="https://ipj.cba.gov.ar/"  target="_blank" class="link-image2"><img src="images/linkdeinteres/ipj.png" alt="" width="138" height="55"/></a></div>
               </div>
 
@@ -433,7 +465,7 @@
                 <div class="link-image-wrap"><a href="https://www.tcpcordoba.gov.ar/" target="_blank" class="link-image2"><img src="images/linkdeinteres/tribunal.png" alt=""  width="132" height="83"/></a></div>
               </div>
 
-              <div class="p-2 ">
+              <div class="p-2 offset-top-30 offset-xs-top-0">
                 <div class="link-image-wrap"><a href="https://boletinoficial.cba.gov.ar/ " target="_blank" class="link-image2"><img src="images/linkdeinteres/bo.png" alt="" width="150" height="83"/></a></div>
               </div>
 
@@ -451,10 +483,10 @@
       </div>
 
     </section>
-    <section class=" page-foot section-40 section-sm-75 bg-cape-cod ">
-      <div class="shell ">
-        <div class="range range-xs-center ">
-          <div class="cell-xs-9 cell-sm-11 cell-lg-12 ">
+    <section class=" page-foot section-40 section-sm-75 bg-cape-cod    ">
+      <div class="shell">
+        <div class="range range-xs-center">
+          <div class="cell-xs-9 cell-sm-11 cell-lg-12">
 
             <div class="range">
               <div class="cell-sm-6 cell-md-10 cell-lg-3">
