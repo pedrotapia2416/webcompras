@@ -12484,8 +12484,8 @@ address {
 }
 
 .bg-iron {
-    background: #dcdde0 !important;
-    fill: #dcdde0;
+    background: #e5e5e5 !important;
+    fill: #e5e5e5;
 }
 
 .bg-cello {
@@ -13513,7 +13513,7 @@ html .btn-cello .badge {
 }
 
 .page .icon-tundora {
-    color: #414141;
+    color: #00a538;
 }
 
 .page .icon-gray-dark-filled {
@@ -13871,7 +13871,7 @@ html .btn-cello .badge {
 
 .fa-border {
     padding: .2em .25em .15em;
-    border: solid 0.08em #eeeeee;
+    border: 1px solid #f2f3f7;
     border-radius: .1em;
 }
 
@@ -32162,7 +32162,7 @@ html .group-xl-responsive > *:first-child {
 
 * + h4,
 * + .h4 {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 * + h5,
@@ -32499,7 +32499,10 @@ p + p {
         transform: rotate(180deg);
     }
 }
+.border {
+  border: 1px solid #f2f3f7 !important;
 
+}
 .pagination-custom {
     position: relative;
     display: inline-block;
@@ -34567,8 +34570,9 @@ box-shadow: -4px 6px 72px -24px rgba(107,107,107,1);
 
 .page-title-wrap {
   background-image: url(../images/slider2b.png);
-  background-size: cover;
-  background-position: bottom;
+  background-position: top;
+  background-attachment: fixed;
+
 }
 
 @media (min-width: 768px) {
@@ -51679,9 +51683,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53aae0', end
 transition: .33s all ease-out;
 }
 .shadowh:hover{
-  -webkit-box-shadow: -5px -5px 5px -1px rgba(0,0,0,0.35);
-  -moz-box-shadow: -5px -5px 5px -1px rgba(0,0,0,0.35);
-  box-shadow: -5px -5px 5px -1px rgba(0,0,0,0.35);
+  -webkit-box-shadow: -5px 5px 5px -1px rgba(0,0,0,0.35);
+  -moz-box-shadow: -5px 5px 5px -1px rgba(0,0,0,0.35);
+  box-shadow: -8px 6px 16px -9px rgba(0,0,0,0.35);
   transition: .33s all ease-out;
 border-radius: 5px;
 }
