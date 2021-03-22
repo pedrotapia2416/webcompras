@@ -38750,14 +38750,16 @@ dt {
 .tabs-custom.tabs-corporate .nav-tabs li a:hover,
 .tabs-custom.tabs-corporate .nav-tabs li.active a {
     color: #fff;
-    background: #034c9a;
-    border-color: #034c9a;
+    background: #e8bc3e;
+    margin: 1px;
+    border-radius: 5px;
+    border-color:#fff !important;
 }
 
 .tabs-custom.tabs-corporate .nav-tabs li a:hover:after,
 .tabs-custom.tabs-corporate .nav-tabs li.active a:after {
     top: -1px;
-    color: #060f15;
+    color: #ffffff;
 }
 
 .tabs-custom.tabs-corporate .tab-content {
@@ -44499,7 +44501,7 @@ html:not(.lt-ie10) .not-animated {
     display: block;
     margin-top: 27px;
     text-align: left;
-    background: #fff;
+    background: #ffffffe8;
 }
 
 .rd-navbar-static .rd-navbar-list li,
@@ -44669,8 +44671,13 @@ html:not(.lt-ie10) .not-animated {
 
 .rd-navbar-static .rd-navbar-dropdown > li > a:hover,
 .rd-navbar-fullwidth .rd-navbar-dropdown > li > a:hover {
-    color: #060f15;
-    background: transparent;
+  color: #fff;
+  background: #5b99da;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
 }
 
 .rd-navbar-static .rd-navbar-dropdown > li.focus > a,
