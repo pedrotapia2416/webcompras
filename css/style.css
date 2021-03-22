@@ -44627,7 +44627,7 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-fullwidth .rd-navbar-megamenu {
     -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.13);
     box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.13);
-    border-top: 2px solid #060f15;
+    border-top: 2px solid #e08438;
 }
 
 .rd-navbar-static .rd-navbar-dropdown,
