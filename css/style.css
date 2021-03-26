@@ -187,7 +187,7 @@ background: -webkit-linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(196,120,2
 background: -o-linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(196,120,28,1) 61%, rgba(196,120,28,1) 100%);
 background: -ms-linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(196,120,28,1) 61%, rgba(196,120,28,1) 100%);
 background: linear-gradient(45deg, rgba(255,175,75,1) 0%, rgba(196,120,28,1) 61%, rgba(196,120,28,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#c4781c', GradientType=1 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#e8bd3e', GradientType=1 );
 }
 .cidicard {
 padding: 40px !important;
@@ -234,7 +234,7 @@ background-color: white;
 
 .contador-item:hover{
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#c4781c', GradientType=1 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#e8bd3e', GradientType=1 );
 
 }
 
@@ -2268,7 +2268,7 @@ select[multiple].input-lg,
 }
 
 .btn-naranja{
-  color: #d67f34;
+  color: #e8bd3e;
   background-color:white;
 }
 
@@ -33782,13 +33782,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', end
 }
 
 .bg-naranja {
-  background: linear-gradient(119deg, #c4781c 68%, #c4781c 60%);
+  background: linear-gradient(119deg, #e8bd3e 68%, #e8bd3e 60%);
   border-radius: 5px;
 
 }
 
 .bg-naranja2 {
-  background: linear-gradient(137deg, #c4781c 39%, #fad50000 75%);
+  background: linear-gradient(137deg, #e8bd3e 39%, #fad50000 75%);
   border-radius: 5px;
 
 }
@@ -48110,7 +48110,7 @@ html.boxed .rd-navbar--is-clone {
 
 .ui-to-top:hover {
     color: #fff;
-    background: #c4781c;
+    background: #e8bd3e;
     -webkit-box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.4);
 }
