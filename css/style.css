@@ -195,7 +195,12 @@ padding: 40px !important;
 
 }
 
-
+.icotransparencia {
+  font-size: 40px !important;
+  vertical-align: middle;
+  padding: 5px;
+  color: #00a537;
+}
 /*CONTADOR*/
 
 .icocontador {
@@ -1364,7 +1369,7 @@ th {
 
 .table-primary thead>tr>th {
     color: #fff;
-    background: #060f15;
+    background: #3479c1    ;
 }
 
 .table-striped>tbody>tr:nth-of-type(even) {
@@ -7896,6 +7901,7 @@ button.close {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     background-clip: padding-box;
     outline: 0;
+    margin-top: 25%;
 }
 
 .modal-backdrop {
@@ -11920,6 +11926,12 @@ h1,
         line-height: 1.2;
     }
 }
+
+.counter-big {
+    font-size: 88px !important;
+    line-height: 1.2;
+}
+
 
 h2,
 .h2 {
@@ -51684,6 +51696,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53aae0', end
   color:#004d9a ;
 }
 
+.color-amarillo{
+  color: rgba(250,213,0,1);
+}
+.color-lila {
+  color: rgba(130,43,135,1);
+
+}
+.border-none {
+  border: 0px;
+}
 .justify-center{
   justify-content: center;
 }
@@ -51806,4 +51828,14 @@ border-radius: 5px;
 
 .page-title h2{
   color: white;
+}
+.m-12{
+  margin-top: -12px;
+}
+.mb-12{
+  margin-bottom: -12px;
+}
+
+.h100{
+  height: 100% !important;
 }
