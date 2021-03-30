@@ -1307,7 +1307,7 @@ th {
     font-family: "Trasandina", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    padding: 26px 25px;
+    padding: 10px 10px;
     vertical-align: bottom;
     background: #f6f7fa;
     border-bottom: 0;
@@ -1315,7 +1315,7 @@ th {
 
 @media (min-width: 768px) {
     .table>thead>tr>th {
-        padding: 34px 25px 29px;
+        padding: 10x 25px 10px;
     }
 }
 
@@ -51838,4 +51838,11 @@ border-radius: 5px;
 
 .h100{
   height: 100% !important;
+}
+
+.m-0 {
+  margin:0px !important;
+}
+.p-0{
+  padding:0px !important;
 }
