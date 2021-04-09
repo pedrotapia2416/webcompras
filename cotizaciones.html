@@ -7,7 +7,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <!-- CSS -->
-
+<!-- CSS -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v9.0" nonce="y02ErWoK"></script>
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -21,14 +23,68 @@
 <link rel="stylesheet" type="text/css" href="css/css.css?family=Roboto:100,300,400,500,700%7CPlayfair+Display:400,700,700i,900,900i">
 <link rel="stylesheet" href="css/style.css">
 
-<script src="https://kit.fontawesome.com/e25f6e1d42.js" crossorigin="anonymous"></script>
+<script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(112158)</script>
 
 
+<script type="text/javascript">
+$(function(){
+var $tabla = $('#tabla');
 
+$('#selectCategory').change(function(){
+  var value = $(this).val();
+  if (value){
+    $('tbody tr.' + value, $tabla).show();
+    $('tbody tr:not(.' + value + ')', $tabla).hide();
+  }
+  else{
+    // Se ha seleccionado All
+    $('tbody tr', $tabla).show();
+  }
+});
+});
+</script>
+
+<style type="text/css">
+    #register_form fieldset:not(:first-of-type) {
+    display: none;
+    }
+</style>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+      var form_count = 0, previous_form, next_form, total_forms;
+      total_forms = $("fieldset").length;
+      $(".next-form").click(function(){
+      previous_form = $(this).parent();
+      next_form = $(this).parent().next();
+      next_form.show();
+      previous_form.hide();
+      setProgressBarValue(++form_count);
+      });
+      $(".previous-form").click(function(){
+      previous_form = $(this).parent();
+      next_form = $(this).parent().prev();
+      next_form.show();
+      previous_form.hide();
+      setProgressBarValue(--form_count);
+      });
+      setProgressBarValue(form_count);
+      function setProgressBarValue(value){
+      var percent = parseFloat(100 / (total_forms -1) ) * value;
+      percent = percent.toFixed();
+      $(".progress-bar")
+      .css("width",percent+"%")
+      .html(percent+"%");
+
+      }
+      // Handle form submit and validation
+
+      });
+</script>
 
 </head>
 <body style="">
-<div class="">
+<div class="page">
   <header class="page-head ">
     <div class="rd-navbar-wrap" >
       <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="53px" data-lg-stick-up-offset="53px" data-md-stick-up="true" data-lg-stick-up="true" class="rd-navbar rd-navbar-corporate-dark">
@@ -192,208 +248,183 @@
   <main class="page-content">
 
 
-  <section class=" bg-gray-dark page-title-wrap">
+  <section class=" section-15  bg-gray-dark page-title-wrap">
     <div class="shell">
       <div class="page-title">
-        <h2>#cotizaciones</h2>
+        <h5># COTIZACIONES </h5>
+
+      </div>
+
+      <div class="range range-xs-center range-md-left">
+
+        <div class="cell-sm-12 cell-md-6 cell-lg-5 mt-5 p-5 text-white">
+          <div class="offset-top-40">
+            <p class="text-justify">En esta sección podrás encontrar información sobre como participar, las próximas contrataciones e información de interés.</p>
+             </div>
+        </div>
+
+        <div class="cell-sm-12 cell-md-6 cell-lg-6 range">
+
+
+
+          <div class="cell-sm-12 cell-md-6 cell-lg-6 ">
+            <article class="icon-box cell-md-6 ">
+              <a class="text-white" target="_blank" href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
+              <div class="box-top shadowh p-3 h250 w100">
+                <div class="box-icon"></div>
+                <i class="fa fa-bell icon icon-md m-4"></i>
+
+                <p class="text-white f14">CONOCÉ TODAS LAS <br> CONTRATACIONES</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="cell-sm-12 cell-md-6 cell-lg-6 ">
+          <article class="icon-box  cell-md-6">
+            <a class="text-white" target="_blank" href="https://webecommerce.cba.gov.ar/">
+            <div class="box-top shadowh p-3 h250 w100" style="background-image:url('images/')">
+              <div class="box-icon"></div>
+              <i class="fa fa-check icon icon-l m-4"></i>
+
+              <p class="text-white f14">PARTICIPÁ</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+        </div>
+
+
+
+
+
       </div>
     </div>
 
-    <section  class=" ">
-        <div class="shell">
-          <div class="range range-xs-center range-md-left">
-
-            <div class="cell-sm-12 cell-md-6 cell-lg-5 mt-5 p-5 text-white">
-              <div class="offset-top-40">
-                <p class="text-justify">En esta sección podrás encontrar información sobre como participar, las próximas contrataciones e información de interés.</p>
-                 </div>
-            </div>
-
-            <div class="cell-sm-12 cell-md-6 cell-lg-6 range">
-
-
-
-              <div class="cell-sm-12 cell-md-6 cell-lg-6 ">
-                <article class="icon-box cell-md-6 ">
-                  <a class="text-white" target="_blank" href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
-                  <div class="box-top shadowh p-3 h250 w100">
-                    <div class="box-icon"></div>
-                    <i class="fa fa-bell icon icon-md m-4"></i>
-
-                    <p class="text-white f14">CONOCÉ TODAS LAS <br> CONTRATACIONES</p>
-                  </div>
-                </a>
-              </article>
-            </div>
-            <div class="cell-sm-12 cell-md-6 cell-lg-6 ">
-              <article class="icon-box  cell-md-6">
-                <a class="text-white" target="_blank" href="https://webecommerce.cba.gov.ar/">
-                <div class="box-top shadowh p-3 h250 w100" style="background-image:url('images/')">
-                  <div class="box-icon"></div>
-                  <i class="fa fa-check icon icon-l m-4"></i>
-
-                  <p class="text-white f14">PARTICIPÁ</p>
-                </div>
-              </a>
-            </article>
-          </div>
-
-            </div>
-
-
-
-
-
-          </div>
-        </div>
-      </section>
-
-    <section  class=" ">
-        <div class="shell">
-          <div class="range range-xs-center range-md-left ">
-
-            <div class="cell-sm-12 cell-md-6  text-white ">
-              <div class="">
-                <p class="text-justify"></p>
-                 </div>
-            </div>
-
-
-
-            <div class="cell-md-6 ">
-
-              <div class="range">
-
-
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
   </section>
 
 
-  <div >
+<section>
+  <div class="shell">
 
-
-
-
-    <div class="shell">
-
-  <div class="range section-15">
-    <div class="cell-lg-6">
-      <div class="">
-        <div class="pt-5">
-          <h4>Próximas Contrataciones</h4>
-        </div>
-        <article class="pt-5 post post-preview post-preview-inverse offset-top-22"><a href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
-                    <div class="unit unit-horizontal unit-spacing-lg">
-                      <div class="unit-left">
-                        <figure class="post-image offset-top-22"><img src="images/a.png" alt="" style="max-width:70px" width="70" height="70"/> </figure>
-                      </div>
-                      <div class="unit-body">
-                        <div class="post-header">
-                          <p>SISTEMA DE VENTILACION FORZADA PARA EL SUBSUELO DE LA SUBSECRETARIA...	</p>
-                        </div><span class="p-1 redondeado m-1 bg-naranja text-white">19/04/2021</span>
-                        <div class="post-meta">
-                          <ul class="list-meta">
-                            <li>
-                              <time datetime="2016-12-23">02/2021	</time>
-                            </li>
-                            <li>Compulsa Abreviada Presencial	</li>
-                            <li>201 - Dirección General De Vivienda	</li>
-                          </ul>
-                        </div>
+<div class="range section-15">
+  <div class="cell-lg-6">
+    <div class="">
+      <div class="pt-5">
+        <h4>Próximas Contrataciones</h4>
+      </div>
+      <article class="pt-5 post post-preview post-preview-inverse offset-top-22"><a href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
+                  <div class="unit unit-horizontal unit-spacing-lg">
+                    <div class="unit-left">
+                      <figure class="post-image offset-top-22"><img src="images/a.png" alt="" style="max-width:70px" width="70" height="70"/> </figure>
+                    </div>
+                    <div class="unit-body">
+                      <div class="post-header">
+                        <p>SISTEMA DE VENTILACION FORZADA PARA EL SUBSUELO DE LA SUBSECRETARIA...	</p>
+                      </div><span class="p-1 redondeado m-1 bg-naranja text-white">19/04/2021</span>
+                      <div class="post-meta">
+                        <ul class="list-meta">
+                          <li>
+                            <time datetime="2016-12-23">02/2021	</time>
+                          </li>
+                          <li>Compulsa Abreviada Presencial	</li>
+                          <li>201 - Dirección General De Vivienda	</li>
+                        </ul>
                       </div>
                     </div>
-                    </a></article>
+                  </div>
+                  </a></article>
 
-                    <article class="post post-preview post-preview-inverse offset-top-22"><a href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
-                                <div class="unit unit-horizontal unit-spacing-lg">
-                                  <div class="unit-left">
-                                    <figure class="post-image offset-top-22"><img src="images/a.png"  style="max-width:70px" alt="" width="70" height="70"/> </figure>
-                                  </div>
-                                  <div class="unit-body">
-                                    <div class="post-header">
-                                      <p>REMODELACION Y AMPLIACION AREA QUIRURGICA...	 </p>
-                                    </div><span class="p-1 redondeado m-1 bg-naranja text-white">16/04/2021</span>
-                                    <div class="post-meta">
-                                      <ul class="list-meta">
-                                        <li>
-                                          <time datetime="2016-12-23">2021/000173		</time>
-                                        </li>
-                                        <li>Subasta Electrónica Inversa - O.P.</li>
-                                        <li>65 - Ministerio de Salud	</li>
-                                      </ul>
-                                    </div>
+                  <article class="post post-preview post-preview-inverse offset-top-22"><a href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
+                              <div class="unit unit-horizontal unit-spacing-lg">
+                                <div class="unit-left">
+                                  <figure class="post-image offset-top-22"><img src="images/a.png"  style="max-width:70px" alt="" width="70" height="70"/> </figure>
+                                </div>
+                                <div class="unit-body">
+                                  <div class="post-header">
+                                    <p>REMODELACION Y AMPLIACION AREA QUIRURGICA...	 </p>
+                                  </div><span class="p-1 redondeado m-1 bg-naranja text-white">16/04/2021</span>
+                                  <div class="post-meta">
+                                    <ul class="list-meta">
+                                      <li>
+                                        <time datetime="2016-12-23">2021/000173		</time>
+                                      </li>
+                                      <li>Subasta Electrónica Inversa - O.P.</li>
+                                      <li>65 - Ministerio de Salud	</li>
+                                    </ul>
                                   </div>
                                 </div>
-                                </a></article>
+                              </div>
+                              </a></article>
 
-                                <article class="post post-preview post-preview-inverse offset-top-22"><a href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
-                                            <div class="unit unit-horizontal unit-spacing-lg">
-                                              <div class="unit-left">
-                                                <figure class="post-image offset-top-22"><img src="images/a.png" alt=""  style="max-width:70px" width="70" height="70"/> </figure>
-                                              </div>
-                                              <div class="unit-body">
-                                                <div class="post-header">
-                                                  <p>CONTRATACIÓN PARA LA ADQUISICIÓN DE LECHES Y SERVICIO DE LOGÍSTICA Y CADETERIA...	< </p>
-                                                </div><span class="p-1 redondeado m-1 bg-naranja text-white">16/04/2021</span>
-                                                <div class="post-meta">
-                                                  <ul class="list-meta">
-                                                    <li>
-                                                      <time datetime="2016-12-23">02/2021	</time>
-                                                    </li>
-                                                    <li>Subasta Electrónica Inversa		</li>
-                                                    <li>198 - Ministerio De Desarrollo Social	</li>
-                                                  </ul>
-                                                </div>
+                              <article class="post post-preview post-preview-inverse offset-top-22"><a href="https://webecommerce.cba.gov.ar/VistaPublica/OportunidadProveedores.aspx">
+                                          <div class="unit unit-horizontal unit-spacing-lg">
+                                            <div class="unit-left">
+                                              <figure class="post-image offset-top-22"><img src="images/a.png" alt=""  style="max-width:70px" width="70" height="70"/> </figure>
+                                            </div>
+                                            <div class="unit-body">
+                                              <div class="post-header">
+                                                <p>CONTRATACIÓN PARA LA ADQUISICIÓN DE LECHES Y SERVICIO DE LOGÍSTICA Y CADETERIA...	< </p>
+                                              </div><span class="p-1 redondeado m-1 bg-naranja text-white">16/04/2021</span>
+                                              <div class="post-meta">
+                                                <ul class="list-meta">
+                                                  <li>
+                                                    <time datetime="2016-12-23">02/2021	</time>
+                                                  </li>
+                                                  <li>Subasta Electrónica Inversa		</li>
+                                                  <li>198 - Ministerio De Desarrollo Social	</li>
+                                                </ul>
                                               </div>
                                             </div>
-                                            </a></article>
+                                          </div>
+                                          </a></article>
 
-                                            <div class="m-5">
-                                              <p class="p-2 bg-celeste redondeado text-center "><a class="text-white" href="">Ver todas las Contrataciones</a></p>
-                                            </div>
-      </div>
+                                          <div class="m-5">
+                                            <p class="p-2 bg-celeste redondeado text-center "><a class="text-white" href="">Ver todas las Contrataciones</a></p>
+                                          </div>
     </div>
-    <div class="cell-lg-6">
-    <div class="border redondeado">
-      <h4 class="text-center pt-5">Guía rápida - ¿Cómo Participar? </h4>
+  </div>
+  <div class="cell-lg-6">
+  <div class="border redondeado">
+    <h4 class="text-center pt-5">Guía rápida - ¿Cómo Participar? </h4>
 
 <div class="shell">
-  <div class="range p-5">
+<div class="range p-5">
 
-    <div class="cell-xs-6 " >
-      <img class="shadowh" src="images/cotizaciones/1.png" alt="" style="width:100%;">
-
-    </div>
-    <div class="cell-xs-6">
-      <img class="shadowh" src="images/cotizaciones/2.png" alt="" style="width:100%;">
-
-    </div>
-    <div class="cell-xs-6">
-      <img class="shadowh" src="images/cotizaciones/3.png" alt="" style="width:100%;">
-
-    </div>
-    <div class="cell-xs-6">
-      <img class="shadowh" src="images/cotizaciones/4.png" alt="" style="width:100%;">
-
-    </div>
-
+  <div class="cell-xs-6 " >
+    <img class="shadowh" src="images/cotizaciones/1.png" alt="" style="width:100%;">
 
   </div>
+  <div class="cell-xs-6">
+    <img class="shadowh" src="images/cotizaciones/2.png" alt="" style="width:100%;">
 
-</div>
+  </div>
+  <div class="cell-xs-6">
+    <img class="shadowh" src="images/cotizaciones/3.png" alt="" style="width:100%;">
 
-    </div>
-    </div>
+  </div>
+  <div class="cell-xs-6">
+    <img class="shadowh" src="images/cotizaciones/4.png" alt="" style="width:100%;">
+
   </div>
 
 
 </div>
+
+</div>
+
+  </div>
+  </div>
+</div>
+
+
+</div>
+</section>
+
+
+
+
+
 
 
     <section class="shell section-50">
@@ -611,7 +642,7 @@
 
 
 
-                      </div>
+
 
 
                     </div>
