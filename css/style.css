@@ -33772,13 +33772,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', end
 
 }
 .bg-azul {
-  background: linear-gradient(110deg, #5a98da 60%, #5a98da 60%);
+  background: linear-gradient(110deg, #02367b 60%, #02367b 60%);
 
 }
 
-.bg-azul2 {
-  background: linear-gradient(119deg, #5a98da 60%, #fad50000 60%);
-
+.color-azul {
+  color: #02367b;
 }
 
 .bg-naranja {
