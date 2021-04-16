@@ -38758,9 +38758,10 @@ dt {
 .tabs-custom.tabs-corporate .nav-tabs li.active a {
     color: #fff;
     background-color: #5896d8;
-    margin: -10px;
+    margin: -5px;
     border-radius: 5px;
     z-index: 9999999999;
+    border:2px solid #5896d8; 
 }
 
 .tabs-custom.tabs-corporate .nav-tabs li a:hover:after,
