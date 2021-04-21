@@ -45840,7 +45840,7 @@ html.rd-navbar-sidebar-linked body {
 .rd-navbar-corporate-dark.rd-navbar-static .rd-navbar-group {
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+    display: inline;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -45953,7 +45953,7 @@ html.rd-navbar-sidebar-linked body {
 .rd-navbar-corporate-dark.rd-navbar-static .rd-navbar-nav-inner {
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+    display: inline;
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
