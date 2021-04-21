@@ -3994,7 +3994,11 @@ tbody.collapse.in {
   }
 }
 
+.icon-redondo{
+  border: 1px solid #3479c1d1;
+  border-radius:50px !important;
 
+}
 @media only screen and (max-width: 767px) {
 	.navbar-toggleable-sm {
     float: right;
@@ -45211,7 +45215,7 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-fixed .rd-navbar-nav li.opened > a,
 .rd-navbar-fixed .rd-navbar-nav li.opened > a:hover {
     color: #fff;
-    background: #060f15;
+    background: #dedede;
 }
 
 .rd-navbar-fixed .rd-navbar-nav li:hover > .rd-navbar-submenu-toggle::after,
