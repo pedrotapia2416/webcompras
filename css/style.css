@@ -51913,6 +51913,7 @@ border-radius: 5px;
 }
 
 .bubbledLeft{
+  
     float: left;
     margin-right: auto;
     -webkit-border-radius: 8px 8px 8px 0px;
@@ -51920,12 +51921,12 @@ border-radius: 5px;
     -o-border-radius: 8px 8px 8px 0px;
     -ms-border-radius: 8px 8px 8px 0px;
     border-radius: 8px 8px 8px 0px;
-    background-color: #efefef9e;
+    background-color: #fff;
 
 }
 
 .bubbledLeft:before {
-    border-bottom: 10px solid #efefef9e;
+    border-bottom: 10px solid #fff;
     border-left: 9px solid rgba(0, 0, 0, 0);
     position: absolute;
     bottom: 0;
