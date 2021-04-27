@@ -39330,7 +39330,7 @@ dt {
     position: relative;
     z-index: 1;
     padding: 17px 82px 17px 32px;
-    font:  14px/1px "Trasandina", Helvetica, Arial, sans-serif;
+    font:  14px "Trasandina", Helvetica, Arial, sans-serif;
     color: #6c757d;
     transition: 1.3s all ease;
     letter-spacing: -.025em;
