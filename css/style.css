@@ -456,7 +456,10 @@ sub {
 
 img {
     border: 0;
+
 }
+
+
 
 svg:not(:root) {
     overflow: hidden;
@@ -671,7 +674,9 @@ body {
     color: #6c757d30a !important;
     background-color: #fff;
 }
-.drop { filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }
+
+
+.drop { filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.35)); }
 input,
 button,
 select,
@@ -714,6 +719,11 @@ img {
 
 .img-rounded {
     border-radius: 6px;
+}
+
+
+.img-responsive-fieldset{
+  max-height:300px; max-width:100%
 }
 
 .img-thumbnail {
@@ -5897,13 +5907,11 @@ a.thumbnail.active {
 
 .progress {
     overflow: hidden;
-    height: 24px;
-    margin-bottom: 24px;
+    height: 15px;
     background-color: #f5f5f5;
-    border-radius: 0;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .progress-bar {
@@ -39322,7 +39330,7 @@ dt {
     position: relative;
     z-index: 1;
     padding: 17px 82px 17px 32px;
-    font: 500 18px/24px "Trasandina", Helvetica, Arial, sans-serif;
+    font:  14px/1px "Trasandina", Helvetica, Arial, sans-serif;
     color: #6c757d;
     transition: 1.3s all ease;
     letter-spacing: -.025em;
@@ -51559,6 +51567,10 @@ margin-top:-450px;display:block;}
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.centrado-anterior{
+      text-align-last: center
+}
 .sidebarsa {
 }
 
@@ -51617,7 +51629,7 @@ margin-top:-450px;display:block;}
 }
 
 .redondeado {
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .tiracolores {
@@ -51717,6 +51729,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53aae0', end
 .shadowh{
 transition: .33s all ease-out;
 }
+
 .shadowh:hover{
   -webkit-box-shadow: -5px 5px 5px -1px rgba(0,0,0,0.35);
   -moz-box-shadow: -5px 5px 5px -1px rgba(0,0,0,0.35);
@@ -51724,6 +51737,29 @@ transition: .33s all ease-out;
   transition: .33s all ease-out;
 border-radius: 5px;
 }
+
+.boton1 {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  border: 2px solid;
+  position: relative;
+}
+.boton1:before {
+  content:"";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+.boton1:hover:before {
+  height: 100%;
+}
+
 #curved-corner-bottomleft,
 #curved-corner-bottomright,
 #curved-corner-topleft,
