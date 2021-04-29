@@ -2247,7 +2247,6 @@ select[multiple].input-lg,
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
-    white-space: nowrap;
     padding: 5px 5px;
     font-size: 15px;
     line-height: 1.71429;

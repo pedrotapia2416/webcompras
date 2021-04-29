@@ -27,6 +27,18 @@
 
 
 <script type="text/javascript">
+$(document).ready(function(){
+
+$('.btn-success').click(function(){
+  $('body, html').animate({
+    scrollTop: '250px'
+  }, 300);
+});
+
+});
+</script>
+
+<script type="text/javascript">
 $(function(){
 var $tabla = $('#tabla');
 
@@ -230,7 +242,7 @@ $('#selectCategory').change(function(){
     <section class="section-sm-30  bg-gray-dark page-title-wrap">
       <div class="shell p-3">
         <div class="page-title">
-          <h3>#inscripción en ropyce</h3>
+          <h3>#inscripción en <span style="text-transform:none">ROPyCE</span></h3>
         </div>
 
       </div>
@@ -326,7 +338,7 @@ $('#selectCategory').change(function(){
 
                                     <p>- <span class="color-celeste">Balance General</span> del último ejercicio económico, emitido por Contador Público independiente y certificado por el Consejo Profesional de Ciencias Económicas de Córdoba (C.P.C.E.).</p>
 
-
+                                    <p>- Declaración Jurada de Administrador Informático para Representación Conjunta.</p>
 
                                   </div>
                                 </div>
@@ -429,6 +441,8 @@ $('#selectCategory').change(function(){
                                 <p>- <span class="color-celeste">Acta de Asamblea o de Directorio de designación de autoridades</span> donde conste la última distribución y aceptación de los cargos y, solo en el caso sociedades incluidas en el artículo 299 de la Ley N° 19.550, Acta de Asamblea donde conste la aprobación del último ejercicio económico. Dichas actas y/o el último ejercicio económico aprobado (de corresponder), deberán encontrarse inscriptos o presentados en el Registro Público de Comercio correspondiente al lugar de origen de la sociedad.</p>
                                 <p>-<span class="color-celeste">Informe de medidas cautelares,</span> expedido por el Registro Público de Comercio de la jurisdicción donde se encuentre inscripta la sociedad, con una antigüedad no mayor a ciento ochenta (180) días corridos.</p>
                                 <p>-<span class="color-celeste">Balance General</span> del último ejercicio económico, emitido por Contador Público independiente y certificado por el Consejo Profesional de Ciencias Económicas (C.P.C.E.)</p>
+                                <p>- Declaración Jurada de Administrador Informático para Representación Conjunta.</p>
+                                
                               </div>
                             </div>
                           </div>
@@ -574,9 +588,9 @@ $('#selectCategory').change(function(){
   <p><i class="icon icon-round icon-abbey-filled icon-lg-bigger fas fa-database text-left"></i>  Los archivos no pueden superar los <span class="color-celeste">80 MB</span>y deben enviarse por separado en formato PDF. En el caso de que tengas firma digital, cada documento deberá contar con dicha firma.</p>
 </div>
 
-<div class=" col-lg-12 m-5">
+<div class=" col-lg-12 p-5">
   <a href="https://compraspublicas.cba.gov.ar/wp-content/uploads/2020/08/Condiciones-Documentación-Digital_ROPyCE.pdf" target="_blank">
-  <h4 class=" bg-celeste text-white p-3 text-uppercase m-2 btn shadowh">Ver todas las condiciones de digitalización</h4>
+  <h4 class=" bg-celeste text-white  text-uppercase btn shadowh">Ver todas las condiciones de digitalización</h4>
 </a>
 </div>
 
@@ -745,7 +759,7 @@ $('#selectCategory').change(function(){
           <div class="offset-top-22 offset-md-top-30 range">
 
 
-            <div class="cell-lg-6 cell-xs-6 p-3  ">
+            <div class="cell-lg-6 cell-xs-12 p-3  text-center ">
               <article class="  "><a href="normativa.html">
                 <div class=" boton1  redondeado p-2 w100 boxshadow">
                   <div class="text-center">
@@ -759,7 +773,7 @@ $('#selectCategory').change(function(){
               </article>
             </div>
 
-            <div class="cell-lg-6 p-3  ">
+            <div class="cell-lg-6 cell-xs-12 p-3 text-center ">
               <article class="  "><a href="instructivos.html">
                 <div class=" boton1  redondeado p-2 w100 boxshadow">
                   <div class="text-center">
@@ -774,7 +788,7 @@ $('#selectCategory').change(function(){
               </article>
             </div>
 
-            <div class="cell-lg-6 p-3  ">
+            <div class="cell-lg-6 p-3 cell-xs-12 text-center ">
               <article class="  "><a href="instructivos.html">
                 <div class=" boton1  redondeado p-2 w100 boxshadow">
                   <div class="text-center">
@@ -789,7 +803,7 @@ $('#selectCategory').change(function(){
               </article>
             </div>
 
-            <div class="cell-lg-6 p-3  ">
+            <div class="cell-lg-6 p-3 cell-xs-12 text-center ">
               <article class="  "><a href="acceso.html">
                 <div class=" boton1  redondeado p-2 w100 boxshadow">
                   <div class="text-center">
@@ -810,12 +824,13 @@ $('#selectCategory').change(function(){
 
 
 
-            <div class="cell-lg-12 ">
+            <div class="cell-lg-12 cell-xs-12 ">
               <article class="post post-preview post-preview-inverse offset-top-22 bg-whisper p-3 redondeado ">
                 <a href="https://www.facebook.com/ropycecba/" target="_blank">
                 <div class="unit unit-horizontal unit-spacing-lg">
                   <div class="unit-left">
-                    <p><i class="fas fa-facebook icon icon-sm color-celeste" ></i> Fanpage - Ropyce</p>
+                    <p><i class="fas fa-thumbs-up icon icon-sm color-celeste" ></i> Fanpage - Ropyce <span class="color-celeste">¡Seguinos en Facebook!</span></p>
+
 
                   </div>
 
@@ -824,7 +839,7 @@ $('#selectCategory').change(function(){
               </article>
             </div>
 
-            <div class="cell-lg-12 ">
+            <div class="cell-lg-12 cell-xs-12 ">
               <article class="post post-preview post-preview-inverse offset-top-22 bg-whisper p-3 redondeado">
                 <a href="mailto:ropyce.compraspublicas@cba.gov.ar" target="_blank">
                 <div class="unit unit-horizontal unit-spacing-lg">
