@@ -134,7 +134,9 @@
 
 /*INICIO PERSONALIZADOS*/
 
-
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
 
 
 .black-highlight {
@@ -143,7 +145,7 @@
      }
 .cardvariant-1 {
   border: 1px solid grey;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .card, .card-header {
@@ -210,7 +212,7 @@ padding: 40px !important;
 }
 
 .contador-item{
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -427,6 +429,7 @@ dfn {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    text-transform: uppercase;
 }
 
 mark {
@@ -2274,7 +2277,7 @@ select[multiple].input-lg,
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border-radius: 5px !important;
+    border-radius: 8px !important;
 }
 
 .btn-naranja{
@@ -2607,7 +2610,7 @@ fieldset[disabled] .btn-info.focus {
     border-color: #745329;
 }
 .btncidi{
-  border-radius: 5px;
+  border-radius: 8px;
   border:1px solid #ededed;
 }
 .btncidi:hover{
@@ -5911,7 +5914,7 @@ a.thumbnail.active {
     background-color: #f5f5f5;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .progress-bar {
@@ -8211,7 +8214,7 @@ button.close {
     font-size: 15px;
     background-color: #f7f7f7;
     border-bottom: 1px solid #ebebeb;
-    border-radius: 5px 5px 0 0;
+    border-radius: 8px 5px 0 0;
 }
 
 .popover-content {
@@ -28719,7 +28722,7 @@ form.label-outside .form-validation {
 
 .form-classic.form-inline .form-control {
     width: 100%;
-    border-radius: 5px 0 0 5px;
+    border-radius: 8px 0 0 5px;
 }
 
 .form-classic.form-inline .btn {
@@ -32556,7 +32559,7 @@ p + p {
     padding-right: 25px;
     color: #5a98da;
     border-color: #5a98da;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .pagination-custom li a {
@@ -32587,7 +32590,7 @@ p + p {
 
     color: #5a98da;
     border-color: #5a98da;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .pagination-custom li a:hover {
@@ -33167,8 +33170,7 @@ blockquote cite {
 
 .icon-box .box-top {
   top: 0;
-  border: 1px solid #f2f3f7;
-  border-radius: 5px;
+
 }
 
 .icon-box .box-body {
@@ -33305,7 +33307,7 @@ blockquote cite {
     bottom: 0;
     left: 0;
     z-index: 0;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .block-image-plate .block-inner > * {
@@ -33673,7 +33675,7 @@ blockquote cite {
 
 .post-preview .post-image,
 .post-preview .post-image img {
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .post-preview .post-image img {
@@ -33715,7 +33717,7 @@ blockquote cite {
 }
 
 .post-preview.post-preview-inverse .post-header {
-    color:#194e9b;
+    color:#5a98da;
     font-weight: 700;
     padding-top: 20px;
 text-decoration-line:underline;
@@ -33795,31 +33797,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c398f', end
 
 .bg-naranja {
   background: linear-gradient(119deg, #e8bd3e 68%, #e8bd3e 60%);
-  border-radius: 5px;
+  border-radius: 8px;
 
 }
 
 .bg-naranja2 {
   background: linear-gradient(137deg, #e8bd3e 39%, #fad50000 75%);
-  border-radius: 5px;
+  border-radius: 8px;
 
 }
 
 .bg-amarillo2 {
   background: linear-gradient(119deg, #fad500 68%, #fad50000 60%);
-  border-radius: 5px;
+  border-radius: 8px;
 
 }
 
 .bg-lila2 {
   background: linear-gradient(110deg, #822b87 60%, #822b87 60%);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 20px;
 
 }
 .bg-lila3 {
 background:linear-gradient(0deg, #822b87 39%, #fad50000 75%);
-border-radius: 5px;
+border-radius: 8px;
 padding: 20px;
 }
 
@@ -33941,7 +33943,7 @@ padding: 20px;
 }
 
 .post-modern {
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     background: #fff;
     transition: all 0.8s;
@@ -36996,7 +36998,7 @@ html .page .offset-top-120 {
  filter: grayscale(1);
  background: white;
  padding: 2px;
- border-radius: 5px;
+ border-radius: 8px;
 }
 
 .link-image2:hover img {
@@ -37007,7 +37009,7 @@ html .page .offset-top-120 {
     width: auto;
     transition: .44s all ease;
  filter:opacity(0.5);
- border-radius: 5px;
+ border-radius: 8px;
 }
 
 .link-image .text-white {
@@ -38772,7 +38774,7 @@ dt {
     color: #fff;
     background-color: #5896d8;
     margin: -5px;
-    border-radius: 5px;
+    border-radius: 8px;
     z-index: 9999999999;
     border:2px solid #5896d8;
 }
@@ -44614,7 +44616,7 @@ html:not(.lt-ie10) .not-animated {
     padding-top: 2px;
     padding-bottom: 2px;
     margin-left: 2px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .rd-navbar-static .rd-navbar-dropdown > li + li,
@@ -44697,7 +44699,7 @@ html:not(.lt-ie10) .not-animated {
   padding-top: 2px;
   padding-bottom: 2px;
   margin-left: 2px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 }
 
@@ -45060,6 +45062,9 @@ html:not(.lt-ie10) .not-animated {
 /*
 * Fullwidth Layout
 */
+.rd-navbar-nav{
+  white-space: nowrap;
+}
 
 .rd-navbar-fullwidth {
     display: block;
@@ -47185,7 +47190,7 @@ html.boxed .rd-navbar--is-clone {
     text-align: center;
     color: #fff;
     background: #060f15;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 0;
     text-transform: uppercase;
     transition: .3s ease-out;
@@ -48231,7 +48236,7 @@ html.boxed .rd-navbar--is-clone {
     height: 100%;
     left: 0;
     top: 0;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
 }
 
@@ -48907,7 +48912,7 @@ html.boxed .rd-navbar--is-clone {
     border: 1px solid white;
     width: 116px;
     height: 116px;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 200ms ease-in-out;
     opacity: 0;
     pointer-events: none;
@@ -48915,7 +48920,7 @@ html.boxed .rd-navbar--is-clone {
 
 .carousel-testimonials-home .slick-images .item .imp-wrap img {
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -51621,7 +51626,7 @@ margin-top:-450px;display:block;}
 
 .widget-importante {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .bg-celeste {
@@ -51735,7 +51740,7 @@ transition: .33s all ease-out;
   -moz-box-shadow: -5px 5px 5px -1px rgba(0,0,0,0.35);
   box-shadow: -8px 6px 16px -9px rgba(0,0,0,0.35);
   transition: .33s all ease-out;
-border-radius: 5px;
+border-radius: 8px;
 }
 
 .boton1 {
@@ -51830,7 +51835,7 @@ border-radius: 5px;
 .bg-navegador {
   background: linear-gradient(
 110deg, #ffffff 60%, #ffffff 60%);
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #0f3459;
 }
 .bg-navegador div h4 {
